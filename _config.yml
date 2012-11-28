@@ -28,6 +28,8 @@ author :
 #
 production_url : http://emir-munoz.github.com
 
+exclude: ['Rakefile', 'README.markdown', 'TODO.markdown', '_drafts']
+
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
 JB :
@@ -97,7 +99,7 @@ JB :
   # Set 'provider' to false to turn analytics off globally.
   #        
   analytics :
-    provider : google 
+    provider : false 
     google : 
         tracking_id : 'UA-123-12'
     getclicky :

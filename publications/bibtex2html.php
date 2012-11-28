@@ -303,6 +303,7 @@ function extractBibName($haystack){
  * @author Johannes Knabe, Andreas Classen
  */
 function formatAuthors($author, $hightlightName, $authorLimit = 0){
+	
 	$editorStr = ", ed.";
 	$suffix = "";
 	if(strpos($author,", ed.")){
@@ -366,22 +367,24 @@ function formatAuthors($author, $hightlightName, $authorLimit = 0){
 			$secondNames = substr($authArr[$i], strrpos($authArr[$i], " ")+1);
 		}
 		
-		// Abbreviate first names
-		$firstNamesArr = explode(" ", trim($firstNames));
-		foreach($firstNamesArr as $j => $name) {
-			if(strlen($name) > 2 && strpos($name, ".") === false) {
-				if(strpos($name, "-") === false) {
-					$firstNamesArr[$j] = substr($name,0,1).".";
-				} else {
-					$firstNamesArr[$j] = substr($name,0,1).substr($name, strpos($name, '-'), 2).".";
-				}
-			}
-		}
-		$firstNames = implode(' ', $firstNamesArr);
+		//// Abbreviate first names
+		//$firstNamesArr = explode(" ", trim($firstNames));
+		//foreach($firstNamesArr as $j => $name) {
+			//if(strlen($name) > 2 && strpos($name, ".") === false) {
+				//if(strpos($name, "-") === false) {
+					//$firstNamesArr[$j] = substr($name,0,1).".";
+				//} else {
+					//$firstNamesArr[$j] = substr($name,0,1).substr($name, strpos($name, '-'), 2).".";
+				//}
+			//}
+		//}
+		//$firstNames = implode(' ', $firstNamesArr);
 		
-		$authArr[$i] = trim($secondNames.$sepName.$firstNames);
-		
-		if($hightlightName != '' && strtolower($secondNames) == strtolower($hightlightName)) $authArr[$i] = '<span class="highlight">'.$authArr[$i].'</span>';
+		//$authArr[$i] = trim($secondNames.$sepName.$firstNames);
+		$authArr[$i] = trim($firstNames.' '.$secondNames);
+				
+		if($hightlightName != '' && strtolower($secondNames) == strtolower($hightlightName)) 
+			$authArr[$i] = '<span class="highauthor">'.$authArr[$i].'</span>';
 		
 		$i++;
 	}
@@ -394,7 +397,7 @@ function formatAuthors($author, $hightlightName, $authorLimit = 0){
 		
 		$authors = '';
 		for($i = 0; $i < $limit - ($addEtAl ? 0 : 1); $i++) {
-			$authors .= '; '.$authArr[$i];
+			$authors .= ', '.$authArr[$i]; // change from ; to ,
 		}
 		if($addEtAl) $authors = substr($authors, 2).' et al.';
 		else $authors = substr($authors, 2).' and '.$authArr[$i];
@@ -418,6 +421,9 @@ function bibtex2html($entry, $type, $accents, $hightlightName = '', $authorLimit
 		// There is no predefined text to show, we create some
 		$title = extractBib("title", $entry, $accents);
 		$webpdf = extractBib("webpdf", $entry, $accents);
+		$slides = extractBib("slides", $entry, $accents);
+		$comments = extractBib("comment", $entry, $accents);
+		$bibtexurl = extractBib("bibtexlink", $entry, $accents);
 		$publisherurl = extractBib("publisherurl", $entry, $accents);
 		$doi = extractBib("doi", $entry, $accents);
 		if($doi != '') $doi = 'http://dx.doi.org/'.$doi;
@@ -624,25 +630,37 @@ function bibtex2html($entry, $type, $accents, $hightlightName = '', $authorLimit
 		// Links:
 		$ret .= '<span class="links">';
 		
+		if(trim($bibtexurl) != "") {
+			$ret .= ' <span class="webpdf"><a href="'.$bibtexurl.'" >[bib]</a></span>&nbsp;';
+		}
+		
 		if(trim($webpdf) != "") {
-			$ret .= ' <span class="webpdf"><a href="'.$webpdf.'" >pdf</a></span>&nbsp;';
+			$ret .= ' <span class="webpdf"><a href="'.$webpdf.'" >[pdf-file]</a></span>&nbsp;';
+		}
+		
+		if(trim($slides) != "") {
+			$ret .= ' <span class="webpdf"><a href="'.$slides.'" >[slides]</a></span>&nbsp;';
 		}
 		
 		$webcs = extractBib("citeseerurl", $entry, $accents);
 		if(trim($webcs) != "") {
-			$ret .= ' <span class="citeseerurl"><a href="'.$webcs.'" target="_blank">citeseer</a></span>&nbsp;';
+			$ret .= ' <span class="citeseerurl"><a href="'.$webcs.'" target="_blank">[citeseer]</a></span>&nbsp;';
 		}
 		
 		if(!$doilinked && trim($doi) != "") {
-			$ret .= ' <span class="doi"><a href="'.$doi.'" target="_blank">doi</a></span>&nbsp;';
+			$ret .= ' <span class="doi"><a href="'.$doi.'" target="_blank">[doi]</a></span>&nbsp;';
 		}
 		
 		if(!$urllinked && trim($url) != "") {
-			$ret .= ' <span class="url"><a href="'.$url.'" target="_blank">www</a></span>&nbsp;';
+			$ret .= ' <span class="url"><a href="'.$url.'" target="_blank">[www]</a></span>&nbsp;';
 		}
 
 		if(!$publisherlinked && trim($publisherurl) != "") {
-			$ret .= ' <span class="publisherurl"><a href="'.$publisherurl.'" target="_blank">publisher</a></span>&nbsp;';
+			$ret .= ' <span class="publisherurl"><a href="'.$publisherurl.'" target="_blank">[publisher]</a></span>&nbsp;';
+		}
+
+		if(trim($comments) != "") {
+			$ret .= ' ('.$comments.') &nbsp;';
 		}
 
 		$ret .= '</span>';
@@ -829,7 +847,7 @@ function bibstring2html($fileContent, $displayTypes = NULL, $groupType = NULL, $
 		foreach($displayTypes as $type => $typeName) {
 			if(isset($entries[$type])) {
 				krsort($entries[$type]);
-				$ret .= '<h2>'.$typeName.'</h2>';
+				$ret .= '<h3>'.$typeName.'</h3>';
 				foreach($entries[$type] as $year => $yearEntries) {
 					$ret .= '<h3>'.$year.'</h3>';
 					$ret .= '<ol start="'.$j.'">';
@@ -847,7 +865,7 @@ function bibstring2html($fileContent, $displayTypes = NULL, $groupType = NULL, $
 		foreach($displayTypes as $type => $typeName) {
 			if(isset($entries[$type])) {
 				uksort($entries[$type], 'strcoll');
-				$ret .= '<h2>'.$typeName.'</h2>';
+				$ret .= '<h3>'.$typeName.'</h3>';
 				$ret .= '<ol start="'.$j.'">';
 				foreach($entries[$type] as $index => $info) {
 					if(trim($info['text']) != '') $ret .= '<li>'.$info['text'].'</li>';
@@ -860,7 +878,7 @@ function bibstring2html($fileContent, $displayTypes = NULL, $groupType = NULL, $
 	} elseif($groupYear) {	
 		krsort($entries);
 		foreach($entries as $year => $yearEntries) {
-			$ret .= '<h2>'.$year.'</h2>';
+			$ret .= '<h3>'.$year.'</h3>';
 			$ret .= '<ol start="'.$j.'">';
 			uksort($yearEntries, 'strcoll');
 			foreach($yearEntries as $index => $info) {
