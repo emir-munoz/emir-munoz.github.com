@@ -125,7 +125,7 @@ ul h4 {
 #logo {
 	position: absolute;
 	left: 35px;
-	line-height: 110px;
+	line-height: 70px;
 	height: 110px;
 	top: 35px;
 }
@@ -145,7 +145,9 @@ ul h4 {
 	position: absolute;
 	font-family: Arvo, serif;
 	background: #6B2E42 url(images/img02.gif);
+/*
 	top: 66px;
+*/
 	right: 0;
 	height: 60px;
 	border: solid 1px #CA8B9F;
@@ -170,7 +172,7 @@ ul h4 {
 }
 
 #page {
-	margin: 20px 0 20px 0;
+	margin: -10px 0 20px 0px;
 	position: relative;
 	width: 980px;
 	padding: 0;
