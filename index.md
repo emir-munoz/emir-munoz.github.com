@@ -9,15 +9,17 @@ tagline: Supporting tagline
 
 <table>
 <tr>
-<td>
-<div style="display:block;text-align:center;margin-right:auto;margin-left:auto">
-<a imageanchor="1"><img width="200" border="0" height="187" src="./images/DSC02506-2.JPG"></a>
-</div>
+<td style="text-align:center;width:350px;height:190px">
+<img alt="My photo" width="200" border="0" height="187" src="./images/DSC02506-2.JPG">
 </td>
-<td>
+<td style="width:890px;height:190px">
 Emir Muñoz <br>
 M.Sc. in Computer Science
+<div style="display:block;text-align:left">
+<a imageanchor="1" href="mailto:emir@emunoz.org">
+<img border="0" src="./images/mail.png">
+</a>
+</div>
 </td>
-<tr>
+</tr>
 </table>
-
