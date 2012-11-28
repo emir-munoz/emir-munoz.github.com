@@ -7,7 +7,7 @@ tagline: Supporting tagline
 
 ## Contact Information
 
-Emir Muñoz
+Emir Muñoz <br>
 M.Sc. in Computer Science
 
 
