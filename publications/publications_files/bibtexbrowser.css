@@ -1,0 +1,104 @@
+/** CSS for publications.li */
+
+BODY {
+margin-left:7%;
+margin-right:7%;
+margin-top:3%;
+margin-bottom:3%;
+
+}
+/* title */
+.bibtitle { font-weight:bold; }
+/* author */
+.bibauthor { /* nothing by default */ }
+/* booktitle (e.g. proceedings title, journal name, etc )*/
+.bibbooktitle { font-style:italic; }
+/* publisher */
+.bibpublisher { /* nothing by default */ }
+.bibitem {
+text-align:justify;
+padding: 5px;
+}
+
+.title {
+  color: #003366;
+  font-size: large;
+  font-weight: bold;
+  text-align: right;
+}
+
+.header {
+/*   background-color: #995124; */
+/*   color: #FFFFFF; */
+  border: 1px solid #000000;
+  padding: 1px 2px 1px 2px;
+}
+
+.rheader {
+/*   text-align:right; */
+  font-weight: bold;
+/*   background-color: #003366; */
+/*   color: #ffffff; */
+  padding: 2px;
+  margin-bottom: 10px;
+  border-bottom: #ff6633 2px solid;
+
+}
+.menu {
+  font-size: x-small;
+/*   background-color: #EFDDB4; */
+  padding: 0px;
+  border: 1px solid #000000;
+  margin: 0px;
+}
+.menu a {
+  text-decoration: none;
+  color: #003366;
+}
+.menu a:hover {
+  color: #ff6633;
+}
+
+.bibref {
+  padding:7px;
+  padding-left:15px;
+  vertical-align:text-top; 
+}
+
+.result {
+  padding:0px;
+/*   border: 1px solid #000000; */
+  margin:0px;
+/*   background-color: #ffffff; */
+  width:100%;
+}
+.result a {
+  text-decoration: none;
+  color: #469AF8;
+}
+
+.result a:hover {
+  color: #ff6633;
+}
+
+.purebibtex {
+  font-family: monospace;
+/*   background-color:#FFFFFF; */
+  font-size: small;
+  border: 1px solid #000000;
+  white-space:pre;
+  
+}
+.input_box{
+  margin-bottom : 2px;
+}
+.mini_se {
+  border: none 0;
+  border-top: 1px dashed #717171;
+  height: 1px;
+}
+.a_name a {
+  color:#469AF8;
+  width:130px;
+}
+
