@@ -22,8 +22,8 @@
 -->
 
    <!-- Typekit -->
-   <!--<script type="text/javascript" src="http://use.typekit.com/jpd0pfm.js"></script>-->
-   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+   <!--<script type="text/javascript" src="http://use.typekit.com/jpd0pfm.js"></script>
+   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>-->
 </head>
 <body>
 <div id="wrapper">
@@ -46,12 +46,6 @@
 <!--
 			<h4><a href="{{ HOME_PATH }}">{{ site.title }}</a></h4>
 -->
-			<div class="Menu">
-				<a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive</a>
-				<a href="{{ BASE_PATH }}{{ site.JB.pages_path }}">Pages</a>
-				<a href="{{ BASE_PATH }}{{ site.JB.categories_path }}">Categories</a>
-				<a href="{{ BASE_PATH }}{{ site.JB.tags_path }}">Tags</a>
-			</div>
 			<div class="contact">
 				<p>
 				  {{ site.author.name }}<br />
@@ -59,12 +53,10 @@
 				  <a href='mailto:{{ site.author.email }}'>{{ site.author.email }}</a>
 				</p>
 			</div>
-			<div class="contact">
-				<p>
-				  <a href="http://github.com/{{ site.author.github }}/">github.com/{{ site.author.github }}</a><br />
-				  <a href="http://twitter.com/{{ site.author.twitter }}/">twitter.com/{{ site.author.twitter }}</a><br />
-				</p>
+			<div class="socialnet">
+				{% include networks.html %}
 			</div>
+			{% include widgets.html %}
 		</div>
 		<br class="clearfix" />
 	</div>

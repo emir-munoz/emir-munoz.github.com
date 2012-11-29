@@ -11,16 +11,23 @@ Released   : 20120125
 
 * {
 	margin: 0;
+/*
 	padding: 0;
+*/
 }
 
 a {
-	text-decoration: underline;
+	text-decoration: none; /*underline*/
 	color: #6B2E42;
 }
 
-a:hover {
+#content a:hover {
 	text-decoration: none;
+	background-color: #A9F5F2;
+}
+
+#content a:active {
+	color: #FF0000; /* selected link */
 }
 
 body {
@@ -57,7 +64,8 @@ h2 {
 h2,h3,h4 {
 	color: #000405;
 	font-family: Arvo, serif;
-	margin-bottom: 1em;
+	margin-bottom: 0.5em;
+	margin-top: 0.5em;
 }
 
 h3 {
@@ -81,8 +89,11 @@ p {
 	margin-bottom: 1.5em;
 }
 
-ul {
+ul, ol {
+/*
 	margin-bottom: 1.5em;
+*/
+	padding-left: 1em;
 }
 
 ul h4 {
@@ -93,7 +104,7 @@ ul h4 {
 	background: #FFFFFF;
 	width: 595px;
 	color: #6E6E6E;
-	padding: 45px 35px 0 35px;
+	padding: 25px 35px 0 35px;
 	float: right;
 	border-bottom: solid 2px #BBC1BF;
 }
@@ -103,7 +114,9 @@ ul h4 {
 }
 
 #footer {
+/*
 	padding: 30px 0 50px 0;
+*/
 	text-align: center;
 	margin: 0 0 5px 0;
 	color: #808384;
@@ -117,7 +130,7 @@ ul h4 {
 }
 
 #header {
-	height: 80px;
+	height: 55px;
 	position: relative;
 	padding: 35px;
 }
@@ -188,9 +201,11 @@ ul h4 {
 	padding: 20px 0 20px 0;
 }
 
+/*
 #page ul {
 	list-style: none;
 }
+*/
 
 /*
 #page ul li {
@@ -240,7 +255,7 @@ ul h4 {
 	background: #FFFFFF;
 	margin: 0 0 0 0px;
 	color: #6E6E6E;
-	padding: 10px 35px 10px 35px;
+	padding: 20px 35px 20px 35px;
 	width: 225px;
 	border-bottom: solid 2px #BBC1BF;
 	font: 16px arial,sans-serif;
@@ -262,6 +277,12 @@ ul h4 {
 #sidebar ul li.first {
 	border-top: 0;
 	padding-top: 0;
+}
+
+.socialnet {
+	display: block;
+	text-align: left;
+	margin-right: auto;
 }
 
 .Menu {
