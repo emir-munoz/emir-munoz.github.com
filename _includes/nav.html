@@ -1,9 +1,22 @@
 
-<ul>
-	<li class="first current_page_item"><a href="{{ HOME_PATH }}">Homepage</a></li>
-	<li><a href="/publications">Publications</a></li>
-	<li><a href="/projects">Projects</a></li>
-	<li><a href="/teaching">Teaching</a></li>
-	<li class="last"><a href="/links">Links</a></li>
+<ul class="link">
+	<li class="item first current_page_item"><a class="link" href="{{ HOME_PATH }}">Homepage</a></li>
+	<li class="item"><a class="link" href="/publications">Publications</a></li>
+	<li class="item"><a class="link" href="/projects">Projects</a></li>
+	<li class="item dropdown">
+		<a id="dLabel" class="dropdown-toggle link" href="/teaching" data-toggle="dropdown" data-target="#" role="button" >Teaching <b class="caret"></b></a>
+		<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel" role="menu">
+			<li><a href="/teaching">All</a></li>
+			<li class="divider"></li>
+			<li><a href="/teaching/usach.html">USACH</a></li>
+			<li><a href="/teaching/ucentral.html">UCentral</a></li>
+			<!--<li><a href="#">Something else here</a></li>
+			<li class="divider"></li>
+			<li class="nav-header">Nav header</li>
+			<li><a href="#">Separated link</a></li>
+			<li><a href="#">One more separated link</a></li>-->
+		</ul>
+	</li>
+	<li class="item last"><a class="link" href="/links">Links</a></li>
 </ul>
 <br class="clearfix" />

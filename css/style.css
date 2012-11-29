@@ -136,11 +136,16 @@ ul h4 {
 }
 
 #logo {
+/*
 	position: absolute;
-	left: 35px;
+*/
+	left: 190px; /*35px*/
+
+/*
 	line-height: 70px;
 	height: 110px;
 	top: 35px;
+*/
 }
 
 #logo a {
@@ -166,7 +171,7 @@ ul h4 {
 	border: solid 1px #CA8B9F;
 }
 
-#menu a {
+#menu a.link {
 	font-size: 1.5em;
 	text-transform: lowercase;
 	letter-spacing: -1px;
@@ -174,12 +179,12 @@ ul h4 {
 	text-decoration: none;
 }
 
-#menu ul {
+#menu ul.link {
 	padding: 0 15px 0 15px;
 	list-style: none;
 }
 
-#menu ul li {
+#menu ul.link li.item {
 	display: inline;
 	padding: 0 10px 0 10px;
 }
