@@ -10,7 +10,7 @@ tagline: Supporting tagline
 <table>
 <tr>
 	<td style="text-align:center;width:350px;height:190px">
-		<img alt="My photo" width="200" border="0" height="187" src="./images/DSC02506-2.JPG">
+		<img alt="My photo" width="200" border="0" height="187" src="./images/DSC02506-3.JPG">
 	</td>
 	<td style="width:890px;height:190px">
 		Emir Muñoz <br>
