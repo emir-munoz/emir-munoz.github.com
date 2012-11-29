@@ -2,7 +2,9 @@
 cd /home/emir/Work/research/homepage/emir-munoz.github.com/
 
 # generate publications/index.html file
-php publications/body.php
+cd publications/
+php body.php
+cd ..
 
 # run jekyll
 jekyll --no-auto
