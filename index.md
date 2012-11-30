@@ -71,5 +71,5 @@ tagline: Supporting tagline
 </ul>
 
 <div>
-	<iframe width="615px" height="470px" frameborder="0" scrolling="no" src="http://www.slideshare.net/emispy/slideshelf">t</iframe>
+	<iframe width="615" height="470" src="http://www.slideshare.net/emispy/slideshelf">t</iframe>
 </div>
