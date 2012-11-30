@@ -67,4 +67,9 @@ tagline: Supporting tagline
 		<li><a target="_blank" href="http://www.sciencemag.org/magazine.dtl">Science Magazine</a></li>
 	</ul>
 	</li>
+	<li><b>Presentations</b></li>
 </ul>
+
+<div>
+	<iframe width="615px" height="470px" frameborder="0" scrolling="no" src="http://www.slideshare.net/emispy/slideshelf">t</iframe>
+</div>
