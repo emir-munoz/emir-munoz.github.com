@@ -313,3 +313,15 @@ ul h4 {
 	margin: 0 auto;
 	position: relative;
 }
+
+::selection {
+	background: none repeat scroll 0 0 #FFAC00;
+    color: #FFFFFF;
+    text-shadow: none; /* Safari */
+}
+
+*::-moz-selection {
+    background: none repeat scroll 0 0 #FFAC00;
+    color: #FFFFFF;
+    text-shadow: none; /* Firefox */
+}
