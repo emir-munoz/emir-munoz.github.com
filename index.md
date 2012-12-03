@@ -16,7 +16,7 @@ tagline: Supporting tagline
 		Emir Muñoz <br>
 		M.Sc. in Computer Science
 		<div style="display:block;text-align:left">
-			<a href="mailto:emir@emunoz.org"><img alt="email" src="./images/mail.png"></a>
+			<a href="mailto:emir at emunoz dot org"><img alt="email" src="./images/mail.png"></a>
 		</div>
 	</td>
 </tr>
