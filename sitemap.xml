@@ -1,0 +1,43 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
+     <url> 
+         <loc>http://emunoz.org/</loc>
+         <lastmod>{{ site.time | date_to_xmlschema}}</lastmod>
+         <changefreq>daily</changefreq>
+         <priority>1.0</priority> 
+     </url>
+     <url> 
+         <loc>http://emunoz.org/publications</loc>
+         <lastmod>{{ site.time | date_to_xmlschema}}</lastmod>
+         <changefreq>daily</changefreq>
+         <priority>1.0</priority> 
+     </url>
+     <url> 
+         <loc>http://emunoz.org/projects</loc>
+         <lastmod>{{ site.time | date_to_xmlschema}}</lastmod>
+         <changefreq>daily</changefreq>
+         <priority>0.8</priority>
+     </url>
+     <url> 
+         <loc>http://emunoz.org/teaching</loc>
+         <lastmod>{{ site.time | date_to_xmlschema}}</lastmod>
+         <changefreq>daily</changefreq>
+         <priority>0.8</priority> 
+     </url>
+     <url> 
+         <loc>http://emunoz.org/links</loc>
+         <lastmod>{{ site.time | date_to_xmlschema}}</lastmod>
+         <changefreq>daily</changefreq>
+         <priority>0.5</priority> 
+     </url>
+     {% for page in site.posts %}
+     <url>
+         <loc>http://emir-munoz.github.com{{ page.url }}</loc>
+         <lastmod>{{ page.date | date: "%Y-%m-%d" }}</lastmod>
+         <changefreq>monthly</changefreq>
+     </url>
+    {% endfor %}
+</urlset>
