@@ -3,13 +3,13 @@
 	$pub_str = "---\nlayout: page \ntitle: \"Publications\" \ndescription: \"Scientific publications\" \n--- \n\n";
 	$pub_str = $pub_str . '<a target="_blank" href="http://www.informatik.uni-trier.de/%7Eley/db/indices/a-tree/m/Mu=ntilde=oz:Emir.html">Emir@DBLP</a> <br>';
 	$pub_str = $pub_str . '<a target="_blank" href="http://scholar.google.com/citations?user=ofdUXHIAAAAJ">Emir@GoogleScholar</a> <br><br>';
-	$types = array(	'article' => 'Articles',
+	$types = array(	'phdthesis' => 'PhD Thesis',
+					'mastersthesis' => 'Master&rsquo;s Thesis',
 					'book' => 'Books',
 					'inbook' => 'Book chapters',
+					'article' => 'Articles',
 					'inproceedings' => 'In Proceedings',
-					'mastersthesis' => 'Master&rsquo;s Thesis',
 					'misc' => 'Misc',
-					'phdthesis' => 'PhD Thesis',
 					'techreport' => 'Technical Reports',
 					'unpublished' => 'Submitted Papers'
 					);

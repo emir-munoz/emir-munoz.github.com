@@ -727,18 +727,18 @@ function bibstring2html($fileContent, $displayTypes = NULL, $groupType = NULL, $
 	// Default parameter values
 	
 	if($displayTypes === null) {
-		$displayTypes = array(	'article' => 'Articles',
-							 	'book' => 'Books',
+		$displayTypes = array(	'phdthesis' => 'PhD Theses',
+								'mastersthesis' => 'Master&rsquo;s Theses',
+								'book' => 'Books',
 								'booklet' => 'Booklets',
-								'conference' => 'Conferences',
 								'inbook' => 'Book chapters',
-								'incollection' => 'Collections',
-								'inproceedings' => 'In Proceedings',
-								'manual' => 'Manuals',
-								'mastersthesis' => "Master's Theses",
-								'misc' => 'Misc',
-								'phdthesis' => 'PhD Theses',
+								'article' => 'Articles',
 								'proceedings' => 'Conference Proceedings',
+								'inproceedings' => 'In Proceedings',
+								'conference' => 'Conferences',
+								'incollection' => 'Collections',
+								'manual' => 'Manuals',
+								'misc' => 'Misc',
 								'techreport' => 'Technical Reports',
 								'unpublished' => 'Unpublished',
 								'_unknown' => 'Other');
@@ -848,9 +848,9 @@ function bibstring2html($fileContent, $displayTypes = NULL, $groupType = NULL, $
 		foreach($displayTypes as $type => $typeName) {
 			if(isset($entries[$type])) {
 				krsort($entries[$type]);
-				$ret .= '<h3>'.$typeName.'</h3>';
+				$ret .= '<h4>'.$typeName.'</h4>';
 				foreach($entries[$type] as $year => $yearEntries) {
-					$ret .= '<h3>'.$year.'</h3>';
+					$ret .= '<h4>'.$year.'</h4>';
 					$ret .= '<ol start="'.$j.'">';
 					uksort($yearEntries, 'strcoll');
 					foreach($yearEntries as $index => $info) {
@@ -866,7 +866,7 @@ function bibstring2html($fileContent, $displayTypes = NULL, $groupType = NULL, $
 		foreach($displayTypes as $type => $typeName) {
 			if(isset($entries[$type])) {
 				uksort($entries[$type], 'strcoll');
-				$ret .= '<h3>'.$typeName.'</h3>';
+				$ret .= '<h4>'.$typeName.'</h4>';
 				$ret .= '<ol start="'.$j.'">';
 				foreach($entries[$type] as $index => $info) {
 					if(trim($info['text']) != '') $ret .= '<li>'.$info['text'].'</li>';
@@ -879,7 +879,7 @@ function bibstring2html($fileContent, $displayTypes = NULL, $groupType = NULL, $
 	} elseif($groupYear) {	
 		krsort($entries);
 		foreach($entries as $year => $yearEntries) {
-			$ret .= '<h3>'.$year.'</h3>';
+			$ret .= '<h4>'.$year.'</h4>';
 			$ret .= '<ol start="'.$j.'">';
 			uksort($yearEntries, 'strcoll');
 			foreach($yearEntries as $index => $info) {
