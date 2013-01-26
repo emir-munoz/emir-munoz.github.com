@@ -14,7 +14,7 @@ tagline: Supporting tagline
 	</td>
 	<td style="width:890px;height:190px">
 		Emir Muñoz <br>
-		M.Sc. in Computer Science
+		Master of Computer Engineering
 		<div style="display:block;text-align:left">
 			<a href="mailto:emir at emunoz dot org"><img alt="email" src="./images/mail.png"></a>
 		</div>
@@ -38,9 +38,9 @@ tagline: Supporting tagline
 	</li>
 	<li><b>Education</b>
 	<ul>
-		<li>M.Sc. in Computer Science, <a target="_blank" href="http://www.informatica.usach.cl/">University of Santiago de Chile</a>, Aug 2009-Apr 2011</li>
-		<li>Computer Engineer, <a target="_blank" href="http://www.informatica.usach.cl/">University of Santiago de Chile</a>, 2004-2010</li>
-		<li>B.Eng. in Computer Science, <a target="_blank" href="http://www.informatica.usach.cl/">University of Santiago de Chile</a>, Jun 2009</li>
+		<li>Master of Computer Engineering, <a target="_blank" href="http://www.informatica.usach.cl/">University of Santiago de Chile</a>, Aug 2009-Apr 2011</li>
+		<li>Diploma in Computer Engineering, <a target="_blank" href="http://www.informatica.usach.cl/">University of Santiago de Chile</a>, Apr 2011</li>
+		<li>Bachelor of Science in Engineering, <a target="_blank" href="http://www.informatica.usach.cl/">University of Santiago de Chile</a>, Jun 2009</li>
 	</ul>
 	</li>
 	<li><b>Master Thesis</b>
@@ -48,16 +48,17 @@ tagline: Supporting tagline
 		<li>Emir Muñoz: <a target="_blank" href="publications/files/thesis-magister.pdf">XML Keys: Implication and Validation Algorithms Implementation</a>. Advisors: <a target="_blank" href="http://www.victoria.ac.nz/sim/staff/flavio-ferrarotti.aspx">Flavio Ferrarotti</a> and <a target="_blank" href="http://www.dcc.uchile.cl/%7Emmarin/">Mauricio Marín</a>, University of Santiago de Chile, December 2010 <a href="publications/files/defensa-magister-emir.pdf">[Slides]</a> <i>(In Spanish)</i></li>
 	</ul>
 	</li>
-	<li><b>Awards</b>
+	<li><bGrants, Awards & Fellowships</b>
 	<ul>
 		<li>Norman Revell Best Paper Award, In 23rd International Conference on Database and Expert Systems Applications - DEXA 2012, Vienna, Austria, September 3-6, Springer Lecture Notes in Computer Science <a href="publications/files/BPA-DEXA2012.pdf">[Certificate]</a></li>
+		<li>Master’s Fellowship, Yahoo! Research Labs Latin America, Master’s Thesis.</li>
 	</ul>
 	</li>
 	<li><b>Interest Areas</b>
 	<ul>
-		<li>Text mining and NLP</li>
-		<li>XML constraints</li>
-		<li>Database management</li>
+		<li>Databases</li>
+		<li>Web Data Mining</li>
+		<li>Artificial Intelligence</li>
 	</ul>
 	</li>
 	<li><b>Recommended websites</b>
