@@ -398,10 +398,10 @@ function formatAuthors($author, $hightlightName, $authorLimit = 0){
 		
 		$authors = '';
 		for($i = 0; $i < $limit - ($addEtAl ? 0 : 1); $i++) {
-			$authors .= ', '.$authArr[$i]; // change from ; to ,
+			$authors .= ', '.$authArr[$i]; // change ; for ,
 		}
 		if($addEtAl) $authors = substr($authors, 2).' et al.';
-		else $authors = substr($authors, 2).' and '.$authArr[$i];
+		else $authors = substr($authors, 2).' and '.$authArr[$i].'. ';
 	}
 	
 	return $authors.$suffix;
