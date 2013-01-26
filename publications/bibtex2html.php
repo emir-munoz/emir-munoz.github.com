@@ -214,6 +214,7 @@ function make_accent_table(){
 		"\\`{x}" => "&xgrave;",
 		"\\^{x}" => "&xcirc;",
 		"\\~{x}" => "&xtilde;",
+		"{\\~x}" => "&xtilde;",
 		"\\\"{x}" => "&xuml;",
 	);
 	$vowel = array("a", "e", "i", "o", "u", "n", "A", "E", "I", "O", "U", "N");

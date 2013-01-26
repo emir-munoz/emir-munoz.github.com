@@ -10,7 +10,8 @@
 					'mastersthesis' => "Master's Theses",
 					'misc' => 'Misc',
 					'phdthesis' => 'PhD Theses',
-					'techreport' => 'Technical Reports'
+					'techreport' => 'Technical Reports',
+					'unpublished' => 'Submitted Papers'
 					);
 	$pub_str = $pub_str . bibfile2html(	'./emir.bib', //input file
 										$types, //displayTypes
