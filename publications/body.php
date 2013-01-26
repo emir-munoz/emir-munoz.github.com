@@ -10,9 +10,8 @@
 					'article' => 'Articles',
 					'inproceedings' => 'In Proceedings',
 					'misc' => 'Misc',
-					'techreport' => 'Technical Reports',
-					'unpublished' => 'Submitted Papers'
-					);
+					'techreport' => 'Technical Reports'
+					); // 'unpublished' => 'Submitted Papers'
 	$pub_str = $pub_str . bibfile2html(	'./emir.bib', //input file
 										$types, //displayTypes
 										true, //groupType
@@ -22,5 +21,5 @@
 										);
 	//$pub_str = $pub_str . '<h3>Presentations</h3><div><iframe width="615" height="470" src="http://www.slideshare.net/emispy/slideshelf">t</iframe></div>';
 	file_put_contents('./index.html', $pub_str);
-	echo "index.html file generated!\n";
+	echo "File publications/index.html generated succesfully!\n";
 ?>

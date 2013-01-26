@@ -391,7 +391,7 @@ function formatAuthors($author, $hightlightName, $authorLimit = 0){
 	}
 	
 	$authors = '';
-	if(count($authArr) == 1) $authors = $authArr[0];
+	if(count($authArr) == 1) $authors = $authArr[0].'. ';
 	else {
 		$limit = $authorLimit == 0 ? count($authArr) : min(count($authArr), $authorLimit);
 		$addEtAl = $authorLimit != 0 && count($authArr) > $authorLimit;
