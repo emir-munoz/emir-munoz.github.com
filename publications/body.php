@@ -7,9 +7,9 @@
 					'book' => 'Books',
 					'inbook' => 'Book chapters',
 					'inproceedings' => 'In Proceedings',
-					'mastersthesis' => "Master's Theses",
+					'mastersthesis' => 'Master&rsquo;s Thesis',
 					'misc' => 'Misc',
-					'phdthesis' => 'PhD Theses',
+					'phdthesis' => 'PhD Thesis',
 					'techreport' => 'Technical Reports',
 					'unpublished' => 'Submitted Papers'
 					);
