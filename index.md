@@ -27,7 +27,7 @@ tagline: Supporting tagline
 <ul>
 	<li><b>Current Affiliations</b>
 	<ul>
-		<li>Research Assistant at <a target="_blank" href="http://www.deri.ie/">Digital Enterprise Research Institute</a> (<a target="_blank" href="http://www.deri.ie/">DERI</a>), Galway, Ireland. <a target="_blank" href="http://urq.deri.ie/">Reasoning and Querying Unit (URQ)</a>.</li>
+		<li><a target="_blank" href="http://www.deri.ie/about/team/member/emir_munoz">Research Assistant</a> at <a target="_blank" href="http://www.deri.ie/">Digital Enterprise Research Institute</a> (<a target="_blank" href="http://www.deri.ie/">DERI</a>), Galway, Ireland. <a target="_blank" href="http://urq.deri.ie/">Reasoning and Querying Unit (URQ)</a>.</li>
 		<li><a target="_blank" href="http://www.informatica.usach.cl/capital-humano/academicos/profesores-por-hora">Lecturer</a>, <a target="_blank" href="http://www.informatica.usach.cl/">Department of Computer Engineering</a>, <a target="_blank" href="http://www.usach.cl/portada.php">University of Santiago de Chile</a></li>
 		<li>Lecturer, <a target="_blank" href="http://ucentral.cl/prontus_ucentral2012/site/edic/base/port/fcfm.html">Faculty of Mathematics and Physical Sciences</a>, <a target="_blank" href="http://www.ucentral.cl/prontus_ucentral/site/edic/base/port/inicio.html">Central University of Chile</a></li>
 	</ul>
