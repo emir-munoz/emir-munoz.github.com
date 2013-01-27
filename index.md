@@ -13,7 +13,7 @@ tagline: Supporting tagline
 		<img alt="My photo" width="200" height="187" src="./images/DSC02506-3.JPG">
 	</td>
 	<td style="width:890px;height:190px">
-		Emir Muñoz <br>
+		<span property="foaf:title"></span><span property="foaf:givenname">Emir</span> <span property="foaf:familyName">Muñoz</span> <a target="_self" href="http://www.deri.ie/fileadmin/scripts/foaf.php?id=719"><img width="26" border="0" height="14" title="FOAF file of: Emir Muñoz" alt="FOAF file of: Emir Muñoz" src="./images/foaf.gif"></a><br>
 		Master of Computer Engineering
 		<div style="display:block;text-align:left">
 			<a href="mailto:emir at emunoz dot org"><img alt="email" src="./images/mail.png"></a>
