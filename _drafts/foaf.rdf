@@ -1,0 +1,614 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:foaf="http://xmlns.com/foaf/0.1/"
+xmlns:toilet="http://purl.org/az/Toilet#"
+xmlns:rel="http://www.perceive.net/schemas/20031015/relationship/" 
+xmlns:dc="http://purl.org/dc/elements/1.1/"
+xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+xmlns:owl="http://www.w3.org/2002/07/owl#"
+xmlns:pub="http://sw.deri.org/~aidanh/foaf/publications.rdf#">
+
+<foaf:Document rdf:about="http://sw.deri.org/~aidanh/foaf/foaf.rdf">
+<dc:title xml:lang="en">Aidan's FOAF profile</dc:title>
+<dc:creator rdf:resource ="http://sw.deri.org/~aidanh/foaf/foaf.rdf#Aidan_Hogan" />
+<dc:date xml:datatype="http://www.w3.org/2001/XMLSchema#date">2005-04-07</dc:date>
+<foaf:primaryTopic rdf:resource="http://sw.deri.org/~aidanh/foaf/foaf.rdf#Aidan_Hogan" />
+</foaf:Document>
+
+<foaf:Person rdf:about="http://sw.deri.org/~aidanh/foaf/foaf.rdf#Aidan_Hogan">
+
+<owl:sameAs>
+<foaf:Person rdf:about="http://www.deri.ie/about/team/member/Aidan_Hogan#me"> 
+<rdfs:seeAlso rdf:resource="http://www.deri.ie/fileadmin/scripts/foaf.php?id=231" />
+</foaf:Person>
+</owl:sameAs>
+
+<owl:sameAs rdf:resource="http://aidanhogan.com/foaf/foaf.rdf#Aidan_Hogan" />
+<owl:sameAs rdf:resource="http://data.semanticweb.org/person/aidan-hogan" />
+<owl:sameAs rdf:resource="http://dblp.l3s.de/d2r/resource/authors/Aidan_Hogan" />
+<owl:sameAs rdf:resource="http://semanticweb.org/id/Aidan_Hogan" />
+<owl:sameAs rdf:resource="http://srvgal65.deri.ie/projectblogs/node/10#this" />
+<owl:sameAs rdf:resource="http://korrekt.org/page/Special:URIResolver/Aidan_Hogan" />
+
+<foaf:name xml:lang="en">Aidan Hogan</foaf:name>
+<foaf:name xml:lang="ga">Aodh&#225;n &#211; h&#211;g&#225;in</foaf:name>
+<foaf:title>Dr</foaf:title>
+<foaf:firstName xml:lang="en">Aidan</foaf:firstName>
+<foaf:firstName xml:lang="ga-IE">Aodh&#225;n</foaf:firstName>
+<foaf:surname xml:lang="en">Hogan</foaf:surname>
+<foaf:surname xml:lang="ga">&#211; h&#211;g&#225;in</foaf:surname>
+<foaf:myersBriggs>INTP</foaf:myersBriggs>
+<foaf:gender xml:lang="en">male</foaf:gender>
+<foaf:mbox rdf:resource="mailto:aidan.hogan@deri.org" />
+<foaf:mbox_sha1sum>d2163e057507f828085f322cc77dc43b4105a158</foaf:mbox_sha1sum>
+<rdfs:comment xml:lang="en">Aidan Hogan is a PhD student at the Digital Enterprise Research Institute, Galway, working on light-weight scalable reasoning for the type of application you're looking at now. Hello.</rdfs:comment>
+<!-- <foaf:img rdf:resource="http://sw.deri.org/~knud/fotoblog/05/0505/050521-Hersonnissos/Picture(8).jpg" /> -->
+<foaf:homepage>
+<foaf:Document rdf:about="http://sw.deri.org/~aidanh/">
+<rdfs:label>Aidan Hogan's Homepage</rdfs:label>
+</foaf:Document>
+</foaf:homepage>
+
+<foaf:homepage>
+<foaf:Document rdf:about="http://aidanhogan.com/">
+<rdfs:label>Aidan Hogan's Homepage</rdfs:label>
+</foaf:Document>
+</foaf:homepage>
+
+<foaf:homepage>
+<foaf:Document rdf:about="http://www.aidanhogan.com/">
+<rdfs:label>Aidan Hogan's Homepage</rdfs:label>
+</foaf:Document>
+</foaf:homepage>
+
+<foaf:workplaceHomepage> 
+<foaf:Document rdf:about="http://www.deri.ie/">
+<rdfs:label>Digital Enterprise Research Institure: Home</rdfs:label>
+</foaf:Document>
+</foaf:workplaceHomepage>
+
+<foaf:isPrimaryTopicOf>
+<foaf:Document rdf:about="http://dblp.l3s.de/d2r/data/authors/Aidan_Hogan">
+<rdfs:label>DBLP Description of Aidan Hogan</rdfs:label>
+</foaf:Document>
+</foaf:isPrimaryTopicOf>
+
+<foaf:isPrimaryTopicOf>
+<foaf:Document rdf:about="http://dblp.l3s.de/d2r/data/authors/Aidan_Hogan">
+<rdfs:label>DBLP RDF Description of Aidan Hogan</rdfs:label>
+</foaf:Document>
+</foaf:isPrimaryTopicOf>
+
+<foaf:isPrimaryTopicOf>
+<rdf:Description rdf:about="http://dblp.l3s.de/Authors/Aidan+Hogan">
+<rdfs:label>Faceted DBLP Description of Aidan Hogan</rdfs:label>
+</rdf:Description>
+</foaf:isPrimaryTopicOf>
+
+<foaf:isPrimaryTopicOf>
+<rdf:Description rdf:about="http://ontoworld.org/wiki/Special:ExportRDF/Aidan_Hogan">
+<rdfs:label>Ontoworld RDF Description of Aidan Hogan</rdfs:label>
+</rdf:Description>
+</foaf:isPrimaryTopicOf>
+
+<foaf:isPrimaryTopicOf>
+<rdf:Description rdf:about="http://sw.deri.org/~aidanh/foaf.rdf">
+<rdfs:label>Aidan's *Old* FOAF File</rdfs:label>
+</rdf:Description>
+</foaf:isPrimaryTopicOf>
+
+<foaf:isPrimaryTopicOf>
+<rdf:Description rdf:about="http://www.deri.ie/fileadmin/scripts/foaf.php?id=231">
+<rdfs:label>DERI RDF Description of Aidan Hogan</rdfs:label>
+</rdf:Description>
+</foaf:isPrimaryTopicOf>
+
+<foaf:currentProject>
+<foaf:Project rdf:about="http://sw.deri.org/2007/02/swsepaper/doap.rdf#swse">
+<owl:sameAs rdf:resource="http://semanticweb.org/id/SWSE" />
+<rdfs:label>Semantic Web Search Engine (SWSE) Project</rdfs:label>
+<foaf:depiction rdf:resource="http://swse.org/images/logo_swse_white_medium.gif" />
+<rdfs:comment xml:lang="en">A large scale search engine specifically designed for indexing Linked Data.</rdfs:comment>
+<foaf:homepage>
+<foaf:Document rdf:about="http://swse.deri.org/">
+<rdfs:label>SWSE, Semantic Web Search Engine</rdfs:label>
+</foaf:Document>
+</foaf:homepage>
+</foaf:Project>
+</foaf:currentProject>
+
+<foaf:currentProject>
+<foaf:Project rdf:about="http://pedantic-web.org/#pw">
+<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Group" />
+<rdfs:label>Pedantic Web Group</rdfs:label>
+<rdfs:comment xml:lang="en">The Pedantic Web Group is a loosely organised group of practitioners whose projects and products rely on the quality of the data that's out there. We work with data publishers, tool builders, application developers and standards groups towards an interoperable Web of Data.</rdfs:comment>
+<foaf:depiction rdf:resource="http://pedantic-web.org/dilbert.png" />
+<foaf:member rdf:resource="http://sw.deri.org/~aidanh/foaf/foaf.rdf#Aidan_Hogan" />
+<foaf:member rdf:resource="http://richard.cyganiak.de/foaf.rdf#cygri" />
+<foaf:member rdf:resource="http://apassant.net/alex" />
+<foaf:member rdf:resource="http://harth.org/andreas/foaf#ah" />
+<foaf:member rdf:resource="http://zimmer.aprilfoolsreview.com/antoine#me" />
+<foaf:member rdf:resource="http://www.polleres.net/foaf.rdf#me" />
+<foaf:member rdf:resource="http://sw-app.org/mic.xhtml#i" />
+<foaf:member rdf:resource="http://data.semanticweb.org/person/stephane-corlosquet" />
+
+<foaf:homepage>
+<foaf:Document rdf:about="http://pedantic-web.org/">
+<rdfs:label>Pedantic Web Group Homepage</rdfs:label>
+</foaf:Document>
+</foaf:homepage>
+</foaf:Project>
+</foaf:currentProject>
+
+<!-- <foaf:weblog>
+<foaf:Document rdf:about="http://blog.aidanhogan.com/">
+<rdfs:label>The Prolix Web</rdfs:label>
+<rdfs:comment xml:lang="en">Some out-of-date inane mumblings about Semantic-y stuff</rdfs:comment>
+</foaf:Document>
+</foaf:weblog> -->
+
+<foaf:schoolHomepage rdf:resource="http://www.nuigalway.ie/" />
+<foaf:img rdf:resource="http://sw.deri.org/~aidanh/me.jpg" />
+<!-- <foaf:img rdf:resource="http://sw.deri.org/~aidanh/AidanHogan.jpg" /> -->
+
+<foaf:based_near>
+<rdf:Description rdf:about="http://sws.geonames.org/2964180/">
+<owl:sameAs rdf:resource="http://dbpedia.org/resource/Galway" />
+</rdf:Description>
+</foaf:based_near>
+
+<foaf:knows>
+<foaf:Person rdf:about="http://harth.org/andreas/foaf#ah">
+<foaf:name>Andreas Harth</foaf:name>
+<rdfs:seeAlso rdf:resource="http://harth.org/andreas/foaf.rdf" />
+<toilet:favouriteToiletPaper rdf:resource="http://dbpedia.org/resource/Andrex" />
+</foaf:Person>
+</foaf:knows>
+
+<foaf:knows>
+<foaf:Person rdf:about="http://data.semanticweb.org/person/stephane-corlosquet">
+<foaf:name>St&#233;phane Corlosquet</foaf:name>
+<foaf:homepage rdf:resource="http://openspring.net" />
+</foaf:Person>
+</foaf:knows>
+
+<foaf:knows>
+<foaf:Person rdf:about="http://zimmer.aprilfoolsreview.com/antoine#me">
+<foaf:name>Antoine Zimmermann</foaf:name>
+<owl:sameAs rdf:resource="http://semanticweb.org/id/Antoine_Zimmermann" />
+<owl:sameAs rdf:resource="http://www.deri.ie/about/team/member/Antoine_Zimmermann#me" />
+</foaf:Person>
+</foaf:knows>
+
+<foaf:knows>
+<foaf:Person rdf:about="http://www.johnbreslin.com/foaf/foaf.rdf#me">
+<owl:sameAs rdf:resource="http://data.semanticweb.org/person/john-breslin" />
+<owl:sameAs rdf:resource="http://www.deri.ie/about/team/member/John_Breslin#me" />
+<owl:sameAs rdf:resource="http://data.semanticweb.org/conference/eswc/2007/person-59367" />
+<owl:sameAs rdf:resource="http://www.johnbreslin.com/foaf/foaf.rdf#cloud" />
+<foaf:name>John Breslin</foaf:name>
+<foaf:mbox_sha1sum>9a6b7eefc08fd755d51dd9321aecfcc87992e9a2</foaf:mbox_sha1sum>
+<rdfs:seeAlso rdf:resource="http://www.johnbreslin.com/foaf/foaf.rdf" />
+</foaf:Person>
+</foaf:knows>
+
+<foaf:knows>
+<foaf:Person rdf:about="http://my.opera.com/inaomurchu/xml/foaf#me">
+<owl:sameAs rdf:resource="http://www.deri.ie/about/team/member/Ina_O'Murchu#me" />
+<foaf:name>Ina O' Murchu</foaf:name>
+<foaf:mbox_sha1sum>712b83520bf846cdeb5b8158d541108b12a01447</foaf:mbox_sha1sum> 
+<rdfs:seeAlso rdf:resource="http://sw.deri.org/~ina/foaf.rdf" /> 
+</foaf:Person>
+</foaf:knows>
+
+<foaf:knows>
+<foaf:Person rdf:about="http://kantenwerk.org/metadata/foaf.rdf#me">
+<foaf:name>Knud M&#246;ller</foaf:name>
+<rdfs:seeAlso rdf:resource="http://sw.deri.org/~knud/knudfoaf.rdf" />
+</foaf:Person>
+</foaf:knows>
+
+<foaf:knows>
+<foaf:Person rdf:about="http://compsoc.nuigalway.ie/~fuzz/foaf.rdf#Fergal_Monaghan">
+<foaf:name>Fergal Monaghan</foaf:name>
+<foaf:homepage rdf:resource="http://compsoc.nuigalway.ie/~fuzz/" />
+<owl:sameAs rdf:resource="http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/m/Monaghan:Fergal.html" />
+<owl:sameAs rdf:resource="http://dblp.l3s.de/d2r/resource/authors/Fergal_Monaghan" />
+<owl:sameAs rdf:resource="http://www.deri.ie/about/team/member/Fergal_Monaghan#me" />
+<owl:sameAs rdf:resource="http://acronym.deri.org/people/mbox_sha1sum/2dd896cb9a280e0a1d2c06abfc0fcc04e44b3212" />
+<foaf:mbox_sha1sum>2dd896cb9a280e0a1d2c06abfc0fcc04e44b3212</foaf:mbox_sha1sum>
+<rdfs:seeAlso rdf:resource="http://compsoc.nuigalway.ie/~fuzz/foaf.rdf"/>
+</foaf:Person>
+</foaf:knows>
+
+<foaf:knows>
+<foaf:Person rdf:about="http://sw.deri.org/~bnsapkota/foaf.rdf#me">
+<foaf:name>Brahmananda Sapkota</foaf:name>
+<rdfs:seeAlso rdf:resource="http://sw.deri.org/~bnsapkota/foaf.rdf"/>
+<foaf:depiction rdf:resource="http://sw.deri.org/~bnsapkota/np/pictures/DSC00108.JPG"/>
+</foaf:Person>
+</foaf:knows>
+    
+<foaf:knows>
+<foaf:Person rdf:about="http://eyaloren.org/foaf.rdf#me">
+<foaf:name>Eyal Oren</foaf:name>
+<foaf:homepage rdf:resource="http://eyaloren.org/" />
+<owl:sameAs rdf:resource="http://semanticweb.org/id/User-3AEyal_Oren" />
+<owl:sameAs rdf:resource="http://data.semanticweb.org/person/eyal-oren" />
+<rdfs:seeAlso rdf:resource="http://eyaloren.org/foaf.rdf"/>
+</foaf:Person>
+</foaf:knows>
+
+<foaf:knows>
+<foaf:Person rdf:about="http://nunolopes.org/foaf.rdf#me">
+<foaf:name>Nuno Lopes</foaf:name>
+</foaf:Person>
+</foaf:knows>
+
+<foaf:knows>
+<foaf:Person rdf:about="http://sw.deri.org/~haller/foaf.rdf#ah">
+<foaf:name>Armin Haller</foaf:name>
+</foaf:Person>
+</foaf:knows>
+
+<foaf:knows>
+<foaf:Person rdf:about="http://semanticweb.org/id/Stefan_Decker">
+<foaf:name>Stefan Decker</foaf:name>
+</foaf:Person>
+</foaf:knows>
+
+<foaf:knows>
+<foaf:Person rdf:about="http://www.polleres.net/foaf.rdf#me">
+<foaf:name>Axel Polleres</foaf:name>
+<foaf:homepage rdf:resource="http://www.polleres.net/" />
+</foaf:Person>
+</foaf:knows>
+
+<foaf:knows> 
+<foaf:Person rdf:about="http://apassant.net/alex">
+<foaf:name>Alexandre Passant</foaf:name>
+<foaf:homepage rdf:resource="http://apassant.net/" />
+</foaf:Person>
+</foaf:knows>
+
+<foaf:knows>
+<foaf:Person rdf:about="http://g1o.net/foaf.rdf#me">
+<foaf:homepage rdf:resource="http://g1o.net/" />
+<foaf:name>Giovanni Tummarello</foaf:name>
+<rdfs:seeAlso rdf:resource="http://g1o.net/foaf.rdf"/>
+</foaf:Person>
+</foaf:knows>
+	
+<foaf:knows>
+<foaf:Person rdf:about="http://renaud.delbru.fr/rdf/foaf#me">
+<foaf:homepage rdf:resource="http://renaud.delbru.fr/" /> 
+<foaf:name>Renaud Delbru</foaf:name>
+<rdfs:seeAlso rdf:resource="http://renaud.delbru.fr/rdf/foaf"/>
+</foaf:Person>
+</foaf:knows>
+	
+<foaf:knows>
+<foaf:Person rdf:about="http://richard.cyganiak.de/foaf.rdf#cygri">
+<foaf:homepage rdf:resource="http://richard.cyganiak.de/" />
+<foaf:name>Richard Cyganiak</foaf:name>
+<rdfs:seeAlso rdf:resource="http://richard.cyganiak.de/foaf.rdf"/>
+</foaf:Person>
+</foaf:knows>
+
+<foaf:knows>
+<foaf:Person rdf:about="http://www.umbrich.net/foaf.rdf#me">
+<foaf:name>J&#252;rgen Umbrich</foaf:name>
+<foaf:homepage rdf:resource="http://www.umbrich.net/" />
+<owl:sameAs rdf:resource="http://www.aifb.uni-karlsruhe.de/Personen/viewPersonOWL/id2167instance" />
+<owl:sameAs rdf:resource="http://umbrich.net/foaf.rdf#me" />
+</foaf:Person>
+</foaf:knows>
+
+<foaf:knows>
+<foaf:Person rdf:about="http://fooshed.net/foaf.rdf#me">
+<foaf:name>Michele Catasta</foaf:name>
+<foaf:homepage rdf:resource="http://fooshed.net/"/>
+</foaf:Person>
+</foaf:knows>
+
+<!--
+<pub:primaryAuthorOf>
+<pub:WorkshopPaper rdf:about="http://sw.deri.org/2007/02/objcon/paper.pdf">
+<dc:title>Performing Object Consolidation on the Semantic Web Data Graph</dc:title>
+<pub:primaryAuthor rdf:resource="http://sw.deri.org/~aidanh/foaf/foaf.rdf#Aidan_Hogan" />
+<pub:author rdf:resource="http://harth.org/andreas/foaf#ah" />
+<pub:author rdf:resource="http://semanticweb.org/id/Stefan_Decker" /> 
+<pub:hasPresentation>
+<pub:PresentationTalk>
+<rdfs:label>Presentation Talk at I3.2007/WWW2007 of Paper: Performing Object Consolidation on the Semantic Web Data Graph</rdfs:label>
+<pub:ee rdf:resource="http://sw.deri.org/2007/02/objcon/objcon.ppt" />
+<pub:presentedAt>
+<pub:Workshop>
+<foaf:homepage rdf:resource="http://okkam.dit.unitn.it/i3/" />
+<rdfs:label>I3: Identity, Identifiers, Identification, 2007</rdfs:label>
+<pub:heldInConference>
+<pub:Conference>
+<foaf:homepage rdf:resource="http://www2007.org/" />
+<rdfs:label>16th International World Wide Web Conference, 2007</rdfs:label>
+</pub:Conference>
+</pub:heldInConference>
+</pub:Workshop>
+</pub:presentedAt>
+<pub:presentedBy rdf:resource="http://semanticweb.org/id/Stefan_Decker" />  
+</pub:PresentationTalk>
+</pub:hasPresentation>
+</pub:WorkshopPaper>
+</pub:primaryAuthorOf>
+
+<pub:primaryAuthorOf>
+<pub:PosterPaper rdf:about="http://sw.deri.org/2006/08/www2007/www07poster/paper.pdf">
+<dc:title>Towards a Scalable Search and Query Engine for the Web</dc:title>
+<pub:primaryAuthor rdf:resource="http://sw.deri.org/~aidanh/foaf/foaf.rdf#Aidan_Hogan" />
+<pub:author rdf:resource="http://harth.org/andreas/foaf#ah" />
+<pub:author rdf:resource="http://www.umbrich.net/foaf.rdf#me" />
+<pub:author rdf:resource="http://semanticweb.org/id/Stefan_Decker" /> 
+<pub:hasPresentation>
+<pub:PosterPresentation>
+<rdfs:label>Poster Presentation at WWW07 of Paper: Towards a Scalable Search and Query Engine for the Web</rdfs:label>
+<pub:ee rdf:resource="http://sw.deri.org/2006/08/www2007/www07poster/swse.ppt" />
+<pub:presentedAt>
+<pub:Conference>
+<foaf:homepage rdf:resource="http://www2007.org/" />
+<rdfs:label>16th International World Wide Web Conference, 2007</rdfs:label>
+</pub:Conference>
+</pub:presentedAt>
+<pub:presentedBy rdf:resource="http://eyaloren.org/foaf.rdf#me" />  
+</pub:PosterPresentation>
+</pub:hasPresentation>
+</pub:PosterPaper>
+</pub:primaryAuthorOf>
+
+<pub:primaryAuthorOf>
+<pub:WorkshopPaper rdf:about="http://sw.deri.org/2006/12/expertFinder/paper.pdf">
+<dc:title>The ExpertFinder Corpus 2007 for the Benchmarking and Development of ExpertFinding Systems</dc:title>
+<pub:primaryAuthor rdf:resource="http://sw.deri.org/~aidanh/foaf/foaf.rdf#Aidan_Hogan" />
+<pub:author rdf:resource="http://harth.org/andreas/foaf#ah" />
+<pub:hasPresentation>
+<pub:PresentationTalk>
+<rdfs:label>Presentation Talk at IEfW2007 of Paper: The ExpertFinder Corpus 2007 for the Benchmarking and Development of ExpertFinding Systems</rdfs:label>
+<pub:ee rdf:resource="http://sw.deri.org/2006/12/expertFinder/expertfinder.ppt" />
+<pub:presentedAt> 
+<pub:Workshop>
+<foaf:homepage rdf:resource="http://lsdis.cs.uga.edu/~aleman/efw2007/" />
+<rdfs:label>1st International ExpertFinder Workshop, 2007</rdfs:label>
+</pub:Workshop>
+</pub:presentedAt>
+<pub:presentedBy rdf:resource="http://sw.deri.org/~aidanh/foaf/foaf.rdf#Aidan_Hogan" />  
+</pub:PresentationTalk>
+</pub:hasPresentation>
+</pub:WorkshopPaper>
+</pub:primaryAuthorOf>
+
+<pub:primaryAuthorOf>
+<pub:WorkshopPaper rdf:about="http://sw.deri.org/2005/07/n3rank/paper/paper.pdf">
+<dc:title>ReConRank: A Scalable Ranking Method for Semantic Web Data with Context</dc:title>
+<pub:primaryAuthor rdf:resource="http://sw.deri.org/~aidanh/foaf/foaf.rdf#Aidan_Hogan" />
+<pub:author rdf:resource="http://harth.org/andreas/foaf#ah" />
+<pub:author rdf:resource="http://semanticweb.org/id/Stefan_Decker" /> 
+<pub:hasPresentation>
+<pub:PresentationTalk>
+<rdfs:label>Presentation Talk at SSWS2006/ISWC2006 of Paper: Performing Object Consolidation on the Semantic Web Data Graph</rdfs:label>
+<pub:ee rdf:resource="http://sw.deri.org/2005/07/n3rank/paper/ReConRank_Presentation.ppt" />
+<pub:presentedAt>
+<pub:Workshop>
+<foaf:homepage rdf:resource="http://www.cs.vu.nl/~holger/ssws2006/" />
+<rdfs:label>2nd International Workshop on Scalable Semantic Web Knowledge Base Systems, 2006</rdfs:label>
+<pub:heldInConference>
+<pub:Conference> 
+<foaf:homepage rdf:resource="http://iswc2006.semanticweb.org/" />
+<rdfs:label>5th International Semantic Web Conference, 2006</rdfs:label>
+</pub:Conference>
+</pub:heldInConference>
+</pub:Workshop>
+</pub:presentedAt>
+<pub:presentedBy rdf:resource="http://www.harth.org/~andreas/foaf.rdf#ah" />  
+</pub:PresentationTalk>
+</pub:hasPresentation>
+</pub:WorkshopPaper>
+</pub:primaryAuthorOf>
+
+<pub:authorOf>
+<pub:WorkshopPaper rdf:about="http://sw.deri.org/2007/07/swsechallenge/paper.pdf">
+<dc:title>SWSE: Answers Before Links!</dc:title>
+<pub:author rdf:resource="http://sw.deri.org/~aidanh/foaf/foaf.rdf#Aidan_Hogan" />
+<pub:primaryAuthor rdf:resource="http://harth.org/andreas/foaf#ah" />
+<pub:author rdf:resource="http://semanticweb.org/id/Stefan_Decker" />
+<pub:author rdf:resource="http://umbrich.net/foaf.rdf#me" />
+<pub:author rdf:resource="http://renaud.delbru.fr/rdf/foaf#me" />
+<pub:author rdf:resource="http://www.deri.ie/about/team/member/Sean_O'Riain#me" />
+<pub:hasPresentation>
+<pub:PosterPresentation>
+<rdfs:label>Poster Presentation at SWC2007/ISWC2007 of Paper: SWSE: Answers Before Links!</rdfs:label>
+<pub:presentedAt>
+<pub:Workshop>
+<foaf:homepage rdf:resource="http://iswc2007.semanticweb.org/callfor/SemanticWebChallenge.asp" />
+<rdfs:label>5th Semantic Web Challenge</rdfs:label>
+<pub:heldInConference>
+<pub:Conference>
+<foaf:homepage rdf:resource="http://iswc2007.semanticweb.org/" />
+<rdfs:label>6th International Semantic Web Conference, 2007</rdfs:label>
+</pub:Conference>
+</pub:heldInConference>
+</pub:Workshop>
+</pub:presentedAt>
+<pub:presentedBy rdf:resource="http://www.harth.org/~andreas/foaf.rdf#ah" />  
+</pub:PosterPresentation>
+</pub:hasPresentation>
+</pub:WorkshopPaper>
+</pub:authorOf>
+
+<pub:authorOf>
+<pub:WorkshopPaper rdf:about="http://www.cs.vu.nl/~pmika/swc-2008/SWSE-paper.pdf">
+<dc:title>SWSE: Objects Before Documents!</dc:title>
+<pub:author rdf:resource="http://sw.deri.org/~aidanh/foaf/foaf.rdf#Aidan_Hogan" />
+<pub:primaryAuthor rdf:resource="http://harth.org/andreas/foaf#ah" />
+<pub:author rdf:resource="http://semanticweb.org/id/Stefan_Decker" />
+<pub:author rdf:resource="http://umbrich.net/foaf.rdf#me" />
+<pub:hasPresentation>
+<pub:PosterPresentation>
+<rdfs:label>Poster Presentation at SWC2008/ISWC2008 of Paper: SWSE: Objects Before Documents!</rdfs:label>
+<pub:presentedAt>
+<pub:Workshop rdf:nodeID="swc2008">
+<foaf:homepage rdf:resource="http://iswc2008.semanticweb.org/calls/call-for-semantic-web-challenge-and-billion-triples-tracks/" />
+<rdfs:label>6th Semantic Web Challenge and 1st Billion Triples Challenge</rdfs:label>
+<pub:heldInConference>
+<pub:Conference>
+<foaf:homepage rdf:resource="http://iswc2008.semanticweb.org/" />
+<rdfs:label>7th International Semantic Web Conference, 2008</rdfs:label>
+</pub:Conference>
+</pub:heldInConference>
+</pub:Workshop>
+</pub:presentedAt>
+<pub:presentedBy rdf:resource="http://umbrich.net/foaf.rdf#me" />  
+</pub:PosterPresentation>
+</pub:hasPresentation>
+</pub:WorkshopPaper>
+</pub:authorOf>
+
+<pub:primaryAuthorOf>
+<pub:WorkshopPaper rdf:about="http://aidanhogan.com/docs/saor_billiontc08.pdf">
+<dc:title>Scalable Authoritative OWL Reasoning on a Billion Triples</dc:title>
+<pub:primaryAuthor rdf:resource="http://sw.deri.org/~aidanh/foaf/foaf.rdf#Aidan_Hogan" />
+<pub:author rdf:resource="http://harth.org/andreas/foaf#ah" />
+<pub:author rdf:resource="http://www.polleres.net/foaf.rdf#me" />
+<pub:hasPresentation>
+<pub:PosterPresentation>
+<rdfs:label>Poster Presentation at SWC2008/ISCW2008 of Paper: Scalable Authoritative OWL Reasoning on a Billion Triples</rdfs:label>
+<pub:presentedAt>
+<pub:Workshop rdf:nodeID="swc2008" />
+</pub:presentedAt>
+<pub:presentedBy rdf:resource="http://www.polleres.net/foaf.rdf#me" />  
+</pub:PosterPresentation>
+</pub:hasPresentation>
+</pub:WorkshopPaper>
+</pub:primaryAuthorOf>
+
+<pub:primaryAuthorOf>
+<pub:ConferencePaper rdf:about="http://aidanhogan.com/docs/saor_aswc08.pdf">
+<dc:title>SAOR: Authoritative Reasoning for the Web</dc:title>
+<pub:primaryAuthor rdf:resource="http://sw.deri.org/~aidanh/foaf/foaf.rdf#Aidan_Hogan" />
+<pub:author rdf:resource="http://harth.org/andreas/foaf#ah" />
+<pub:author rdf:resource="http://www.polleres.net/foaf.rdf#me" />
+<pub:hasPresentation>
+<pub:PresentationTalk>
+<rdfs:label>Presentation Talk at ASWC2008 of Paper: SAOR: Authoritative Reasoning for the Web</rdfs:label>
+<pub:presentedAt>
+<pub:Conference>
+<foaf:homepage rdf:resource="http://aswc2008.ait.ac.th/" />
+<rdfs:label>3rd Asian Semantic Web Conference, 2008</rdfs:label> 
+</pub:Conference>
+</pub:presentedAt>
+<pub:presentedBy rdf:resource="http://sw.deri.org/~aidanh/foaf/foaf.rdf#Aidan_Hogan" />  
+</pub:PresentationTalk>
+</pub:hasPresentation>
+</pub:ConferencePaper>
+</pub:primaryAuthorOf>
+
+<pub:authorOf>
+<pub:ConferencePaper rdf:about="http://icwe2008.webengineering.org/Program/Proceedings/ISBN978-0-7695-3261-5/3261a196.pdf">
+<dc:title>Four Heuristics to Guide Structured Content Crawling</dc:title>
+<pub:author rdf:resource="http://sw.deri.org/~aidanh/foaf/foaf.rdf#Aidan_Hogan" />
+<pub:author rdf:resource="http://harth.org/andreas/foaf#ah" />
+<pub:primaryAuthor rdf:resource="http://umbrich.net/foaf.rdf#me" />
+<pub:author rdf:resource="http://semanticweb.org/id/Stefan_Decker" /> 
+<pub:hasPresentation>
+<pub:PresentationTalk>
+<rdfs:label>Presentation Talk at ICWE2008 of Paper: Four Heuristics to Guide Structured Content Crawling</rdfs:label>
+<pub:presentedAt>
+<pub:Conference>
+<foaf:homepage rdf:resource="http://icwe2008.webengineering.org/" />
+<rdfs:label>8th International Conference on Web Engineering, 2008</rdfs:label> 
+</pub:Conference>
+</pub:presentedAt>
+<pub:presentedBy rdf:resource="http://umbrich.net/foaf.rdf#me" />  
+</pub:PresentationTalk>
+</pub:hasPresentation>
+</pub:ConferencePaper>
+</pub:authorOf>
+
+<pub:authorOf>
+<pub:ConferencePaper rdf:about="http://2008.xtech.org/public/asset/attachment/415">
+<dc:title>Building a Semantic Web Search Engine: Challenges and Solutions</dc:title>
+<pub:author rdf:resource="http://sw.deri.org/~aidanh/foaf/foaf.rdf#Aidan_Hogan" />
+<pub:primaryAuthor rdf:resource="http://harth.org/andreas/foaf#ah" />
+<pub:author rdf:resource="http://umbrich.net/foaf.rdf#me" />
+<pub:author rdf:resource="http://semanticweb.org/id/Stefan_Decker" /> 
+<pub:hasPresentation>
+<pub:PresentationTalk>
+<rdfs:label>Presentation Talk at XTech2008 of Paper: Building a Semantic Web Search Engine: Challenges and Solutions</rdfs:label>
+<pub:presentedAt>
+<pub:Conference>
+<foaf:homepage rdf:resource="http://2008.xtech.org/" />
+<rdfs:label>3rd XTech Conference, 2008</rdfs:label> 
+</pub:Conference>
+</pub:presentedAt>
+<pub:presentedBy rdf:resource="http://sw.deri.org/~aidanh/foaf/foaf.rdf#Aidan_Hogan" />  
+</pub:PresentationTalk>
+</pub:hasPresentation>
+</pub:ConferencePaper>
+</pub:authorOf>
+
+<pub:primaryAuthorOf>
+<pub:WorkshopPaper rdf:about="http://sw.deri.org/2005/07/podcast/doc/podcast.pdf">
+<dc:title>Podcast Pinpointer: A Multimedia Semantic Web Application</dc:title>
+<pub:primaryAuthor rdf:resource="http://sw.deri.org/~aidanh/foaf/foaf.rdf#Aidan_Hogan" />
+<pub:author rdf:resource="http://harth.org/andreas/foaf#ah" />
+<pub:author rdf:resource="http://semanticweb.org/id/Stefan_Decker" /> 
+<pub:author rdf:resource="http://www.johnbreslin.com/foaf/foaf.rdf#me" />
+<pub:hasPresentation>
+<pub:PosterPresentation>
+<rdfs:label>Poster Presentation at EWIMT2005 of Paper: Podcast Pinpointer: A Multimedia Semantic Web Application</rdfs:label>
+<pub:ee rdf:resource="http://sw.deri.org/2005/07/podcast/doc/podcast.ppt" />
+<pub:presentedAt>
+<pub:Workshop>
+<foaf:homepage rdf:resource="http://www.acemedia.org/ewimt2005/" />
+<rdfs:label>2nd European Workshop on the Integration of Knowledge, Semantic and Digital Media Technologies, 2005</rdfs:label>
+</pub:Workshop>
+</pub:presentedAt>
+<pub:presentedBy rdf:resource="http://sw.deri.org/~aidanh/foaf/foaf.rdf#Aidan_Hogan" />  
+</pub:PosterPresentation>
+</pub:hasPresentation>
+</pub:WorkshopPaper>
+</pub:primaryAuthorOf>
+
+<pub:authorOf>
+<pub:TechnicalReport rdf:about="http://www.deri.ie/fileadmin/documents/DERI-TR-2007-04-20.pdf">
+<dc:title>YARS2: A Federated Repository for Searching and Querying Graph Structured Data</dc:title>
+<pub:primaryAuthor rdf:resource="http://harth.org/andreas/foaf#ah" />
+<pub:author rdf:resource="http://sw.deri.org/~aidanh/foaf/foaf.rdf#Aidan_Hogan" />
+<pub:author rdf:resource="http://umbrich.net/foaf.rdf#me" />
+<pub:author rdf:resource="http://semanticweb.org/id/Stefan_Decker" /> 
+</pub:TechnicalReport>
+</pub:authorOf>
+
+<pub:authorOf>
+<pub:ConferencePaper rdf:about="http://iswc2007.semanticweb.org/papers/211.pdf">
+<dc:title>YARS2: A Federated Repository for Searching and Querying Graph Structured Data</dc:title>
+<pub:primaryAuthor rdf:resource="http://harth.org/andreas/foaf#ah" />
+<pub:author rdf:resource="http://sw.deri.org/~aidanh/foaf/foaf.rdf#Aidan_Hogan" />
+<pub:author rdf:resource="http://umbrich.net/foaf.rdf#me" />
+<pub:author rdf:resource="http://semanticweb.org/id/Stefan_Decker" />
+<pub:hasPresentation>
+<pub:PresentationTalk>
+<rdfs:label>Presentation Talk at ISWC2007 of Paper: YARS2: A Federated Repository for Searching and Querying Graph Structured Data</rdfs:label>
+<pub:presentedAt>
+<pub:Conference>
+<foaf:homepage rdf:resource="http://iswc2007.semanticweb.org/" />
+<rdfs:label>6th International Semantic Web Conference, 2007</rdfs:label>
+</pub:Conference>
+</pub:presentedAt>
+<pub:presentedBy rdf:resource="http://harth.org/andreas/foaf#ah" />  
+</pub:PresentationTalk>
+</pub:hasPresentation>
+</pub:ConferencePaper>
+</pub:authorOf>
+-->
+
+
+</foaf:Person>
+
+</rdf:RDF>
