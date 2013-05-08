@@ -39,11 +39,12 @@
   author = {Flavio Ferrarotti and Sven Hartmann and Sebastian Link and Mauricio
 	Mar\'{i}n and Emir Mu\~{n}oz},
   title = {{The Finite Implication Problem for Expressive XML Keys: Foundations,
-	Applications, and Performance Evaluation (to appear)}},
+	Applications, and Performance Evaluation}},
   year = {2013},
   booktitle = {Transactions on Large-Scale Data- and Knowledge-Centered Systems},
   publisher = {Springer Berlin Heidelberg},
-  series = {Lecture Notes in Computer Science}
+  series = {Lecture Notes in Computer Science},
+  note = {(to appear)}
 }
 
 @INPROCEEDINGS{LODPeas:2012,

@@ -60,6 +60,11 @@ tagline: Supporting tagline
 		<li>Master&rsquo;s Fellowship, Yahoo! Research Labs Latin America, Master&rsquo;s Thesis.</li>
 	</ul>
 	</li>
+	<li><b>Professional Activities</b>
+	<ul>
+		<li>External Reviewer for DEXA 2013, RR 2013.</li>
+	</ul>
+	</li>
 	<li><b>Interest Areas</b>
 	<ul>
 		<li>Databases</li>

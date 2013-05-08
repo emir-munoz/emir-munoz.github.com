@@ -11,6 +11,7 @@
 					'book' => 'Books',
 					'inbook' => 'Book chapters',
 					'article' => 'Articles',
+					'incollection' => 'Articles',
 					'inproceedings' => 'In Proceedings',
 					'misc' => 'Misc',
 					'techreport' => 'Technical Reports'
