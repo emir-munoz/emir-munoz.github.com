@@ -20,7 +20,6 @@ tagline: Supporting tagline
 		<a target="_self" href="http://www.deri.ie/fileadmin/scripts/foaf.php?id=719"><img width="26" border="0" height="14" title="FOAF file of: Emir Muñoz" alt="FOAF file of: Emir Muñoz" src="./images/foaf.gif"></a>
 		<br>
 		</h4>
-		Master of Computer Engineering
 		<div style="display:block;text-align:left">
 			<a href="mailto:emir at emunoz dot org"><img alt="email" src="./images/mail.png"></a>
 		</div>
@@ -31,13 +30,14 @@ tagline: Supporting tagline
 <ul>
 	<li><b>Current Affiliations</b>
 	<ul>
-		<li><a target="_blank" href="http://www.deri.ie/about/team/member/emir_munoz">Research Assistant</a> at <a target="_blank" href="http://www.deri.ie/">Digital Enterprise Research Institute</a> (<a target="_blank" href="http://www.deri.ie/">DERI</a>), Galway, Ireland. <a target="_blank" href="http://urq.deri.ie/">Reasoning and Querying Unit (URQ)</a>.</li>
-		<li><a target="_blank" href="http://www.informatica.usach.cl/capital-humano/academicos/profesores-por-hora">Lecturer</a>, <a target="_blank" href="http://www.informatica.usach.cl/">Department of Computer Engineering</a>, <a target="_blank" href="http://www.usach.cl/portada.php">University of Santiago de Chile</a></li>
-		<li>Lecturer, <a target="_blank" href="http://ucentral.cl/prontus_ucentral2012/site/edic/base/port/fcfm.html">Faculty of Mathematics and Physical Sciences</a>, <a target="_blank" href="http://www.ucentral.cl/prontus_ucentral/site/edic/base/port/inicio.html">Central University of Chile</a></li>
+		<li>Ph.D. Student at <a target="_blank" href="http://www.fujitsu.com/ie/">Fujitsu Ireland</a></li>
 	</ul>
 	</li>
 	<li><b>Past Affiliations</b>
 	<ul>
+		<li><a target="_blank" href="http://www.deri.ie/about/team/member/emir_munoz">Research Assistant</a> at <a target="_blank" href="http://www.deri.ie/">Digital Enterprise Research Institute</a> (<a target="_blank" href="http://www.deri.ie/">DERI</a>), Galway, Ireland. <a target="_blank" href="http://urq.deri.ie/">Reasoning and Querying Unit (URQ)</a>.</li>
+		<li><a target="_blank" href="http://www.informatica.usach.cl/capital-humano/academicos/profesores-por-hora">Lecturer</a>, <a target="_blank" href="http://www.informatica.usach.cl/">Department of Computer Engineering</a>, <a target="_blank" href="http://www.usach.cl/portada.php">University of Santiago de Chile</a></li>
+		<li>Lecturer, <a target="_blank" href="http://ucentral.cl/prontus_ucentral2012/site/edic/base/port/fcfm.html">Faculty of Mathematics and Physical Sciences</a>, <a target="_blank" href="http://www.ucentral.cl/prontus_ucentral/site/edic/base/port/inicio.html">Central University of Chile</a></li>
 		<li>Research Intern at <a target="_blank" href="http://www.deri.ie/">Digital Enterprise Research Institute</a> (<a target="_blank" href="http://www.deri.ie/">DERI</a>), Galway, Ireland. <a target="_blank" href="http://urq.deri.ie/">Reasoning and Querying Unit (URQ)</a>.</li>
 		<li>Project Engineer at <a target="_blank" href="http://labs.yahoo.com/Yahoo_Labs_Santiago">Yahoo! Research Latin America</a>, in the project Fondef <a target="_blank" href="http://www.informatica.usach.cl/noticias/1727">"Observatorios Escalables de la Web en Tiempo-Real"</a></li>
 	</ul>
@@ -62,7 +62,8 @@ tagline: Supporting tagline
 	</li>
 	<li><b>Professional Activities</b>
 	<ul>
-		<li>External Reviewer for DEXA 2013, RR 2013.</li>
+		<li>External Reviewer for conferences: <a href="http://www.dexa.org/" target="_blank">DEXA</a> (2013), <a href="http://rr2013.uni-mannheim.de/" target="_blank">RR</a> (2013).</li>
+		<li>Invited Reviewer for journals: <a href="http://www.jucs.org/" target="_blank">J.UCS</a> (2013).</li>
 	</ul>
 	</li>
 	<li><b>Interest Areas</b>
