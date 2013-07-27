@@ -432,7 +432,7 @@ function bibtex2html($entry, $type, $accents, $hightlightName = '', $authorLimit
 		$year = extractBib("year", $entry, $accents);
 		$author = extractBib("author", $entry, $accents);
 		
-		$urllinked = false;			// true if the url has been set in a link; it will be placed on the "in" part
+		$urllinked = true;			// true if the url has been set in a link; it will be placed on the "in" part
 		$publisherlinked = false;	// true if the publisherurl has been set in a link; it will be placed on the "in" part except if the url is there, in which case it will be placed on the publisher part
 		$doilinked = false;			// true if the doi has been set in a link; it will be placed on the "in", except if one of the previous guys is
 		
