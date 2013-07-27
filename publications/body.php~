@@ -5,7 +5,7 @@
 	$pub_str = $pub_str . '<a target="_blank" href="http://scholar.google.com/citations?user=ofdUXHIAAAAJ">Emir@GoogleScholar</a> <br>';
 	$pub_str = $pub_str . '<a target="_blank" href="https://www.researchgate.net/profile/Emir_Munoz/">Emir@ResearchGate</a> <br>';
 	//$pub_str = $pub_str . '<a target="_blank" href="http://www.deri.ie/about/team/member/emir_munoz">Emir@DERI</a> <br>';
-        $pub_str = $pub_str . '<br><span class="sc">Colors</span>: <span class="journal">journal</span>|span class="conference">conference</span> <br>'
+        $pub_str = $pub_str . '<br><span class="sc">Colors</span>: <span class="journal">journal</span>|span class="conference">conference</span> <br>';
 	$pub_str = $pub_str . '<br>';
 	$types = array(	'phdthesis' => 'PhD Thesis',
 					'mastersthesis' => 'Master&rsquo;s Thesis',
