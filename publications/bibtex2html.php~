@@ -433,7 +433,7 @@ function bibtex2html($entry, $type, $accents, $hightlightName = '', $authorLimit
 		$author = extractBib("author", $entry, $accents);
 		
 		$urllinked = true;			// true if the url has been set in a link; it will be placed on the "in" part
-		$publisherlinked = false;	// true if the publisherurl has been set in a link; it will be placed on the "in" part except if the url is there, in which case it will be placed on the publisher part
+		$publisherlinked = true;	// true if the publisherurl has been set in a link; it will be placed on the "in" part except if the url is there, in which case it will be placed on the publisher part
 		$doilinked = false;			// true if the doi has been set in a link; it will be placed on the "in", except if one of the previous guys is
 		
 	        // Title should not end with a full stop
@@ -545,7 +545,7 @@ function bibtex2html($entry, $type, $accents, $hightlightName = '', $authorLimit
 				$volume	= extractBib("volume", $entry, $accents);
 				
 				// Decide on link for publisher
-				if(trim($publisher)	!= "") {
+				if(trim($publisher) != "") {
 					if(trim($publisherurl) != "") {
 						$publisher = '<a href="'.$publisherurl.'" target="_blank">'.$publisher.'</a>';
 						$publisherlinked = true;
@@ -651,11 +651,11 @@ function bibtex2html($entry, $type, $accents, $hightlightName = '', $authorLimit
 			$ret .= ' <span class="doi"><a href="'.$doi.'" target="_blank">[doi]</a></span>&nbsp;';
 		}
 		
-		if(!$urllinked && trim($url) != "") {
+		if($urllinked && trim($url) != "") {
 			$ret .= ' <span class="url"><a href="'.$url.'" target="_blank">[www]</a></span>&nbsp;';
 		}
 
-		if(!$publisherlinked && trim($publisherurl) != "") {
+		if($publisherlinked && trim($publisherurl) != "") {
 			$ret .= ' <span class="publisherurl"><a href="'.$publisherurl.'" target="_blank">[publisher]</a></span>&nbsp;';
 		}
 
