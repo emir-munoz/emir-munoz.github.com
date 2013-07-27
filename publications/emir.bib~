@@ -3,6 +3,41 @@
 
 @PREAMBLE{ " \newcommand{\noop}[1]{} " }
 
+@inproceedings{WISE:2013,
+  author    = {Flavio Ferrarotti and Sven Hartmann and Sebastian Link and Mauricio
+	Mar\'{i}n and Emir Mu\~{n}oz},
+  title     = {{Soft Cardinality Constraints on XML Data (to appear)}},
+  year      = {2013},
+  booktitle = {Web Information Systems Engineering - WISE 2013},
+  publisher = {Springer}
+}
+
+@ARTICLE{TLKS:2013,
+  author = {Flavio Ferrarotti and Sven Hartmann and Sebastian Link and Mauricio
+	Mar\'{i}n and Emir Mu\~{n}oz},
+  title = {{The Finite Implication Problem for Expressive XML Keys: Foundations,
+	Applications, and Performance Evaluation (to appear)}},
+  year = {2013},
+  booktitle = {Transactions on Large-Scale Data- and Knowledge-Centered Systems},
+  publisher = {Springer Berlin Heidelberg},
+  series = {Lecture Notes in Computer Science}
+}
+
+@INPROCEEDINGS{LODPeas:2012,
+  author = {Aidan Hogan and Emir Mu\~{n}oz and J\"{u}rgen Umbrich},
+  title = {{LODPeas: Like peas in a LOD (cloud)}},
+  booktitle = {Proceedings of the Billion Triple Challenge 2012 (co-located with
+	ISWC2012, Boston, US), 13 November},
+  year = {2012},
+  address = {Boston, US},
+  month = {November},
+  abstractlink = {http://leansemanticweb.com/web/iswc/2012/data/proceedings/iswc2012paper-semantic-web-challenge-btc-03.html},
+  bibtexlink = {http://data.semanticweb.org/node/229573/bibtex},
+  link = {http://lodpeas.org/},
+  url = {http://leansemanticweb.com/web/iswc/2012/data/proceedings/iswc2012paper-semantic-web-challenge-btc-03.html},
+  webpdf = {http://challenge.semanticweb.org/2012/submissions/swc2012_submission_30.pdf}
+}
+
 @INPROCEEDINGS{DEXA:2012,
   author = {Flavio Ferrarotti and Sven Hartmann and Sebastian Link and Mauricio
 	Mar\'{i}n and Emir Mu\~{n}oz},
@@ -20,46 +55,9 @@
   bibtexlink = {http://dblp.uni-trier.de/rec/bibtex/conf/dexa/FerrarottiHLMM12},
   comment = {This paper received the Norman Revell <a href="files/BPA-DEXA2012.pdf">best
 	paper award</a> out of 183 submitted papers.},
-  crossref = {DBLP:conf/dexa/2012-1},
   slides = {files/talk-DEXA2012-v3.pdf},
   url = {http://dx.doi.org/10.1007/978-3-642-32600-4_9},
-  webpdf = {http://slink.foiks.org/Articles/DEXA12.pdf}
-}
-
-@UNPUBLISHED{WWW:2013,
-  author = {Flavio Ferrarotti and Sven Hartmann and Sebastian Link and Mauricio
-	Mar\'{i}n and Emir Mu\~{n}oz},
-  title = {{Soft Cardinality Constraints on XML Data}},
-  year = {2013},
-  booktitle = {Proceedings of the International Conference on World Wide Web},
-  publisher = {ACM}
-}
-
-@incollection{TLKS:2013,
-  author = {Flavio Ferrarotti and Sven Hartmann and Sebastian Link and Mauricio
-	Mar\'{i}n and Emir Mu\~{n}oz},
-  title = {{The Finite Implication Problem for Expressive XML Keys: Foundations,
-	Applications, and Performance Evaluation}},
-  year = {2013},
-  booktitle = {Transactions on Large-Scale Data- and Knowledge-Centered Systems},
-  publisher = {Springer Berlin Heidelberg},
-  series = {Lecture Notes in Computer Science},
-  note = {(to appear)}
-}
-
-@INPROCEEDINGS{LODPeas:2012,
-  author = {Aidan Hogan and Emir Mu\~{n}oz and J\"{u}ergen Umbrich},
-  title = {{LODPeas: Like peas in a LOD (cloud)}},
-  booktitle = {Proceedings of the Billion Triple Challenge 2012 (co-located with
-	ISWC2012, Boston, US), 13 November},
-  year = {2012},
-  address = {Boston, US},
-  month = {November},
-  abstractlink = {http://leansemanticweb.com/web/iswc/2012/data/proceedings/iswc2012paper-semantic-web-challenge-btc-03.html},
-  bibtexlink = {http://data.semanticweb.org/node/229573/bibtex},
-  link = {http://lodpeas.org/},
-  url = {http://leansemanticweb.com/web/iswc/2012/data/proceedings/iswc2012paper-semantic-web-challenge-btc-03.html},
-  webpdf = {http://challenge.semanticweb.org/2012/submissions/swc2012_submission_30.pdf}
+  webpdf = {files/DEXA12.pdf}
 }
 
 @MASTERSTHESIS{Emir:Master:2011,
@@ -70,21 +68,5 @@
   year = {2011},
   address = {Chile},
   webpdf = {http://emunoz.org/publications/files/thesis-magister.pdf}
-}
-
-@PROCEEDINGS{DBLP:conf/dexa/2012-1,
-  title = {Database and Expert Systems Applications - 23rd International Conference,
-	DEXA 2012, Vienna, Austria, September 3-6, 2012. Proceedings, Part
-	I},
-  year = {2012},
-  editor = {Stephen W. Liddle and Klaus-Dieter Schewe and A Min Tjoa and Xiaofang
-	Zhou},
-  volume = {7446},
-  series = {Lecture Notes in Computer Science},
-  publisher = {Springer},
-  bibsource = {DBLP, http://dblp.uni-trier.de},
-  booktitle = {DEXA (1)},
-  ee = {http://dx.doi.org/10.1007/978-3-642-32600-4},
-  isbn = {978-3-642-32599-1}
 }
 

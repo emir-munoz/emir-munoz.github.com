@@ -8,7 +8,7 @@
 	$pub_str = $pub_str . '<br>';
 	$types = array(	'phdthesis' => 'PhD Thesis',
 					'mastersthesis' => 'Master&rsquo;s Thesis',
-					'book' => 'Books',
+					//'book' => 'Books',
 					'inbook' => 'Book chapters',
 					'article' => 'Articles',
 					'incollection' => 'Articles',

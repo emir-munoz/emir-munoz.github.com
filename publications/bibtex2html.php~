@@ -436,24 +436,28 @@ function bibtex2html($entry, $type, $accents, $hightlightName = '', $authorLimit
 		$publisherlinked = false;	// true if the publisherurl has been set in a link; it will be placed on the "in" part except if the url is there, in which case it will be placed on the publisher part
 		$doilinked = false;			// true if the doi has been set in a link; it will be placed on the "in", except if one of the previous guys is
 		
-	        // Title should not end with a full stop
-	        if($title[strlen($title)-1] == ".") $title = substr($title, 0, strlen($title)-1);
 
-	        if($author == "") {
-		        $author = extractBib("editor", $entry, $accents);
-		        $author = $author.", ed.";
-	        }
-	        // Authors:
-	        $ret = $ret . '<span class="authors">'.formatAuthors($author, $hightlightName, $authorLimit).'</span> ';
+                if (in_array($type, $types))
+                {
+		        // Title should not end with a full stop
+		        if($title[strlen($title)-1] == ".") $title = substr($title, 0, strlen($title)-1);
 
-	        // Check validity:
-	        if((trim($author)=="") || (trim($title)=="")) return "";
+		        if($author == "") {
+			        $author = extractBib("editor", $entry, $accents);
+			        $author = $author.", ed.";
+		        }
+		        // Authors:
+		        $ret = $ret . '<span class="authors">'.formatAuthors($author, $hightlightName, $authorLimit).'</span> ';
 	
-	        if(trim($webpdf)!="") {
-		        $title = '<a href="'.$webpdf.'" >'.$title.'</a>';
-	        }
-	        // Ttitle:
-	        $ret .= '<span class="title">'.$title.'</span>. ';
+		        // Check validity:
+		        if((trim($author)=="") || (trim($title)=="")) return "";
+		
+		        if(trim($webpdf)!="") {
+			        $title = '<a href="'.$webpdf.'" >'.$title.'</a>';
+		        }
+		        // Ttitle:
+		        $ret .= '<span class="title">'.$title.'</span>. ';
+		}
 		
 		// Main content:
 		switch($type) {
