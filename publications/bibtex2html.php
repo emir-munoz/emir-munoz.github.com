@@ -479,7 +479,7 @@ function bibtex2html($entry, $type, $accents, $hightlightName = '', $authorLimit
 					}
 					
 					// Build output
-					$ret	= $ret.' <span class="in article">In '.$journ.'</span>';
+					$ret	= $ret.' <span class="in journal">In '.$journ.'</span>';
 					if(trim($vol)	!= "") $ret = $ret.', '.$vol;
 					if(trim($numb)	!= "") $ret = $ret.' ('.str_replace(array("--", " -", "- "), "-", $numb).")";
 					if(trim($pages)	!= "") $ret = $ret.': '.str_replace(array("--", " -", "- "), "-", $pages);
