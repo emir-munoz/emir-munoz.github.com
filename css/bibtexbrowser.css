@@ -109,3 +109,27 @@ padding: 5px;
   font-weight: bold;
   color: #6B2E42;
 }
+
+.journal {
+    color: #009933;
+}
+
+.workshop {
+    color: #999999;
+}
+
+.conference {
+    color: #6666CC;
+}
+
+.chapter {
+    color: #CC6666;
+}
+
+.misc {
+    color: #DAA520;
+}
+
+.sc {
+    font-variant: small-caps;
+}
