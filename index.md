@@ -51,12 +51,12 @@ tagline: Supporting tagline
 	</li>
 	<li><b>Master Thesis</b>
 	<ul>
-		<li>Emir Muñoz: <a target="_blank" href="publications/files/thesis-magister.pdf">XML Keys: Implication and Validation Algorithms Implementation</a>. Advisors: <a target="_blank" href="http://www.victoria.ac.nz/sim/staff/flavio-ferrarotti.aspx">Flavio Ferrarotti</a> and <a target="_blank" href="http://www.dcc.uchile.cl/%7Emmarin/">Mauricio Marín</a>, University of Santiago de Chile, December 2010 <a href="publications/files/defensa-magister-emir.pdf">[Slides]</a> <i>(In Spanish)</i></li>
+		<li>Emir Muñoz: <a target="_blank" href="publications/files/master-thesis-2011.pdf">XML Keys: Implication and Validation Algorithms Implementation</a>. Advisors: <a target="_blank" href="http://www.victoria.ac.nz/sim/staff/flavio-ferrarotti.aspx">Flavio Ferrarotti</a> and <a target="_blank" href="http://www.dcc.uchile.cl/%7Emmarin/">Mauricio Marín</a>, University of Santiago de Chile, December 2010 <a href="publications/files/master-thesis-2011-slides.pdf">[slides]</a> <i>(In Spanish)</i></li>
 	</ul>
 	</li>
 	<li><b>Grants, Awards &amp; Fellowships</b>
 	<ul>
-		<li>Norman Revell Best Paper Award, In 23rd International Conference on Database and Expert Systems Applications - DEXA 2012, Vienna, Austria, September 3-6, Springer Lecture Notes in Computer Science <a href="publications/files/BPA-DEXA2012.pdf">[Certificate]</a></li>
+		<li>Norman Revell Best Paper Award, In 23rd International Conference on Database and Expert Systems Applications - DEXA 2012, Vienna, Austria, September 3-6, Springer Lecture Notes in Computer Science <a href="publications/files/BPA-DEXA2012.pdf">[certificate]</a></li>
 		<li>Master&rsquo;s Fellowship, Yahoo! Research Labs Latin America, Master&rsquo;s Thesis.</li>
 	</ul>
 	</li>
