@@ -3,9 +3,32 @@
 
 @PREAMBLE{ " \newcommand{\noop}[1]{} " }
 
+@MASTERSTHESIS{Emir:Master:2011,
+  author = {Emir Mu\~{n}oz},
+  title = {{Claves XML: Una Implementaci\'{o}n de Algoritmos de Implicaci\'{o}n
+	y Validaci\'{o}n}},
+  school = {Universidad de Santiago de Chile},
+  year = {2011},
+  address = {Chile},
+  slides = {files/master-thesis-2011-slides.pdf},
+  webpdf = {http://emunoz.org/publications/files/master-thesis-2011.pdf}
+}
+
+@INPROCEEDINGS{LD4IE:2013,
+  author = {Emir Mu\~{n}oz and Aidan Hogan and Alessandra Mileo},
+  title = {{Triplifying Wikipedia's Tables (CEUR to appear)}},
+  booktitle = {Proceedings of the Linked Data for Information Extraction Workshop
+	(LD4IE 2013) at ISWC 2013, Sydney, Australia, 21--25 October},
+  year = {2013},
+  address = {Sydney, Australia},
+  month = {October},
+  link = {http://emunoz.org/wikitables},
+  webpdf = {files/LD4IE2013.pdf}
+}
+
 @INPROCEEDINGS{DEXA:2012,
   author = {Flavio Ferrarotti and Sven Hartmann and Sebastian Link and Mauricio
-	Mar\'{i}n and Emir Mu{\~n}oz},
+	Mar\'{i}n and Emir Mu\~{n}oz},
   title = {{Performance Analysis of Algorithms to Reason about XML Keys}},
   booktitle = {23rd International Conference on Database and Expert Systems Applications,
 	DEXA 2012, Vienna, Austria, 3-6 September},
@@ -20,83 +43,48 @@
   bibtexlink = {http://dblp.uni-trier.de/rec/bibtex/conf/dexa/FerrarottiHLMM12},
   comment = {This paper received the Norman Revell <a href="files/BPA-DEXA2012.pdf">best
 	paper award</a> out of 183 submitted papers.},
-  crossref = {DBLP:conf/dexa/2012-1},
-  slides = {files/talk-DEXA2012-v3.pdf},
+  slides = {files/DEXA2012-slides.pdf},
   url = {http://dx.doi.org/10.1007/978-3-642-32600-4_9},
-  webpdf = {http://slink.foiks.org/Articles/DEXA12.pdf}
+  webpdf = {files/DEXA2012.pdf}
 }
 
-@UNPUBLISHED{WWW:2013,
+@ARTICLE{TLKS:2013,
   author = {Flavio Ferrarotti and Sven Hartmann and Sebastian Link and Mauricio
-	Mar\'{i}n and Emir Mu{\~n}oz},
-  title = {{Soft Cardinality Constraints on XML Data}},
-  year = {\noop{3001}in press},
-  booktitle = {Proceedings of the International Conference on World Wide Web},
-  publisher = {ACM}
-}
-
-@UNPUBLISHED{TLKS:2013,
-  author = {Flavio Ferrarotti and Sven Hartmann and Sebastian Link and Mauricio
-	Mar\'{i}n and Emir Mu{\~n}oz},
+	Mar\'{i}n and Emir Mu\~{n}oz},
   title = {{The Finite Implication Problem for Expressive XML Keys: Foundations,
-	Applications, and Performance Evaluation}},
-  year = {\noop{3000}in press},
+	Applications, and Performance Evaluation (to appear)}},
+  year = {2013},
   booktitle = {Transactions on Large-Scale Data- and Knowledge-Centered Systems},
   publisher = {Springer Berlin Heidelberg},
-  series = {Lecture Notes in Computer Science}
+  series = {Lecture Notes in Computer Science},
+  webpdf = {files/TLDKS2013.pdf}
+}
+
+@INPROCEEDINGS{WISE:2013,
+  author = {Flavio Ferrarotti and Sven Hartmann and Sebastian Link and Mauricio
+	Mar\'{i}n and Emir Mu\~{n}oz},
+  title = {{Soft Cardinality Constraints on XML Data (to appear)}},
+  booktitle = {Web Information Systems Engineering - WISE 2013},
+  year = {2013},
+  publisher = {Springer},
+  webpdf = {files/WISE2013.pdf}
 }
 
 @INPROCEEDINGS{LODPeas:2012,
-  author = {Aidan Hogan and Emir Mu{\~n}oz and J\"{u}ergen Umbrich},
-  title = {LODPeas: Like peas in a LOD (cloud)},
+  author = {Aidan Hogan and Emir Mu\~{n}oz and J\"{u}rgen Umbrich},
+  title = {{LODPeas: Like peas in a LOD (cloud)}},
   booktitle = {Proceedings of the Billion Triple Challenge 2012 (co-located with
 	ISWC2012, Boston, US), 13 November},
   year = {2012},
   address = {Boston, US},
   month = {November},
   abstractlink = {http://leansemanticweb.com/web/iswc/2012/data/proceedings/iswc2012paper-semantic-web-challenge-btc-03.html},
-  bibtexlink = {http://data.semanticweb.org/node/229573/bibtex},
+  bibtexlink = {http://leansemanticweb.com/web/iswc/2012/data/proceedings/iswc2012paper-semantic-web-challenge-btc-03.html},
   link = {http://lodpeas.org/},
-  url = {http://leansemanticweb.com/web/iswc/2012/data/proceedings/iswc2012paper-semantic-web-challenge-btc-03.html},
-  webpdf = {http://challenge.semanticweb.org/2012/submissions/swc2012_submission_30.pdf}
-}
-
-@MASTERSTHESIS{Emir:Master:2011,
-  author = {Emir Mu{\~n}oz},
-  title = {{Claves XML: Una Implementaci{\'o}n de Algoritmos de Implicaci{\'o}n
-	y Validaci{\'o}n}},
-  school = {Universidad de Santiago de Chile},
-  year = {2011},
-  address = {Chile}
-}
-
-@UNPUBLISHED{btxdoc,
-  author = {Oren Patashnik},
-  title = {{Using BibTeX}},
-  note = {Documentation for general BibTeX users},
-  month = jan,
-  year = {1988}
-}
-
-@MISC{miscexa,
-  author = {Charles Louis Xavier Joseph de la Vall{\'e}e Poussin},
-  year = {1879},
-  note = {A strong form of the prime number theorem, 19th century}
-}
-
-@PROCEEDINGS{DBLP:conf/dexa/2012-1,
-  title = {Database and Expert Systems Applications - 23rd International Conference,
-	DEXA 2012, Vienna, Austria, September 3-6, 2012. Proceedings, Part
-	I},
-  year = {2012},
-  editor = {Stephen W. Liddle and Klaus-Dieter Schewe and A Min Tjoa and Xiaofang
-	Zhou},
-  volume = {7446},
-  series = {Lecture Notes in Computer Science},
-  publisher = {Springer},
-  bibsource = {DBLP, http://dblp.uni-trier.de},
-  booktitle = {DEXA (1)},
-  ee = {http://dx.doi.org/10.1007/978-3-642-32600-4},
-  isbn = {978-3-642-32599-1}
+  owner = {emir},
+  slides = {files/BTC_swc2012-slides.pptx},
+  timestamp = {2013.08.30},
+  url = {http://lodpeas.org/},
+  webpdf = {files/BTC_swc2012.pdf}
 }
 
