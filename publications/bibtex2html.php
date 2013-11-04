@@ -468,7 +468,7 @@ function bibtex2html($entry, $type, $accents, $hightlightName = '', $authorLimit
 					
 					// Decide on link
 					if(trim($url) != "") {
-						$journ = '<a href="'.$url.'" target="_blank">'.$journ.'</a>';
+						//$journ = '<a href="'.$url.'" target="_blank">'.$journ.'</a>';
 						$urllinked = true;
 					} elseif(trim($publisherurl) != "") {
 						$journ = '<a href="'.$publisherurl.'" target="_blank">'.$journ.'</a>';
