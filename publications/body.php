@@ -23,7 +23,7 @@
 										true, //groupYear
 										NULL, //bibLink
 										'Mu&ntilde;oz', //highlightName
-                                                                                true
+                              false
 										);
 	//$pub_str = $pub_str . '<h3>Presentations</h3><div><iframe width="615" height="470" src="http://www.slideshare.net/emispy/slideshelf">t</iframe></div>';
 	file_put_contents('./index.html', $pub_str);
