@@ -31,6 +31,7 @@ tagline: Supporting tagline
 	<li><b>Current Affiliations</b>
 	<ul>
 		<li>Ph.D. Student at <a target="_blank" href="http://www.fujitsu.com/ie/">Fujitsu Ireland</a></li>
+		<li>Ph.D. Student at <a target="_blank" href="http://www.nuigalway.ie/">National University of  Ireland</a></li>
 	</ul>
 	</li>
 	<li><b>Past Affiliations</b>
