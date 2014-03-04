@@ -17,7 +17,7 @@ tagline: Supporting tagline
 		<span property="foaf:title"></span>
 		<span property="foaf:givenname">Emir</span>
 		<span property="foaf:familyName">Muñoz</span>
-		<a target="_self" href="http://www.deri.ie/fileadmin/scripts/foaf.php?id=719"><img width="26" border="0" height="14" title="FOAF file of: Emir Muñoz" alt="FOAF file of: Emir Muñoz" src="./images/foaf.gif"></a>
+		<a target="_self" href="http://www.deri.ie/user/719/foaf.xml"><img width="26" border="0" height="14" title="FOAF file of: Emir Muñoz" alt="FOAF file of: Emir Muñoz" src="./images/foaf.gif"></a>
 		<br>
 		</h4>
 		<div style="display:block;text-align:left">
