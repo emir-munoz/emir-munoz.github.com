@@ -643,7 +643,7 @@ function bibtex2html($entry, $type, $accents, $hightlightName = '', $authorLimit
 		}
 		
 		if(trim($slides) != "") {
-			$ret .= ' <span class="webpdf"><a href="'.$slides.'" >[slides]</a></span>&nbsp;';
+			$ret .= ' <span class="webpdf"><a href="'.$slides.'" target="_blank">[slides]</a></span>&nbsp;';
 		}
 		
 		$webcs = extractBib("citeseerurl", $entry, $accents);
