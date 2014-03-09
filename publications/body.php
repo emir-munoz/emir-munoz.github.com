@@ -26,6 +26,10 @@
                               false
 										);
 	//$pub_str = $pub_str . '<h3>Presentations</h3><div><iframe width="615" height="470" src="http://www.slideshare.net/emispy/slideshelf">t</iframe></div>';
+	
+	$javascript = "<script>jQuery(document).ready(function(){jQuery('.toggle').live('click', function(event) { var div = $(this).attr('title'); $('body').find('#'+div).toggle('show'); }); });</script>";
+	$pub_str .= $javascript;
+	
 	file_put_contents('./index.html', $pub_str);
 	echo "File publications/index.html generated succesfully!\n";
 ?>

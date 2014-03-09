@@ -420,6 +420,7 @@ function bibtex2html($entry, $type, $accents, $hightlightName = '', $authorLimit
 	
 	if(trim($ret)==""){
 		// There is no predefined text to show, we create some
+		$key = extractBibName($entry);;
 		$title = extractBib("title", $entry, $accents);
 		$webpdf = extractBib("webpdf", $entry, $accents);
 		$slides = extractBib("slides", $entry, $accents);
@@ -479,7 +480,7 @@ function bibtex2html($entry, $type, $accents, $hightlightName = '', $authorLimit
 					}
 					
 					// Build output
-					$ret	= $ret.' <span class="in journal">In '.$journ.'</span>';
+					$ret	= $ret.' <span class="in journal">In <i>'.$journ.'</i></span>';
 					if(trim($vol)	!= "") $ret = $ret.', '.$vol;
 					if(trim($numb)	!= "") $ret = $ret.' ('.str_replace(array("--", " -", "- "), "-", $numb).")";
 					if(trim($pages)	!= "") $ret = $ret.': '.str_replace(array("--", " -", "- "), "-", $pages);
@@ -525,7 +526,7 @@ function bibtex2html($entry, $type, $accents, $hightlightName = '', $authorLimit
 					}
 					
 					// Build output
-					$ret = $ret.' <span class="in conference">In '.$booktitle.'</span>';
+					$ret = $ret.' <span class="in conference">In <i>'.$booktitle.'</i></span>';
 					if(trim($pages)		!= "") $ret = $ret.", pages ".str_replace(array("--"," -","- "),"-",$pages);
 					if(trim($publisher)	!= "") $ret = $ret.', <span class="publisher">'.$publisher.'</span>';
 					if(trim($pubaddress)!= "") $ret = $ret.', '.$pubaddress.'';
@@ -560,7 +561,7 @@ function bibtex2html($entry, $type, $accents, $hightlightName = '', $authorLimit
 				if(trim($pubaddress)	!= "") $ret = $ret.', '.$pubaddress.'';
 				if(trim($series)		!= "") $ret = $ret.', '.$series.' '.$volume.'';
 				if(trim($year)			!= "") $ret = $ret.', '.$year;
-				$ret = $ret.".";				
+				$ret = $ret.".";
 				break;
 				
 			case "mastersthesis":
@@ -630,9 +631,12 @@ function bibtex2html($entry, $type, $accents, $hightlightName = '', $authorLimit
 		// Links:
 		$ret .= '<span class="links">';
 		
-		if(trim($bibtexurl) != "") {
-			$ret .= ' <span class="webpdf"><a href="'.$bibtexurl.'" >[bib]</a></span>&nbsp;';
-		}
+		//if(trim($bibtexurl) != "") {
+			//$ret .= ' <span class="webpdf"><a href="'.$bibtexurl.'" >[bib]</a></span>&nbsp;';
+		//}
+		// using toggle function to show/hide bibsource
+		$ret .= ' <span class="webpdf"><a href="#" class="toggle" title="'.$key.'">[bib]</a></span>&nbsp;';
+		
 		
 		if(trim($webpdf) != "") {
 			$ret .= ' <span class="webpdf"><a href="'.$webpdf.'" >[pdf-file]</a></span>&nbsp;';
@@ -662,9 +666,12 @@ function bibtex2html($entry, $type, $accents, $hightlightName = '', $authorLimit
 		if(trim($comments) != "") {
 			$ret .= ' ('.$comments.') &nbsp;';
 		}
-
+		
 		$ret .= '</span>';
 		
+		// add the bibtex source
+		$bibsource = str_replace(',  ',',<br>',$entry);
+		$ret .= '<div class="well well-small hidebibsource" id="'.$key.'" style="display: block;"><pre>'.$bibsource.'</pre></div>';
 	}
 	
 	return $ret;
@@ -897,6 +904,7 @@ function bibstring2html($fileContent, $displayTypes = NULL, $groupType = NULL, $
 		}
 		$ret .= '</ol>';
 	}
+	
 	return $ret;
 }
 
