@@ -439,21 +439,21 @@ function bibtex2html($entry, $type, $accents, $hightlightName = '', $authorLimit
 	        // Title should not end with a full stop
 	        if($title[strlen($title)-1] == ".") $title = substr($title, 0, strlen($title)-1);
 
+			  if(trim($webpdf)!="") {
+		        $title = '<a href="'.$webpdf.'" >'.$title.'</a>';
+	        }
+	        // Title:
+	        $ret .= '<span class="title">'.$title.'</span><br>';
+
 	        if($author == "") {
 		        $author = extractBib("editor", $entry, $accents);
 		        $author = $author.", ed.";
 	        }
 	        // Authors:
-	        $ret = $ret . '<span class="authors">'.formatAuthors($author, $hightlightName, $authorLimit).'</span> ';
+	        $ret = $ret . '<span class="authors">'.formatAuthors($author, $hightlightName, $authorLimit).'</span><br>';
 
 	        // Check validity:
 	        if((trim($author)=="") || (trim($title)=="")) return "";
-	
-	        if(trim($webpdf)!="") {
-		        $title = '<a href="'.$webpdf.'" >'.$title.'</a>';
-	        }
-	        // Ttitle:
-	        $ret .= '<span class="title">'.$title.'</span>. ';
 		
 		// Main content:
 		switch($type) {
