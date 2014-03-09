@@ -671,7 +671,7 @@ function bibtex2html($entry, $type, $accents, $hightlightName = '', $authorLimit
 		
 		// add the bibtex source
 		$bibsource = str_replace(',  ',',<br>',$entry);
-		$ret .= '<div class="well well-small collapse" id="'.$key.'"><pre>'.$bibsource.'</pre></div>';
+		$ret .= '<div class="collapse" id="'.$key.'"><pre>'.$bibsource.'</pre></div>';
 	}
 	
 	return $ret;
