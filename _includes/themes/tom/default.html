@@ -80,9 +80,11 @@
 <script src="/script/js/bootstrap-affix.js"></script>
 <script>
 	$('.dropdown-toggle').dropdown();
+	jQuery(document).ready(function(){
 	jQuery('.toggle').live('click', function(event) {
 		var div = $(this).attr('title');
 		$("body").find('#'+div).toggle('show');
+	});
 	});
 </script>
 </body>
