@@ -635,7 +635,7 @@ function bibtex2html($entry, $type, $accents, $hightlightName = '', $authorLimit
 			//$ret .= ' <span class="webpdf"><a href="'.$bibtexurl.'" >[bib]</a></span>&nbsp;';
 		//}
 		// using toggle function to show/hide bibsource
-		$ret .= ' <span class="webpdf"><a class="link" href="#" data-toggle="collapse" data-target="#'.$key.'">[bib]</a></span>&nbsp;';
+		$ret .= ' <span class="webpdf"><a class="btn" data-toggle="collapse" data-target="#'.$key.'">[bib]</a></span>&nbsp;';
 		
 		
 		if(trim($webpdf) != "") {
