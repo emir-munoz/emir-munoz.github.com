@@ -440,9 +440,9 @@ function bibtex2html($entry, $type, $accents, $hightlightName = '', $authorLimit
 	        // Title should not end with a full stop
 	        if($title[strlen($title)-1] == ".") $title = substr($title, 0, strlen($title)-1);
 
-			  if(trim($webpdf)!="") {
-		        $title = '<a href="'.$webpdf.'" >'.$title.'</a>';
-	        }
+			  //if(trim($webpdf)!="") {
+		     //   $title = '<a href="'.$webpdf.'" >'.$title.'</a>';
+	        //}
 	        // Title:
 	        $ret .= '<span class="title">'.$title.'</span><br>';
 
