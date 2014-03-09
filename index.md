@@ -14,11 +14,11 @@ tagline: Supporting tagline
 	</td>
 	<td style="width:890px;height:190px">
 		<h4>
-		<span property="foaf:title"></span>
-		<span property="foaf:givenname">Emir</span>
-		<span property="foaf:familyName">Muñoz</span>
-		<a target="_self" href="http://www.deri.ie/user/719/foaf.xml"><img width="26" border="0" height="14" title="FOAF file of: Emir Muñoz" alt="FOAF file of: Emir Muñoz" src="./images/foaf.gif"></a>
-		<br>
+                     <span property="foaf:title"></span>
+		     <span property="foaf:givenname">Emir</span>
+		     <span property="foaf:familyName">Muñoz</span>
+		     <a target="_self" href="http://www.deri.ie/user/719/foaf.xml"><img width="26" border="0" height="14" title="FOAF file of: Emir Muñoz" alt="FOAF file of: Emir Muñoz" src="./images/foaf.gif"></a>
+		     <br>
 		</h4>
 		<div style="display:block;text-align:left">
 			<a href="mailto:emir at emunoz dot org"><img alt="email" src="./images/mail.png"></a>
@@ -31,7 +31,7 @@ tagline: Supporting tagline
 	<li><b>Current Affiliations</b>
 	<ul>
 		<li>Ph.D. Student at <a target="_blank" href="http://www.fujitsu.com/ie/">Fujitsu Ireland</a></li>
-		<li>Ph.D. Student at <a target="_blank" href="http://www.nuigalway.ie/">National University of  Ireland</a></li>
+		<li>1st Year Ph.D. Student at <a target="_blank" href="http://www.nuigalway.ie/">National University of  Ireland</a></li>
 	</ul>
 	</li>
 	<li><b>Past Affiliations</b>

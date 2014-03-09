@@ -32,7 +32,7 @@ a {
 
 body {
 	background: #C9CFCD url(images/img01.gif);
-	font-size: 11pt;
+	font-size: 13pt !important;
 	color: #323232;
 	line-height: 1.75em;
 }
