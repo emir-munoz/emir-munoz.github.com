@@ -7,10 +7,30 @@
 body {
 	padding-top: 65px;
 	padding-bottom: 20px;
+}
+
+.container {
+	margin-right: auto;
+	margin-left: auto;
 	padding-left: 20px;
 	padding-right: 20px;
 	/*margin: 0 auto;
 	position: relative;*/
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
 }
 
 a {
