@@ -1,6 +1,6 @@
 # Home page
 
-This is the repo for my professional web site.
+This is the repo for my professional web site version 2.0.
 
 ## Author
 
