@@ -26,6 +26,14 @@ a:active {
 	color: #FF0000; /* selected link */
 }
 
+/* to remove horizontal scroll 
+ * http://stackoverflow.com/questions/18392477/how-to-make-bootstrap-3-fluid-layout-without-horizontal-scrollbar
+ */
+.row {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
 .jumbotron {
 	background-color: #eee;
 	padding-top: 10px;
