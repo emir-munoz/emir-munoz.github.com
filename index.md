@@ -14,17 +14,15 @@ name: home
 	<div class="jumbotron">
 		<div class="row">
 			<div class="col-lg-3 text-center">
-				<div class="span4">
-					<img id="image_main" alt="My photo" width="200" height="187" src="./images/DSC02506-3.JPG">
-					<h3>
-						<span property="foaf:title"></span>
-						<span property="foaf:givenname">Emir</span>
-						<span property="foaf:familyName">Muñoz</span>
-						<a target="_self" href="./foaf.xml"><img width="26" border="0" height="14" title="FOAF file of: Emir Muñoz" alt="FOAF file of: Emir Muñoz" src="./images/foaf.gif"></a>
-						<br>
-						<a href="mailto:emir at emunoz dot org"><img alt="email" src="./images/mail.png"></a>
-					</h3>
-				</div>
+				<img id="image_main" alt="My photo" width="200" height="187" src="./images/DSC02506-3.JPG">
+				<h3>
+					<span property="foaf:title"></span>
+					<span property="foaf:givenname">Emir</span>
+					<span property="foaf:familyName">Muñoz</span>
+					<a target="_self" href="./foaf.xml"><img width="26" border="0" height="14" title="FOAF file of: Emir Muñoz" alt="FOAF file of: Emir Muñoz" src="./images/foaf.gif"></a>
+					<br>
+					<a href="mailto:emir at emunoz dot org"><img alt="email" src="./images/mail.png"></a>
+				</h3>
 			</div>
 			<div class="col-lg-9">
 				<div class="span4">
