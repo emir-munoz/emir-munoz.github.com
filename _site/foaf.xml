@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:bibtex="http://purl.oclc.org/NET/nknouf/ns/bibtex#">
+
+  <rdf:Description rdf:about="http://emunoz.org">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name>Emir Muñoz</foaf:name>
+    <foaf:firstName>Emir</foaf:firstName>
+    <foaf:surname>Muñoz</foaf:surname>
+    <foaf:workplaceHomepage>http://www.fujitsu.com/ie/</foaf:workplaceHomepage>
+    <foaf:mbox_sha1sum>53119c47c30dc436bbe0bcc9170de7ead08d8110</foaf:mbox_sha1sum>
+    <foaf:img>http://emunoz.org/images/DSC02506-3.JPG</foaf:img>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.deri.ie/content/lodpeas-peas-lod-cloud">
+    <rdf:type rdf:resource="http://purl.oclc.org/NET/nknouf/ns/bibtex#inproceedings"/>
+    <bibtex:hasTitle>LODPeas: Like Peas in a LOD (Cloud)</bibtex:hasTitle>
+  </rdf:Description>
+
+</rdf:RDF>
