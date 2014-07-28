@@ -7,18 +7,10 @@
 body {
 	padding-top: 65px;
 	padding-bottom: 20px;
-	/*width: 980px;*/
+	padding-left: 20px;
 	margin: 0 auto;
 	position: relative;
 }
-
-/*
-#wrapper {
-	width: 980px;
-	margin: 0 auto;
-	position: relative;
-}
-*/
 
 a {
 	text-decoration: none; /*underline*/
@@ -59,20 +51,6 @@ a:active {
 	-webkit-shape-outside: circle(50%, 50%, 50%);
 	-webkit-shape-margin: 15px;
 }
-
-/*
-hr {
-  -moz-border-bottom-colors: none;
-  -moz-border-image: none;
-  -moz-border-left-colors: none;
-  -moz-border-right-colors: none;
-  -moz-border-top-colors: none;
-  border-color: #EEEEEE -moz-use-text-color #FFFFFF;
-  border-style: solid none;
-  border-width: 1px 0;
-  margin: 18px 0;
-}
-*/
 
 .navbar-fixed-top {
 	opacity: .85;
