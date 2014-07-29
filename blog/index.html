@@ -18,6 +18,19 @@ group: navigation
   {% endfor %}
 </ul>-->{% endcomment %}
 
+<ul>
+    {% for post in site.posts %}
+    <li>
+        <a href="{{ post.url }}">
+            <h3>{{ post.title }}</h3>
+            <p class="meta">Posted {{ post.date | date_to_long_string }}</p>
+            <p>{{ post.excerpt }}</p>
+        </a>
+    </li>
+    {% endfor %}
+</ul>
+
+{% comment %}<!--
 {% for post in site.posts offset: 0 limit: 10 %}
     <h2>
         <a href="{{ site.prefix }}{{ post.url }}">{{ post.title }}</a>
@@ -26,3 +39,4 @@ group: navigation
     {{ post.content }}
     <hr />
 {% endfor %}
+-->{% endcomment %}
