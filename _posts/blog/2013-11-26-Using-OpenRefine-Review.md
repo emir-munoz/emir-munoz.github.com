@@ -3,7 +3,7 @@ layout: post
 title: Using OpenRefine Review
 category: Books
 tagline: "Book Review"
-tags: [toread, book, review]
+tags: [to read, book, review]
 summary: Review of the book Using OpenRefine
 status: final
 hn-discussion:
