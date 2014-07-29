@@ -11,8 +11,6 @@ hn-discussion:
 
 {% include JB/setup %}
 
-### LaTex Links
-
 <dl>
 	<dt><a target="_blank" href="https://www.sharelatex.com/">ShareLaTex:</a></dt>
 	<dd>Online pdflatex compiler that allow you to do a collaborative LaTex document.</dd>
