@@ -7,6 +7,7 @@ tags: [to read, books, review]
 summary: Review of the book Using OpenRefine
 status: final
 hn-discussion:
+share: true
 ---
 
 {% include JB/setup %}
