@@ -11,7 +11,8 @@ hn-discussion:
 
 {% include JB/setup %}
 
-***Celebrate 2000 Titles with Packt with the BUY ONE, GET ONE FREE offer! Check it out at [http://bit.ly/1j26nPN]! #Packt2k***
+
+***Celebrate 2000 Titles with Packt with the BUY ONE, GET ONE FREE offer! Check it out at [http://bit.ly/1j26nPN]()! #Packt2k***
 
 [![alt text](http://dgdsbygo8mp3h.cloudfront.net/sites/default/files/2000th-Book-Home-Page-Banner.png)](http://bit.ly/1j26nPN)
 

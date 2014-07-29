@@ -11,6 +11,7 @@ hn-discussion:
 
 {% include JB/setup %}
 
+
 It has been 10 years since [Packt Publishing](http://bit.ly/1sTMBub) embarked on its mission to deliver effective learning and 
 information services to IT professionals. In that time, it has published over 2000 titles and helped projects become household 
 names, awarding over $400,000 through its Open Source Project Royalty Scheme.
@@ -25,4 +26,4 @@ or the key skills to keep you ahead of the competition in more established tech 
 
 [![alt text](http://www.packtpub.com/sites/default/files/10yr-webbanner2.jpg)](http://bit.ly/1sTMBub)
 
-More information is available at: [http://bit.ly/1sTMBub]
+More information is available at: [http://bit.ly/1sTMBub]()
