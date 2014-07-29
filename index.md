@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: "Emir Muñoz"
 tagline: 
 lang: en

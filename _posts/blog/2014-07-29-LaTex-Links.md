@@ -1,10 +1,15 @@
 ---
 layout: post
 title: LaTex Links
-summary:
-status: draft
+category: Utils
+tagline: "Supporting tagline"
+tags : [utils, latex]
+summary: Useful links for who works with LaTex documents.
+status: final
 hn-discussion:
 ---
+
+{% include JB/setup %}
 
 ### LaTex Links
 
