@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Using OpenRefine Review
-category: books
+category: Books
 tagline: "Book Review"
 tags: [to read, book, review]
 summary: Review of the book: Using OpenRefine

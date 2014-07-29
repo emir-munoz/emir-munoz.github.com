@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Packt Publishing's 2000th Title Campaign Offer
-category: books
-tagline: ""
+category: Books
+tagline: 
 tags: [books]
 summary: Packt publisher offer
 status: final

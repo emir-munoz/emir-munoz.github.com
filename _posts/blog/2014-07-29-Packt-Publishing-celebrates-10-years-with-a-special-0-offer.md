@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Packt Publishing celebrates 10 years with a special 0 offer
-category: books
-tagline: ""
+title: Packt Publishing celebrates 10 years with a special offer
+category: Books
+tagline: 
 tags: [books]
 summary: Packt publisher offer
 status: final
