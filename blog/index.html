@@ -24,7 +24,7 @@ group: navigation
         <a href="{{ post.url }}">
             <h3>{{ post.title }}</h3>
             <p class="meta">Posted {{ post.date | date_to_long_string }}</p>
-            <p>{{ post.excerpt }}</p>
+            <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
         </a>
     </li>
     {% endfor %}
