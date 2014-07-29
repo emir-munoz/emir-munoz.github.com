@@ -13,9 +13,9 @@
 	<!-- Collect the nav links, forms, and other content for toggling -->
 	<div class="collapse navbar-collapse" id="jb-navbar-collapse">
 	  <ul class="nav navbar-nav">
-	    <li><a href="/publications">Publications</a></li>
-	    <li><a href="/projects">Projects</a></li>
-	    <li class="item dropdown">
+	    <li class="{% active_page publications%}"><a href="/publications">Publications</a></li>
+	    <li class="{% active_page projects%}"><a href="/projects">Projects</a></li>
+	    <li class="item dropdown {% active_page teaching%}">
 			<a id="dLabel" class="dropdown-toggle link" href="/teaching" data-toggle="dropdown" data-target="#" role="button" >Teaching <b class="caret"></b></a>
 			<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
 				<li role="menuitem"><a href="/teaching">All</a></li>
@@ -23,18 +23,9 @@
 				<li role="menuitem"><a href="/teaching/usach.html">USACH</a></li>
 				<li role="menuitem"><a href="/teaching/ucentral.html">UCentral</a></li>
 			</ul>
-		</li>
-	    <li class="item dropdown">
-			<a id="dLabel" class="dropdown-toggle link" href="#" data-toggle="dropdown" data-target="#" role="button" >Blog <b class="caret"></b></a>
-			<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-				<li role="menuitem"><a href="{{ archive_path }}">Archive</a></li>
-				<li role="menuitem" class="divider"></li>
-				<li role="menuitem"><a href="{{ categories_path }}">Categories</a></li>
-				<li role="menuitem"><a href="{{ tags_path }}">Tags</a></li>
-			</ul>
-		</li>
-	    <li><a href="/links">Links</a></li>
-	    <li><a href="/contact">Contact</a></li>
+		 </li>
+	    <li class="{% active_page links%}"><a href="/links">Links</a></li>
+	    <li class="{% active_page contact%}"><a href="/contact">Contact</a></li>
 {% comment %}<!--
 	    {% assign pages_list = site.pages %}
 	    {% assign group = 'navigation' %}
