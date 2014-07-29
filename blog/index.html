@@ -27,10 +27,10 @@ group: navigation
         <p class="meta">Posted {{ post.date | date_to_long_string }}</p>
         {% if post.content contains '<!--more-->' %}
           {{ post.content | split:'<!--more-->' | first }}
+          <a href="{{ post.url }}">Continue reading...</a>
         {% else %}
           {{ post.content }}
         {% endif %}
-        <a href="{{ post.url }}">Continue reading...</a>
     </li>
     {% endfor %}
 </ul>
