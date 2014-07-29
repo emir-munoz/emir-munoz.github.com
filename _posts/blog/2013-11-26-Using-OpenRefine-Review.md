@@ -3,14 +3,13 @@ layout: post
 title: Using OpenRefine Review
 category: Books
 tagline: "Book Review"
-tags: [to read, book, review]
-summary: Review of the book: Using OpenRefine
+tags: [toread, book, review]
+summary: Review of the book Using OpenRefine
 status: final
 hn-discussion:
 ---
 
 {% include JB/setup %}
-
 
 _[The publisher of this book provide me with a free e-copy for review]_
 
@@ -24,9 +23,13 @@ Even without previous knowledge any user can take this book and from scratch sta
 **Organization:**
 
 The book is divided in four chapters plus an appendix.
+
 _Chapter 1_: Presents the first set of easy-to-follow recipes to get your hands into loading and preparing your data.
+
 _Chapter 2_: The main contribution is on how to sort and create facets to select (or isolate) data based on regular expressions over the cell values, with the main goal of fix the datasets.
+
 _Chapter 3_: Tells you how to deal with more advanced operations over your data, and gives a brief introduction to GREL, the language defined to manipulate cell values. GREL is simple and powerful enough to match and replace the cell’s content as needed by different purposes, that’s because they have an appendix with a deeper explanation.
+
 _Chapter 4_: Once that all the data have been normalized this can be reconciliated with an external knowledge base or linked open dataset such as Freebase (can be whatever knowledge base appropriate for the data at hands) to enrich the semantics of the data.
 
 **What I like about this book:**
