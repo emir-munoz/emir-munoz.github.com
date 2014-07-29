@@ -25,7 +25,11 @@ group: navigation
             <h3>{{ post.title }}</h3>
         </a>
         <p class="meta">Posted {{ post.date | date_to_long_string }}</p>
-        <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
+        {% if post.content contains '<!--more-->' %}
+          {{ post.content | split:'<!--more-->' | first }}
+        {% else %}
+          {{ post.content }}
+        {% endif %}
         <a href="{{ post.url }}">Continue reading...</a>
     </li>
     {% endfor %}
@@ -38,6 +42,7 @@ group: navigation
     </h2>
     {{ post.date | date_to_string }}
     {{ post.content }}
+    <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
     <hr />
 {% endfor %}
 -->{% endcomment %}
