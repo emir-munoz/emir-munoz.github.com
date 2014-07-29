@@ -2,8 +2,8 @@
 layout: post
 title: LaTex Links
 category: Utils
-tagline: "Supporting tagline"
-tags : [utils, latex]
+tagline: "PhD utils"
+tags : [phd, utils, latex]
 summary: Useful links for who works with LaTex documents.
 status: final
 hn-discussion:
