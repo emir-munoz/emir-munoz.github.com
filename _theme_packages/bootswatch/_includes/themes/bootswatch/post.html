@@ -13,14 +13,14 @@
 
 	<hr>
 
-	<p><i class="fa-list"></i> Posted in 
+	<p><i class="fa fa-list"></i> Posted in 
 	{% for category in page.categories %} 
       <a rel="dc:subject" class="category" 
          href="/categories.html#{{ category | cgi_escape }}">{{ category }}</a>
     {% unless page.categories.last == category %}, {% endunless %}
     {% endfor %}</p>
 
-	<p> <i class="fa-tags"></i> tags: 
+	<p> <i class="fa fa-tags"></i> tags: 
     {% for tag in page.tags %}
     <!-- http://schema.org/BlogPosting/keywords -->
     <a rel="og:tag" class="tag" 
