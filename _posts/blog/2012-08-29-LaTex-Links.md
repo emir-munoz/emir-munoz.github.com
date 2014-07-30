@@ -19,6 +19,8 @@ hn-discussion:
 Here is an example MathJax inline rendering \\( 1/x^{2} \\), and here is a block rendering: 
 \\[ \frac{1}{n^{2}} \\]
 
+\( \frac{1}{n^{2}} \)
+
 <dl>
 	<dt><a target="_blank" href="https://www.sharelatex.com/">ShareLaTex:</a></dt>
 	<dd>Online pdflatex compiler that allow you to do a collaborative LaTex document.</dd>
