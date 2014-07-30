@@ -33,6 +33,16 @@ $$
 \end{align*}
 $$
 
+The following is a math block:
+
+$$ 5 + 5 $$
+
+But next comes a paragraph with an inline math statement:
+
+\$$ 5 + 5 $$
+
+\$\$ 5 + 5 $$
+
 <dl>
 	<dt><a target="_blank" href="https://www.sharelatex.com/">ShareLaTex:</a></dt>
 	<dd>Online pdflatex compiler that allow you to do a collaborative LaTex document.</dd>
@@ -53,6 +63,4 @@ $$
 	<dd>An open source JavaScript display engine for mathematics that works in all modern browsers.</dd>
 </dl>
 
-{% comment %}<!--
 <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
--->{% endcomment %}
