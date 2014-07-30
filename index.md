@@ -62,7 +62,7 @@ name: home
 		</li>
 		<li><b>Master Thesis</b>
 		<ul>
-			<li>Emir Muñoz: <a target="_blank" href="publications/files/master-thesis-2011.pdf">XML Keys: Implication and Validation Algorithms Implementation</a>. Advisors: <a target="_blank" href="http://www.victoria.ac.nz/sim/staff/flavio-ferrarotti.aspx">Flavio Ferrarotti</a> and <a target="_blank" href="http://www.dcc.uchile.cl/%7Emmarin/">Mauricio Marín</a>, University of Santiago de Chile, December 2010 <a href="publications/files/master-thesis-2011-slides.pdf">[slides]</a> <i>(In Spanish)</i></li>
+			<li>Emir Muñoz: <a target="_blank" href="publications/files/master-thesis-2011.pdf">XML Keys: Implication and Validation Algorithms Implementation</a>. Advisors: <a target="_blank" href="https://www.scch.at/de/team/person_id/189/field/0/category/0">Flavio Ferrarotti</a> and <a target="_blank" href="http://www.dcc.uchile.cl/%7Emmarin/">Mauricio Marín</a>, University of Santiago de Chile, December 2010 <a href="publications/files/master-thesis-2011-slides.pdf">[slides]</a> <i>(In Spanish)</i></li>
 		</ul>
 		</li>
 		<li><b>Grants, Awards &amp; Fellowships</b>
@@ -87,7 +87,7 @@ name: home
 		<li><b>Recommended websites</b>
 		<ul>
 			<li><a target="_blank" href="http://technews.acm.org/">ACM Tech News </a></li>
-			<li><a target="_blank" href="http://queue.acm.com/">ACM Queue </a></li>
+			<li><a target="_blank" href="http://queue.acm.org/">ACM Queue </a></li>
 			<li><a target="_blank" href="http://www.sciencemag.org/magazine.dtl">Science Magazine</a></li>
 		</ul>
 		</li>
