@@ -11,6 +11,22 @@
       {{ content }}
     </div>
 
+	<p><i class="icon-list"></i> Posted in 
+	{% for category in page.categories %} 
+      <a rel="dc:subject" class="category" 
+         href="/categories.html#{{ category | cgi_escape }}">{{ category }}</a>
+    {% unless page.categories.last == category %}, {% endunless %}
+    {% endfor %}</p>
+
+	<p> <i class="icon-tag"></i> tags: 
+    {% for tag in page.tags %}
+    <!-- http://schema.org/BlogPosting/keywords -->
+    <a rel="og:tag" class="tag" 
+       href="/tags.html#{{ tag | cgi_escape }}">#{{ tag }}</a>{% unless page.tags.last == tag %}, {% endunless %}
+    {% endfor %}</p>
+	
+
+{% comment %}<!--
   {% unless page.categories == empty %}
     <ul class="tag_box inline">
       <li><i class="glyphicon-open"></i></li>
@@ -26,7 +42,8 @@
       {% include JB/tags_list %}
     </ul>
   {% endunless %}  
-  
+-->{% endcomment %}  
+
     <hr>
     <ul class="pagination">
     {% if page.previous %}
