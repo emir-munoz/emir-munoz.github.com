@@ -16,9 +16,8 @@ hn-discussion:
 
 {% include JB/setup %}
 
-\$$ \LaTex{} $$ Links 
-
-$$ 5 + 5 $$
+Here is an example MathJax inline rendering \\( 1/x^{2} \\), and here is a block rendering: 
+\\[ \frac{1}{n^{2}} \\]
 
 <dl>
 	<dt><a target="_blank" href="https://www.sharelatex.com/">ShareLaTex:</a></dt>
@@ -40,5 +39,6 @@ $$ 5 + 5 $$
 	<dd>An open source JavaScript display engine for mathematics that works in all modern browsers.</dd>
 </dl>
 
-
+{% comment %}<!--
 <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+-->{% endcomment %}
