@@ -20,6 +20,8 @@ This book is a nice cookbook, easy to follow written in a friendly language, to 
 data such as HTML tables, spreadsheets, csv files, among others, exploiting the linkeability of your datasets with the Linked Open Data (LOD). 
 Even without previous knowledge any user can take this book and from scratch start to use OpenRefine.
 
+<!--more-->
+
 **Organization:**
 
 The book is divided in four chapters plus an appendix.

@@ -11,6 +11,13 @@
       {{ content }}
     </div>
 
+  <div>
+    <p>Share this:</p>
+    <a href="http://facebook.com/sharer.php?u=http://{{ page.url }}"><i class="fa fa-facebook-square fa-2x"></i></a>
+    <a href="http://twitter.com/intent/tweet?url=http://{{ page.url }}&text={{ page.title }}&via=emir_munoz"><i class="fa fa-twitter fa-2x"></i></a>
+    <a href="https://plus.google.com/share?url=http%3A%2F%2F{{ page.url }}"><i class="fa fa-google-plus fa-2x"></i></a>
+  </div>
+
   {% unless page.categories == empty %}
     <ul class="tag_box inline">
       <li><i class="glyphicon-open"></i></li>
