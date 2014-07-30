@@ -9,12 +9,12 @@ status: final
 hn-discussion:
 ---
 
+{% include JB/setup %}
+
 <div style="visibility: hidden; overflow: hidden; position: absolute; top: 0px; height: 1px; width: auto; padding: 0px; border: 0px; margin: 0px; text-align: left; text-indent: 0px; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal;">
 	<div id="MathJax_Hidden"></div>
 </div>
 <div id="MathJax_Message" style="display: none;"></div>
-
-{% include JB/setup %}
 
 <dl>
 	<dt><a target="_blank" href="https://www.sharelatex.com/">ShareLaTex:</a></dt>
@@ -35,6 +35,8 @@ hn-discussion:
 	<dt><a target="_blank" href="http://www.mathjax.org/">MathJax:</a></dt>
 	<dd>An open source JavaScript display engine for mathematics that works in all modern browsers.</dd>
 </dl>
+
+<!--more-->
 
 The following is an example of MathJax:
 
