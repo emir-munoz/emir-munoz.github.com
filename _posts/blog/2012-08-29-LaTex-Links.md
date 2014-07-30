@@ -11,6 +11,9 @@ hn-discussion:
 
 {% include JB/setup %}
 
+\$$ \LaTex{} $$ Links 
+
+$$ 5 + 5 $$
 
 <dl>
 	<dt><a target="_blank" href="https://www.sharelatex.com/">ShareLaTex:</a></dt>
