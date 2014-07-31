@@ -25,8 +25,7 @@ The library is really simple and intuitive to use, since represent the HTML docu
 Too much chatter, now I'm going to show you the python code :)
 
 ```
-
-   #!/usr/bin/env python
+    #!/usr/bin/env python
 ```
 
 
