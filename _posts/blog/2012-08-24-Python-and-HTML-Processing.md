@@ -9,8 +9,6 @@ status: draft
 hn-discussion:
 ---
 
-{% include JB/setup %}
-
 Trying to harvest some links from the Coursea Lectures, in a fast and efficient way saving me valuable time, 
 I decided to use Python with [Beautiful Soup](http://www.crummy.com/software/BeautifulSoup/).
 
@@ -24,6 +22,7 @@ The library is really simple and intuitive to use, since represent the HTML docu
 
 Too much chatter, now I'm going to show you the python code :)
 
+```python
     #!/usr/bin/env python
     import urllib, sgmllib
  
@@ -51,7 +50,7 @@ Too much chatter, now I'm going to show you the python code :)
           if link.get('type') == "video/mp4":
           # You can concate 'wget' to build immediately an script
              print 'wget '+link.get('src')
-
+```
 
 A full documentation can be found [here](http://www.crummy.com/software/BeautifulSoup/bs4/doc/).
 
