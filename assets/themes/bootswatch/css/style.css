@@ -125,8 +125,8 @@ p > code, p > a > code, li > code, h3 > code {
 border-radius: 4px;
 -webkit-border-radius: 4px;
 -moz-border-radius: 4px;
-color: #C5CBD0;
-/*color: white*/
+/*color: #C5CBD0;*/
+color: white;
 background-image: url(/assets/themes/bootswatch/bootstrap/img/opaque_20.png);
 font-family: Menlo, Consolas, "Courier New", Courier, "Liberation Mono", monospace;
 font-size: 1.1em;
