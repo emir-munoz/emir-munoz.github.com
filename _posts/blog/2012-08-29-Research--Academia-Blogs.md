@@ -3,7 +3,7 @@ layout: post
 title: Research & Academia Blogs
 category: Research
 tagline: "Research"
-tags : [phd, to read]
+tags : [phd, to-read]
 summary:
 status: final
 hn-discussion:
