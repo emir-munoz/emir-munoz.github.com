@@ -24,9 +24,7 @@ The library is really simple and intuitive to use, since represent the HTML docu
 
 Too much chatter, now I'm going to show you the python code :)
 
-
-```python
-
+```
 #!/usr/bin/env python
  
 import urllib, sgmllib
@@ -55,7 +53,6 @@ from bs4 import BeautifulSoup
          if link.get('type') == "video/mp4":
          # You can concate 'wget' to build immediately an script
             print 'wget '+link.get('src')
-
 ```
 
 A full documentation can be found [here](http://www.crummy.com/software/BeautifulSoup/bs4/doc/).
