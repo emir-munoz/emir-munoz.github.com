@@ -25,7 +25,7 @@ group: navigation
         <a href="{{ post.url }}">
             <h3>{{ post.title }}</h3>
         </a>
-        <p class="meta">Posted {{ post.date | date_to_long_string }}</p>
+        <p class="meta">Posted <i class="fa fa-calendar"></i> {{ post.date | date_to_long_string }}</p>
         {% if post.content contains '<!--more-->' %}
           {{ post.content | split:'<!--more-->' | first }}
           <a href="{{ post.url }}">Continue reading...</a>
