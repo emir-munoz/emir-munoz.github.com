@@ -24,40 +24,35 @@ The library is really simple and intuitive to use, since represent the HTML docu
 
 Too much chatter, now I'm going to show you the python code :)
 
-<!--<pre>
-  <code class="python">-->
-{% highlight python %}
-    #!/usr/bin/env python
-    import urllib, sgmllib
+{% highlight python linenos %}
+#!/usr/bin/env python
+import urllib, sgmllib
  
-    # Get a file-like object for the Coursea Web site course page.
-    f = urllib.urlopen("https://class.coursera.org/gametheory/lecture/preview")
-    # Read from the object, storing the page's contents in 's'.
-    s = f.read()
- 
-    # Here is the import for the library above described.
-    from bs4 import BeautifulSoup
-    # BeautifulSoup object, which represents the document as a nested data structure
-    soup = BeautifulSoup(s)
- 
-    # Find all the link with rel 'lecture-link'
-   for videos in soup.find_all('a', rel="lecture-link"):
-       link = videos.get('href')
- 
-       # Get the page apointed by the previous link in the same way
-       f1 = urllib.urlopen(link)
-       s1 = f1.read()
-       soup1 = BeautifulSoup(s1)
- 
-       # Find all the source tags in the document and filter for 'video/mp4'
-       for link in soup1.find_all('source'):
-          if link.get('type') == "video/mp4":
-          # You can concate 'wget' to build immediately an script
-             print 'wget '+link.get('src')
-{% endhighlight %}
-<!--  </code>
-</pre>-->
+# Get a file-like object for the Coursea Web site course page.
+f = urllib.urlopen("https://class.coursera.org/gametheory/lecture/preview")
+# Read from the object, storing the page's contents in 's'.
+s = f.read()
 
+# Here is the import for the library above described.
+from bs4 import BeautifulSoup
+# BeautifulSoup object, which represents the document as a nested data structure
+soup = BeautifulSoup(s)
+ 
+# Find all the link with rel 'lecture-link'
+for videos in soup.find_all('a', rel="lecture-link"):
+   link = videos.get('href')
+
+   # Get the page apointed by the previous link in the same way
+   f1 = urllib.urlopen(link)
+   s1 = f1.read()
+   soup1 = BeautifulSoup(s1)
+ 
+   # Find all the source tags in the document and filter for 'video/mp4'
+   for link in soup1.find_all('source'):
+      if link.get('type') == "video/mp4":
+      # You can concate 'wget' to build immediately an script
+          print 'wget '+link.get('src')
+{% endhighlight %}
 
 A full documentation can be found [here](http://www.crummy.com/software/BeautifulSoup/bs4/doc/).
 
