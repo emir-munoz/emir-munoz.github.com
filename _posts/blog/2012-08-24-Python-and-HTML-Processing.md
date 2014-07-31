@@ -9,6 +9,8 @@ status: draft
 hn-discussion:
 ---
 
+{% include JB/setup %}
+
 Trying to harvest some links from the Coursea Lectures, in a fast and efficient way saving me valuable time, 
 I decided to use Python with [Beautiful Soup](http://www.crummy.com/software/BeautifulSoup/).
 
