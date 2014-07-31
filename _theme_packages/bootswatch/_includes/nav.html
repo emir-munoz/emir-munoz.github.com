@@ -24,14 +24,14 @@
 				<li role="menuitem" {% if page.url == "/teaching/ucentral.html" %} class="active" {% endif %}><a href="/teaching/ucentral.html">UCentral</a></li>
 			</ul>
 		</li>
-	    <li class="item dropdown">
+	    <li class="item dropdown {% if page.url == '/blog/index.html' | '/archive.html' | '/categories.html' | '/tags.html' %} active {% endif %}">
 			<a id="dLabel" class="dropdown-toggle link" href="#" data-toggle="dropdown" data-target="#" role="button">Blog<b class="caret"></b></a>
 			<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-				<li role="menuitem" {% if page.url == "/blog/index.html" %} class="active" {% endif %}><a href="/blog/">Posts</a></li>
+				<li role="menuitem"><a href="/blog/">Posts</a></li>
 				<li role="menuitem" class="divider"></li>
-				<li role="menuitem" {% if page.url == "/archive.html" %} class="active" {% endif %}><a href="/archive.html">Archive</a></li>
-				<li role="menuitem" {% if page.url == "/categories.html" %} class="active" {% endif %}><a href="/categories.html">Categories</a></li>
-				<li role="menuitem" {% if page.url == "/tags.html" %} class="active" {% endif %}><a href="/tags.html">Tags</a></li>
+				<li role="menuitem"><a href="/archive.html">Archive</a></li>
+				<li role="menuitem"><a href="/categories.html">Categories</a></li>
+				<li role="menuitem"><a href="/tags.html">Tags</a></li>
 			</ul>
 		</li>
 	    <li {% if page.url == "/contact/index.html" %} class="active" {% endif %}><a href="/contact/">Contact</a></li>
