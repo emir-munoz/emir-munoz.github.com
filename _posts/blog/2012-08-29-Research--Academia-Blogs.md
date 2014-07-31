@@ -11,7 +11,7 @@ hn-discussion:
 
 {% include JB/setup %}
 
-
+<br />
 <ul>
 	<li><a target="_blank" href="http://patthomson.wordpress.com/">Patter — Pat Thomson</a></li>
 	<li><a target="_blank" href="http://thesiswhisperer.com/">The Thesis Whisperer — Inger Mewburn</a></li>

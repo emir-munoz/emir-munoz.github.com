@@ -11,6 +11,7 @@ hn-discussion:
 
 {% include JB/setup %}
 
+<br />
 _[The publisher of this book provide me with a free e-copy for review]_
 
 Link to the book: [http://www.packtpub.com/openrefine-guide-for-data-analysis-and-linking-dataset-to-the-web/book]()

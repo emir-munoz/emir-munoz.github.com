@@ -5,13 +5,15 @@ category: Utils
 tagline: "Hacking"
 tags : [utils, linux]
 summary:
-status: draft
+status: final
 hn-discussion:
 ---
 
 {% include JB/setup %}
 
 <br />
+_This post was first published on my Wordpress page [link](http://depinfi.wordpress.com/2012/08/24/path-for-ubuntu-applications/)_
+
 Usually Iâ€™m looking for the path where ubuntu installs some applications, here is a way to do it.
 
 {% highlight bash %}
@@ -22,7 +24,7 @@ For example if you want to find what installed applications contains the word â€
 
 <!--more-->
 
-{% highlight bash %}
+{% highlight Bash %}
 $ sudo dpkg -l | grep emacs
 ii  emacs                                  23.3+1-1ubuntu9                         The GNU Emacs editor (metapackage)
 ii  emacs23                                23.3+1-1ubuntu9                         The GNU Emacs editor (with GTK+ user interface)
