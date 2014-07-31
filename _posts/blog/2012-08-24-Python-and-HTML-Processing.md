@@ -24,8 +24,9 @@ The library is really simple and intuitive to use, since represent the HTML docu
 
 Too much chatter, now I'm going to show you the python code :)
 
-<pre>
-  <code class="python">
+<!--<pre>
+  <code class="python">-->
+{% highlight python %}
     #!/usr/bin/env python
     import urllib, sgmllib
  
@@ -53,8 +54,9 @@ Too much chatter, now I'm going to show you the python code :)
           if link.get('type') == "video/mp4":
           # You can concate 'wget' to build immediately an script
              print 'wget '+link.get('src')
-  </code>
-</pre>
+{% endhighlight %}
+<!--  </code>
+</pre>-->
 
 
 A full documentation can be found [here](http://www.crummy.com/software/BeautifulSoup/bs4/doc/).
