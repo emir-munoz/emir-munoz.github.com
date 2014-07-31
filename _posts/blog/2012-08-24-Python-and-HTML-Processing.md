@@ -11,6 +11,9 @@ hn-discussion:
 
 {% include JB/setup %}
 
+<br />
+_This post was first published on my Wordpress page [link](http://depinfi.wordpress.com/2012/08/24/python-and-html-processing/)_
+
 Trying to harvest some links from the Coursea Lectures, in a fast and efficient way saving me valuable time, 
 I decided to use Python with [Beautiful Soup](http://www.crummy.com/software/BeautifulSoup/).
 
