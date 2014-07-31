@@ -22,7 +22,8 @@ I decided to use Python with [Beautiful Soup](http://www.crummy.com/software/Bea
 First, you need to download the library from this [link](http://www.crummy.com/software/BeautifulSoup/bs4/download/) and untar the bs4 folder in your workspace.
 The library is really simple and intuitive to use, since represent the HTML document as a nested data structure.
 
-Too much chatter, now I’m going to show you the python code :)
+Too much chatter, now I'm going to show you the python code :)
+
 
 ```python
 #!/usr/bin/env python
