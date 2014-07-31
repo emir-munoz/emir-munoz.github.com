@@ -43,5 +43,15 @@
 	    {% include JB/pages_list %}
 -->{% endcomment %}
 	  </ul>
+	  
+	  <!-- Search site using Google's index -->
+        <form class="navbar-form navbar-right" role="search" method="get" action="http://google.com/search">
+          <div class="form-group">
+            <input type="hidden" name="q" value="site:emunoz.org" />
+            <input type="text" class="form-control search-query" name="q" placeholder="Search"/>
+          </div>
+          <button class="btn btn-mini" type="submit"><i class="icon-search"></i></button> 
+	</form>
+	  
 	</div><!-- /.navbar-collapse -->
 </nav>
