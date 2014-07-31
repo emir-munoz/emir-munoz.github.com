@@ -15,7 +15,7 @@
 	  <ul class="nav navbar-nav">
 	    <li {% if page.url == "/publications/index.html" %} class="active" {% endif %}><a href="/publications/">Publications</a></li>
 	    <li {% if page.url == "/projects/index.html" %} class="active" {% endif %}><a href="/projects/">Projects</a></li>
-	    <li class="item dropdown {% if page.url == '/teaching/index.html' or '/teaching/usach.html' or '/teaching/ucentral.html' %} active {% endif %}">
+	    <li class="item dropdown {% if page.url == '/teaching/index.html' or page.url == '/teaching/usach.html' or page.url == '/teaching/ucentral.html' %}active{% endif %}">
 			<a id="dLabel" class="dropdown-toggle link" href="#" data-toggle="dropdown" data-target="#" role="button">Teaching<b class="caret"></b></a>
 			<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
 				<li role="menuitem"><a href="/teaching/">All</a></li>
@@ -24,7 +24,7 @@
 				<li role="menuitem"><a href="/teaching/ucentral.html">UCentral</a></li>
 			</ul>
 		</li>
-	    <li class="item dropdown {% if page.url == '/blog/index.html' or '/archive.html' or '/categories.html' or '/tags.html' %} active {% endif %}">
+	    <li class="item dropdown {% if page.url == '/blog/index.html' or page.url == '/archive.html' or page.url == '/categories.html' or page.url == '/tags.html' %}active{% endif %}">
 			<a id="dLabel" class="dropdown-toggle link" href="#" data-toggle="dropdown" data-target="#" role="button">Blog<b class="caret"></b></a>
 			<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
 				<li role="menuitem"><a href="/blog/">Posts</a></li>
