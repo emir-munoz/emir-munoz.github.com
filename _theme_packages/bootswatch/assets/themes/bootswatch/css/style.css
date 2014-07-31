@@ -149,6 +149,12 @@ p > a > code {
 color: #95be7d;
 }
 
+pre {
+    color: #fff;
+    background-color: transparent;
+    border-width: 0;
+}
+
 code, pre {
     font-family: "Consolas", "Courier New", "Courier", "FreeMono", monospace;
     font-size:0.95em;
