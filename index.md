@@ -29,7 +29,7 @@ name: home
 					<p>I'm a PhD Student at the National University of Ireland (NUI) Galway and Researcher in the KI2NA project at Fujitsu Ireland Ltd. I started the PhD programme on February 2014.
 					Before that I worked as Research Assistant at Digital Enterprise Research Institute (DERI) since October 2012. I am also a Computer Engineer and I hold a Master degree in Computer 
 					Engineering from Universidad de Santiago, Chile.</p>
-					<p>My research interests are: Databases, Web Data Mining, and Artificial Intelligence. Currently, focused on quality analysis of Linked Data.</p>
+					<p>My research interests are: Databases, Web Data Mining, and Artificial Intelligence. Currently, focused on quality analysis and anomaly detection in Linked Data.</p>
 				</div>
 			</div>
 		</div>
