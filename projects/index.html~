@@ -50,7 +50,7 @@ name: projects
 			</p>
 		</div>
 		<div class="col-lg-12">
-			<h3>LODPeas: Like peas in a LOD (cloud)</h3>
+			<h3>LODPeas <small>Like peas in a LOD (cloud)</small></h3>
                         <h4>2012</h4>
 			<p>We present <a href="http://lodpeas.org" target="_blank">LODPeas</a>: a system for browsing entities that are found to share many things 
 			in common in an RDF dataset. The system first offers standard keyword search to locate a focus entity. Once a focus entity 
