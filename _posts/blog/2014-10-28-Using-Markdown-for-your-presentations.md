@@ -14,16 +14,16 @@ hn-discussion:
 <br />
 
 This post is about how to use a plain text file to create a HTML5 + Javascript presentation. Among the few options, this time I will use 
-[**KeyDown**](https://github.com/infews/keydown) which is based on [deck.js](imakewebthings.com/deck.js/).
-An example presentation can be found in this [link](http://infews.github.io/keydown/).
+[KeyDown](https://github.com/infews/keydown) which is based on [deck.js](imakewebthings.com/deck.js/). An example presentation can be found 
+in this [link](http://infews.github.io/keydown/).
 
-To start creating your deck, install the builder:
+<!--more-->
+
+To start creating your deck, install the keydown builder:
 
 {% highlight bash %}
 $ gem install keydown
 {% endhighlight %}
-
-<!--more-->
 
 After that, we can generate a template from scratch with the basics.
 
