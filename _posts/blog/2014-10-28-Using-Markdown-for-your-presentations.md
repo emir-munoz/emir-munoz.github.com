@@ -84,4 +84,4 @@ bundle exec keydown slides slides.md
 
 That did the trick and I finally got the `slides.html` file.
 
-Once that everything is working propertly, edit the presentation is as simple as write Markdown. Then, the result looks good =)
+Once that everything is working propertly, edit the presentation is as simple as write Markdown. Then, the result looks good =) Now just use your arrow keys to move.
