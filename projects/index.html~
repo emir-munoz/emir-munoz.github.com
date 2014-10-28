@@ -35,7 +35,7 @@ name: projects
 			</p>
 		</div>
 		<div class="col-lg-12">
-			<h3>WikiTables <small>Extracting RDF from Wikipedia Tables</small></h3>
+			<h3>Wikitables</h3>
                         <h4>2013</h4>
 			<p>We propose that existing RDF knowledge-bases can be leveraged to extract facts (in the form of RDF triples) from relational HTML tables 
 			on the Web with high accuracy. In particular, we propose methods using the DBpedia knowledge-base to extract facts from tables embedded 
