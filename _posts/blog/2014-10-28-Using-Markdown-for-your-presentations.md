@@ -35,12 +35,14 @@ For those that worked before with deck.js this is an improvement making much eas
 
 The result of the generation is a folder with this structure:
 
+{% highlight bash %}
 	| - my_presentation/
 		| - css/					- keydown CSS and a file for you to customize
 		| - deck.js					- deck library
 		| - images/					- Some keydown images, but also for your images
 		| - js/						- keydown JavaScript, and a file for you to customize
 		| - slides.md
+{% endhighlight %}
 		
 That easy is to generate the squeleton of the presentation. Now you can modify the file `slides.md` adding your content using Markdown syntax.
 Each slide is separated by a `!SLIDE` tag.
