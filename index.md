@@ -67,6 +67,7 @@ name: home
 		</li>
 		<li><b>Grants, Awards &amp; Fellowships</b>
 		<ul>
+			<li>LD4IE 2014 Challenge prize with μRaptor system, In 2nd International Workshop on Linked Data for Information Extraction - LD4IE 2014, Riva del Garda, Italy, October 20, <a href="publications/files/LD4IE2014_Challenge_Award.pdf">[certificate]</a> <span class="label label-danger">New!!</span></li>
 			<li>Norman Revell Best Paper Award, In 23rd International Conference on Database and Expert Systems Applications - DEXA 2012, Vienna, Austria, September 3-6, Springer Lecture Notes in Computer Science <a href="publications/files/BPA-DEXA2012.pdf">[certificate]</a></li>
 			<li>Master&rsquo;s Fellowship, Yahoo! Research Labs Latin America, Master&rsquo;s Thesis.</li>
 		</ul>
