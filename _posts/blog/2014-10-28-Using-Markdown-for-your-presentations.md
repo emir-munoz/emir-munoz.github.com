@@ -45,7 +45,7 @@ The result of the generation is a folder with this structure:
 That easy is to generate the squeleton of the presentation. Now you can modify the file `slides.md` adding your content using Markdown syntax.
 Each slide is separated by a `!SLIDE` tag.
 
-{% highlight markdown %}
+{% highlight bash %}
 !SLIDE
 
 # This is my talk
