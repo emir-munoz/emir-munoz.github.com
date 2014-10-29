@@ -74,7 +74,7 @@ name: home
 		</li>
 		<li><b>Professional Activities</b>
 		<ul>
-			<li>External Reviewer for conferences: <a href="http://www.dexa.org/" target="_blank">DEXA</a> (2013, 2014), <a href="http://rr2013.uni-mannheim.de/" target="_blank">RR</a> (2013), <a href="http://www.amia.org/" target="_blank">AMIA</a> (2014), <a href="http://www.ida.liu.se/conferences/EKAW14/home.html" target="_blank">EKAW</a> (2014).</li>
+			<li>External Reviewer for conferences: <a href="http://www.dexa.org/" target="_blank">DEXA</a> (2013, 2014), RR (<a href="http://rr2013.uni-mannheim.de/" target="_blank">2013</a>), <a href="http://www.amia.org/" target="_blank">AMIA</a> (2014), EKAW (<a href="http://www.ida.liu.se/conferences/EKAW14/home.html" target="_blank">2014</a>), AMECSE (<a href="http://2014.amecse-conferences.org/" target="_blank">2014</a>).</li>
 			<li>Invited Reviewer for journals: <a href="http://www.jucs.org/" target="_blank">J.UCS</a> (2013).</li>
 		</ul>
 		</li>
