@@ -3,7 +3,7 @@ layout: post
 title: Using Markdown for your presentations
 category: Utils
 tagline: "PhD utils"
-tags : [utils, markdown]
+tags: [utils, markdown]
 summary:
 status: final
 hn-discussion:

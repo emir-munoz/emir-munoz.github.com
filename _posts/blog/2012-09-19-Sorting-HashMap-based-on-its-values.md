@@ -3,7 +3,7 @@ layout: post
 title: Sorting HashMap based on its values
 category: Utils
 tagline: "Hacking"
-tags : [utils, java]
+tags: [utils, java]
 summary:
 status: final
 hn-discussion:
