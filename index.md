@@ -41,7 +41,7 @@ name: home
 		<li><b>Current Affiliations</b>
 		<ul>
 			<li>Ph.D. Researcher at <a target="_blank" href="http://www.fujitsu.com/ie/">Fujitsu Ireland Limited</a></li>
-			<li>1st Year Ph.D. Student at <a target="_blank" href="http://www.nuigalway.ie/">National University of Ireland Galway</a></li>
+			<li>2nd Year Ph.D. Student at <a target="_blank" href="http://www.nuigalway.ie/">National University of Ireland, Galway</a></li>
 		</ul>
 		</li>
 		<li><b>Past Affiliations</b>
@@ -68,14 +68,14 @@ name: home
 		<li><b>Grants, Awards &amp; Fellowships</b>
 		<ul>
                         <li>Winner of the first <a href="http://www.up.co/communities/ireland/galway/blog/friendship-wins-first-galway-startup-weekend-paired-purchasing-service">Galway Startup Weekend</a> with FriendShip It!! project, Galway, Ireland, November 16, 2014 <a href="projects/files/swGalway.pdf">[certificate]</a> <span class="label label-info">New!!</span></li>
-			<li><a href="http://oak.dcs.shef.ac.uk/ld4ie2014/AWARDS.html">LD4IE 2014 Challenge</a> prize with μRaptor system, In 2nd International Workshop on Linked Data for Information Extraction - LD4IE 2014, Riva del Garda, Italy, October 20, 2014 <a href="publications/files/LD4IE2014_Challenge_Award.pdf">[certificate]</a> <span class="label label-info">New!!</span></li>
+			<li>Winner of the first <a href="http://oak.dcs.shef.ac.uk/ld4ie2014/AWARDS.html">LD4IE 2014 Challenge</a> with μRaptor system, In 2nd International Workshop on Linked Data for Information Extraction - LD4IE 2014, Riva del Garda, Italy, October 20, 2014 <a href="publications/files/LD4IE2014_Challenge_Award.pdf">[certificate]</a> <span class="label label-info">New!!</span></li>
 			<li>Norman Revell Best Paper Award, In 23rd International Conference on Database and Expert Systems Applications - DEXA 2012, Vienna, Austria, September 3-6, Springer Lecture Notes in Computer Science <a href="publications/files/BPA-DEXA2012.pdf">[certificate]</a></li>
 			<li>Master&rsquo;s Fellowship, Yahoo! Research Labs Latin America, Master&rsquo;s Thesis.</li>
 		</ul>
 		</li>
 		<li><b>Professional Activities</b>
 		<ul>
-			<li>External Reviewer for conferences: <a href="http://www.dexa.org/" target="_blank">DEXA</a> (2013, 2014), RR (<a href="http://rr2013.uni-mannheim.de/" target="_blank">2013</a>), <a href="http://www.amia.org/" target="_blank">AMIA</a> (2014), EKAW (<a href="http://www.ida.liu.se/conferences/EKAW14/home.html" target="_blank">2014</a>), AMECSE (<a href="http://2014.amecse-conferences.org/" target="_blank">2014</a>).</li>
+			<li>External Reviewer for conferences: <a href="http://www.dexa.org/" target="_blank">DEXA</a> (2013, 2014), RR (<a href="http://rr2013.uni-mannheim.de/" target="_blank">2013</a>), <a href="http://www.amia.org/" target="_blank">AMIA</a> (2014, 2015), EKAW (<a href="http://www.ida.liu.se/conferences/EKAW14/home.html" target="_blank">2014</a>), AMECSE (<a href="http://2014.amecse-conferences.org/" target="_blank">2014</a>).</li>
 			<li>Invited Reviewer for journals: <a href="http://www.jucs.org/" target="_blank">J.UCS</a> (2013).</li>
 		</ul>
 		</li>
