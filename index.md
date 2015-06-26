@@ -67,10 +67,10 @@ name: home
 		</li>
 		<li><b>Grants, Awards &amp; Fellowships</b>
 		<ul>
-             <li><span class="label label-info">NEW</span> Winner of the third <a href="http://knowalod2015.informatik.uni-mannheim.de/en/linkeddataminingchallenge/">Linked Data Mining Challenge</a>, In 4th Workshop on Knowledge Discovery and Data Mining Meets Linked Data - Know@LOD 2015, Portoroz, Slovenia, May 31st, 2015 <a href="publications/files/LDM2015_Challenge_Award.pdf">[certificate]</a></li>
+             <li><span class="label label-info">NEW</span> Winner of the third <a href="http://knowalod2015.informatik.uni-mannheim.de/en/linkeddataminingchallenge/">Linked Data Mining Challenge</a>, In the 4th Workshop on Knowledge Discovery and Data Mining Meets Linked Data - Know@LOD 2015, Portoroz, Slovenia, May 31st, 2015 <a href="publications/files/LDM2015_Challenge_Award.pdf">[certificate]</a></li>
              <li>Winner of the first <a href="http://www.up.co/communities/ireland/galway/blog/friendship-wins-first-galway-startup-weekend-paired-purchasing-service">Galway Startup Weekend</a> with FriendShip It!! project, Galway, Ireland, November 16, 2014 <a href="projects/files/swGalway.pdf">[certificate]</a></li>
-			<li>Winner of the first <a href="http://oak.dcs.shef.ac.uk/ld4ie2014/AWARDS.html">LD4IE 2014 Challenge</a> with μRaptor system, In 2nd International Workshop on Linked Data for Information Extraction - LD4IE 2014, Riva del Garda, Italy, October 20th, 2014 <a href="publications/files/LD4IE2014_Challenge_Award.pdf">[certificate]</a></li>
-			<li>Norman Revell Best Paper Award, In 23rd International Conference on Database and Expert Systems Applications - DEXA 2012, Vienna, Austria, September 3-6, Springer Lecture Notes in Computer Science <a href="publications/files/BPA-DEXA2012.pdf">[certificate]</a></li>
+			<li>Winner of the first <a href="http://oak.dcs.shef.ac.uk/ld4ie2014/AWARDS.html">LD4IE 2014 Challenge</a> with μRaptor system, In the 2nd International Workshop on Linked Data for Information Extraction - LD4IE 2014, Riva del Garda, Italy, October 20th, 2014 <a href="publications/files/LD4IE2014_Challenge_Award.pdf">[certificate]</a></li>
+			<li>Norman Revell Best Paper Award, In the 23rd International Conference on Database and Expert Systems Applications - DEXA 2012, Vienna, Austria, September 3-6, Springer Lecture Notes in Computer Science <a href="publications/files/BPA-DEXA2012.pdf">[certificate]</a></li>
 			<li>Master&rsquo;s Fellowship, Yahoo! Research Labs Latin America, Master&rsquo;s Thesis.</li>
 		</ul>
 		</li>
