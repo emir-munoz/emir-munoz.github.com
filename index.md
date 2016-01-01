@@ -26,10 +26,10 @@ name: home
 			</div>
 			<div class="col-lg-9">
 				<div class="span4">
-					<p>I'm a PhD Student at the National University of Ireland (NUI) Galway and Researcher in the KI2NA project at Fujitsu Ireland Ltd. I started the PhD programme on February 2014.
-					Before that I worked as Research Assistant at Digital Enterprise Research Institute (DERI) since October 2012. I am also a Computer Engineer and I hold a Master degree in Computer 
-					Engineering from Universidad de Santiago, Chile.</p>
-					<p>My research interests are: Databases, Web Data Mining, and Artificial Intelligence. Currently, focused on quality analysis and anomaly detection in Linked Data.</p>
+					<p>I'm a PhD Student at the National University of Ireland (NUI) Galway and Researcher at Fujitsu Ireland Ltd. I started the PhD programme on February 2014.
+					Before that I worked as Research Assistant at Digital Enterprise Research Institute (DERI, now INSIGHT) since October 2012. I am also a Computer Engineer and I hold a Master degree in Computer 
+					Engineering both from University of Santiago de Chile.</p>
+					<p>My research interests are: Databases, Web Data Mining, and Artificial Intelligence. Currently, focused on constraints and quality analysis in Linked Data.</p>
 				</div>
 			</div>
 		</div>
@@ -40,7 +40,7 @@ name: home
 	<ul>
 		<li><b>Current Affiliations</b>
 		<ul>
-			<li>Ph.D. Researcher at <a target="_blank" href="http://www.fujitsu.com/ie/">Fujitsu Ireland Limited</a></li>
+			<li>Ph.D. Researcher at <a target="_blank" href="http://www.fujitsu.com/ie/">Fujitsu Ireland Limited</a> in projects KI2NA (2013-2015) and TOMOE (2015-2018)</li>
 			<li>2nd Year Ph.D. Student at <a target="_blank" href="http://www.nuigalway.ie/">National University of Ireland, Galway</a></li>
 		</ul>
 		</li>
