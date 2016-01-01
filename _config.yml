@@ -39,7 +39,7 @@ scholar:
   order: descending
 
   source: /_bibliography
-#  bibliography: references.bib
+  bibliography: references.bib
   bibliography_template: bibtemplate
 
   replace_strings: true
