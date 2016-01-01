@@ -1,7 +1,10 @@
+# jekyll output
 _site/*
 
+# tmp files
 Thumbs.db
 .DS_Store
+*.bak
 
 !.gitkeep
 
