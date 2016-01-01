@@ -2,6 +2,10 @@
 
 This is the repo for my professional web site version 2.0.
 
+## Version
+
+Original version using only jekyll
+
 ## Author
 
 Emir Muñoz :: <emir@emunoz.org> :: http://emunoz.org
