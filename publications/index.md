@@ -3,14 +3,13 @@ layout: default
 title: Publications
 ---
 
-## List of my academic publications
+## Publications
 
-[Emir@DBLP](http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/m/Mu=ntilde=oz:Emir.html)
+<hr>
 
-[Emir@GoogleScholar](http://scholar.google.com/citations?user=ofdUXHIAAAAJ)
-
-[Emir@ResearchGate](https://www.researchgate.net/profile/Emir_Munoz/)
-
+[Emir@DBLP](http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/m/Mu=ntilde=oz:Emir.html)<br>
+[Emir@GoogleScholar](http://scholar.google.com/citations?user=ofdUXHIAAAAJ)<br>
+[Emir@ResearchGate](https://www.researchgate.net/profile/Emir_Munoz/)<br>
 [Emir@BibSonomy](http://www.bibsonomy.org/user/emunoz)
 
 ### Thesis
