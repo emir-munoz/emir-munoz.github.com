@@ -4,7 +4,8 @@ permalink: /:categories/:year/:month/:day/:title
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 pygments: true
-markdown: kramdown
+markdown: redcarpet
+highlighter: pygments
 
 paginate: 3
 
@@ -29,6 +30,29 @@ author :
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
 production_url : http://emunoz.org
+
+scholar:
+  style: assets/bibliography/apa-no-doi-no-issue.csl
+  locale: en
+
+  sort_by: year
+  order: descending
+
+  source: ./_bibliography
+#  bibliography: references.bib
+  bibliography_template: bibtemplate
+
+  replace_strings: true
+  join_strings:    true
+
+#  details_dir:    bibliography
+#  details_layout: bibtex.html
+#  details_link:   Details
+
+  query: "@*"
+
+#  repository: ./pdf
+
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #

@@ -1,0 +1,25 @@
+---
+---
+{{reference | replace_first: 'Muñoz, E.', '<span class="highauthor">Muñoz, E.</span>'}}
+ 
+<div id="{{key}}-materials">
+    {% if entry.abstract %}
+    [<a data-toggle="collapse" onclick="$('#{{key}}-abstract').toggle();">Abstract</a>]
+    {% endif %}
+ 
+    [<a data-toggle="collapse" onclick="$('#{{key}}-bibtex').toggle();">BibTeX</a>]
+ 
+    {% if entry.pdf-file %}
+    [<a href="{{entry.pdf-file}}" target="_blank">PDF</a>]
+    {% endif %}
+    
+    {% if entry.url %}
+    [<a href="{{entry.url}}" target="_blank">WWW</a>]
+    {% endif %}
+ 
+    {% if entry.abstract %}
+    <p id="{{key}}-abstract" class="collapse">{{entry.abstract}}</p>
+    {% endif %}
+
+    <pre id="{{key}}-bibtex" class="collapse">{{entry.bibtex}}</pre>
+</div>
