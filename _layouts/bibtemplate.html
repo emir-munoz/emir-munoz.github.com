@@ -1,6 +1,6 @@
 ---
 ---
-{{reference | replace_first: 'Muñoz, E.', '<span class="highauthor">Muñoz, E.</span>'}}
+{{reference | replace_first: 'MUÑOZ, Emir', '<span class="highauthor">MUÑOZ, Emir</span>'}}
  
 <div id="{{key}}-materials">
     {% if entry.abstract %}
@@ -15,6 +15,14 @@
     
     {% if entry.url %}
     [<a href="{{entry.url}}" target="_blank">WWW</a>]
+    {% endif %}
+    
+    {% if entry.slides %}
+    [<a href="{{entry.slides}}" target="_blank">Slides</a>]
+    {% endif %}
+    
+    {% if entry.poster %}
+    [<a href="{{entry.poster}}" target="_blank">Poster</a>]
     {% endif %}
  
     {% if entry.abstract %}
