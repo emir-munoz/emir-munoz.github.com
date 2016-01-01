@@ -3,11 +3,10 @@
 permalink: /:categories/:year/:month/:day/:title 
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
-pygments: true
 markdown: redcarpet
 highlighter: pygments
 
-paginate: 3
+#paginate: 3
 
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
@@ -32,13 +31,14 @@ author :
 production_url : http://emunoz.org
 
 scholar:
-  style: assets/bibliography/apa-no-doi-no-issue.csl
+#  style: assets/bibliography/apa-no-doi-no-issue.csl
+  style: assets/bibliography/iso690-author-date-en-title.csl
   locale: en
 
   sort_by: year
   order: descending
 
-  source: ./_bibliography
+  source: /_bibliography
 #  bibliography: references.bib
   bibliography_template: bibtemplate
 
