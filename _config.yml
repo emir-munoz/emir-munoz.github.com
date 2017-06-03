@@ -1,0 +1,46 @@
+title: Emir Muñoz
+description: My Professional Webpage
+author: Emir Muñoz
+logo: /static/img/avatar.png
+github: https://github.com/emir-munoz
+about: Computer Science Researcher
+
+baseurl: ""
+url: "http://emunoz.org"
+
+disqus_shortname: emirmunoz
+google_analytics: UA-48858636-1
+
+share:
+  twitter_username: emir_munoz
+  fb_appid: 000000000000
+
+enableTags: true
+tagarray: []
+
+paginate: 20
+per_page: 20
+paginate_path: "/blog/page:num/"
+markdown: kramdown
+gems: [jekyll-paginate, jekyll-gist]
+
+scholar:
+#  style: assets/bibliography/apa-no-doi-no-issue.csl
+  style: /assets/bibliography/iso690-author-date-en-title.csl
+  locale: en
+
+  sort_by: year
+  order: descending
+
+  source: /_bibliography
+  bibliography: references.bib
+  bibliography_template: bibtemplate
+
+  replace_strings: true
+  join_strings:    true
+
+#  details_dir:    bibliography
+#  details_layout: bibtex.html
+#  details_link:   Details
+
+  query: "@*"

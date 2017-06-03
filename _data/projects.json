@@ -1,0 +1,72 @@
+[
+	{
+		"name": "Prediction of Adverse Drug Reactions",
+		"image": "graph.png",
+		"url": "http://emunoz.org/adr-prediction/",
+		"date": "May 2017",
+		"tags": ["Machine Learning","Bioinformatics","Knowledge Discovery","Knowledge Graphs"]
+	},
+	{
+		"name": "ROSA: RDF and Ontology conStraints Analyzer",
+		"image": "graph.png",
+		"url": "http://emunoz.org/ROSA/",
+		"date": "Jul 2016",
+		"tags": ["Knowledge Graphs","RDF","Data Mining"]
+	},
+	{
+		"name": "Know@LOD ESWC Challenge 2016",
+		"image": "LOD_Cloud_Diagram_as_of_September_2011.png",
+		"url": "https://github.com/emir-munoz/KNOW2016",
+		"date": "Mar 2016",
+		"tags": ["Linked Data","Machine Learning","Data Mining","Challenge"]
+	},
+	{
+		"name": "A basic AMIA (American Medical Informatics Association) style compliant LaTeX paper skeleton",
+		"image": "latex.png",
+		"url": "https://github.com/emir-munoz/amia-paper-template",
+		"date": "Jan 2016",
+		"tags": ["LaTeX","Template"]
+	},
+	{
+		"name": "μRaptor: A DOM based system with appetite for hCard elements",
+		"image": "LOD_Cloud_Diagram_as_of_September_2011.png",
+		"url": "https://github.com/emir-munoz/uraptor",
+		"date": "Sep 2014",
+		"tags": ["hCard","IE","Data Mining","HTML","Challenge"]
+	},
+	{
+		"name": "Linked Data Patterns",
+		"image": "LOD_Cloud_Diagram_as_of_September_2011.png",
+		"url": "https://github.com/emir-munoz/ld-patterns",
+		"date": "Aug 2014",
+		"tags": ["Linked Data","RDF","IE","Data Mining"]
+	},
+	{
+		"name": "WikiTables: Extracting RDF from Wikipedia Tables",
+		"image": "627px-Wikipedia-logo-en-big.png",
+		"url": "http://emunoz.org/wikitables",
+		"date": "Oct 2013",
+		"tags": ["Linked Data","RDF","Machine Learning","Data Mining","Wikipedia","DBpedia","Webtables"]
+	},
+	{
+		"name": "LODPeas: Like peas in a LOD (cloud)",
+		"image": "LOD_Cloud_Diagram_as_of_September_2011.png",
+		"url": "https://github.com/emir-munoz/lodpeas",
+		"date": "2012",
+		"tags": ["Linked Data","RDF","Visualization","Challenge"]
+	},
+	{
+		"name": "XML Constraints",
+		"image": "523px-Text-xml.svg.png",
+		"url": "http://emunoz.org/xml-constraints/",
+		"date": "2011",
+		"tags": ["Databases","XML","Constraints","Reasoning"]
+	},
+	{
+		"name": "LaTeX template for thesis USACH",
+		"image": "latex.png",
+		"url": "http://emunoz.org/tesis-usach",
+		"date": "2011",
+		"tags": ["LaTeX","Template"]
+	}
+]

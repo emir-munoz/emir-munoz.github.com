@@ -1,0 +1,44 @@
+[
+  {
+    "text": "Home",
+    "url": "/",
+    "icon": "fa-home"
+  },
+  {
+    "text": "Publications",
+    "url": "/publications",
+    "icon": "fa-book"
+  },
+  {
+    "text": "Projects",
+    "url": "/projects",
+    "icon": "fa-desktop"
+  },
+  {
+    "text": "Talks",
+    "url": "/talks",
+    "icon": "fa-users"
+  },
+  {
+    "text": "Teaching",
+    "url": "/teaching",
+    "icon": "fa-pencil"
+  },
+  {
+    "text": "Blog",
+    "url": "/blog",
+    "icon": "fa-comments",
+    "layout": "post"
+  },
+  {
+    "text": "Resume",
+    "url": "/resume",
+    "icon": "fa-graduation-cap",
+  },
+  {
+    "text": "XML Feed",
+    "url": "/feed.xml",
+    "icon": "fa-feed",
+    "target": _blank
+  }
+]

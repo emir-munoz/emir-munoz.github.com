@@ -1,0 +1,347 @@
+% This file was created with JabRef 2.10.
+% Encoding: UTF8
+
+@PREAMBLE{ " \newcommand{\noop}[1]{} " }
+
+
+@Article{TLKS_2013,
+  Title                    = {The Finite Implication Problem for Expressive XML Keys: Foundations, Applications, and Performance Evaluation},
+  Author                   = {Flavio Ferrarotti and Sven Hartmann and Sebastian Link and Mauricio Mar\'{i}n and Emir Mu{\~n}oz},
+  Journal                  = {Transactions on Large-Scale Data- and Knowledge-Centered Systems (TLDKS 2013)},
+  Year                     = {2013},
+  Pages                    = {60-94},
+  Volume                   = {10},
+
+  Bibsource                = {DBLP, http://dblp.uni-trier.de},
+  Bibtexlink               = {http://dblp.uni-trier.de/rec/bibtex/journals/tlsdkcs/FerrarottiHLMM13},
+  Crossref                 = {DBLP:journals/tlsdkcs/2013-10},
+  Ee                       = {http://dx.doi.org/10.1007/978-3-642-41221-9_3},
+  Owner                    = {emir},
+  Pdf-file                 = {files/TLDKS2013.pdf},
+  Publisher                = {Springer Berlin Heidelberg},
+  Timestamp                = {2016.01.01},
+  Url                      = {http://link.springer.com/chapter/10.1007/978-3-642-41221-9_3}
+}
+
+@InProceedings{LDMC_2015,
+  Title                    = {A Linked Data-Based Decision Tree Classifier to Review Movies},
+  Author                   = {Suad Aldarra and Emir Mu{\~{n}}oz},
+  Booktitle                = {Proceedings of the 4th International Workshop on Knowledge Discovery and Data Mining Meets Linked Open Data at {ESWC} 2015},
+  Year                     = {2015},
+
+  Address                  = {Portoroz, Slovenia},
+  Month                    = {May 31st},
+  Note                     = {<i class="fa fa-trophy"></i> This paper won the <a href="http://knowalod2015.informatik.uni-mannheim.de/en/linkeddataminingchallenge/">Know@LOD 2015 Challenge</a>.},
+  Publisher                = {CEUR-WS.org},
+  Series                   = {CEUR Workshop Proceedings},
+  Volume                   = {1365},
+
+  Bibtexlink               = {http://dblp.uni-trier.de/rec/bibtex/conf/esws/AldarraM15},
+  Owner                    = {emir},
+  Pdf-file                 = {files/KNOWATLOD2015_challenge.pdf},
+  Timestamp                = {2016.01.01},
+  Url                      = {http://ceur-ws.org/Vol-1365/paper10.pdf}
+}
+
+@InProceedings{ISWC-DEMO_2016,
+  Title                    = {SemanTex: Semantic Text Exploration Using Document Links Implied by
+ Conceptual Networks Extracted from the Texts},
+  Author                   = {Suad Aldarra and
+ Emir Mu{\~{n}}oz and
+ Pierre{-}Yves Vandenbussche and
+ V{\'{\i}}t Nov{\'{a}}cek},
+  Booktitle                = {Proceedings of the {ISWC} 2014 Posters {\&} Demonstrations Track
+ a track within the 13th International Semantic Web Conference, {ISWC}
+ 2014, Riva del Garda, Italy, October 21, 2014.},
+  Year                     = {2014},
+  Editor                   = {Matthew Horridge and
+ Marco Rospocher and
+ Jacco van Ossenbruggen},
+  Pages                    = {345--348},
+  Publisher                = {CEUR-WS.org},
+  Series                   = {{CEUR} Workshop Proceedings},
+  Volume                   = {1272},
+
+  Bibsource                = {dblp computer science bibliography, http://dblp.org},
+  Biburl                   = {http://dblp.uni-trier.de/rec/bib/conf/semweb/AldarraMVN14},
+  Owner                    = {emir},
+  Timestamp                = {Mon, 30 May 2016 16:28:37 +0200},
+  Url                      = {http://ceur-ws.org/Vol-1272/paper_88.pdf}
+}
+
+@InProceedings{DEXA_2012,
+  Title                    = {Performance Analysis of Algorithms to Reason about XML Keys},
+  Author                   = {Flavio Ferrarotti and Sven Hartmann and Sebastian Link and Mauricio Mar\'{i}n and Emir Mu{\~{n}}oz},
+  Booktitle                = {23rd International Conference on Database and Expert Systems Applications (DEXA 2012), Vienna, Austria, 3-6 September},
+  Year                     = {2012},
+  Editor                   = {S.W. Liddle et al.},
+  Month                    = {3--6 September},
+  Note                     = {<i class="fa fa-trophy"></i> This paper received the Norman Revell <b>best paper award</b> out of 183 submitted papers.},
+  Pages                    = {101-115},
+  Publisher                = {Springer},
+  Series                   = {Lecture Notes in Computer Science},
+  Volume                   = {7446},
+
+  Bibsource                = {DBLP, http://dblp.uni-trier.de},
+  Bibtexlink               = {http://dblp.uni-trier.de/rec/bibtex/conf/dexa/FerrarottiHLMM12},
+  Pdf-file                 = {files/DEXA2012.pdf},
+  Slides                   = {https://speakerdeck.com/emunoz/dexa-2012-talk},
+  Url                      = {http://dx.doi.org/10.1007/978-3-642-32600-4_9}
+}
+
+@InProceedings{WISE_2013,
+  Title                    = {Soft Cardinality Constraints on XML Data},
+  Author                   = {Flavio Ferrarotti and Sven Hartmann and Sebastian Link and Mauricio Mar\'{i}n and Emir Mu{\~{n}}oz},
+  Booktitle                = {Web Information Systems Engineering (WISE 2013)},
+  Year                     = {2013},
+
+  Address                  = {Nanjing, China},
+  Month                    = {13-15 October},
+  Publisher                = {Springer},
+
+  Bibtexlink               = {http://dblp.uni-trier.de/rec/bibtex/conf/wise/FerrarottiHLMM13},
+  Pdf-file                 = {files/WISE2013.pdf},
+  Slides                   = {https://speakerdeck.com/emunoz/soft-cardinality-constaints-on-xml-data},
+  Url                      = {http://link.springer.com/chapter/10.1007/978-3-642-41230-1_32}
+}
+
+@InProceedings{LODPeas_2012,
+  Title                    = {LODPeas: Like peas in a LOD (cloud)},
+  Author                   = {Aidan Hogan and Emir Mu{\~{n}}oz and J\"{u}rgen Umbrich},
+  Booktitle                = {Proceedings of the Billion Triple Challenge 2012 (co-located with ISWC 2012, Boston, US), November 13},
+  Year                     = {2012},
+
+  Address                  = {Boston, US},
+  Month                    = {November},
+
+  Abstractlink             = {http://leansemanticweb.com/web/iswc/2012/data/proceedings/iswc2012paper-semantic-web-challenge-btc-03.html},
+  Bibtexlink               = {http://leansemanticweb.com/web/iswc/2012/data/proceedings/iswc2012paper-semantic-web-challenge-btc-03.html},
+  Link                     = {http://lodpeas.org/},
+  Owner                    = {emir},
+  Pdf-file                 = {files/BTC_swc2012.pdf},
+  Slides                   = {files/BTC_swc2012-slides.pptx},
+  Timestamp                = {2016.01.01},
+  Url                      = {http://lodpeas.org/}
+}
+
+@InProceedings{APCCM_2015,
+  Title                    = {Validation of Expressive XML Keys with XML Schema and XQuery},
+  Author                   = {Bo Liu and Sebastian Link and Emir Mu{\~{n}}oz},
+  Booktitle                = {11th Asia-Pacific Conference on Conceptual Modelling ({APCCM} 2015)},
+  Year                     = {2015},
+
+  Address                  = {Sydney, Australia},
+  Editor                   = { Saeki, M. and Kohler, H. },
+  Month                    = {January 27--30},
+  Pages                    = {81--90},
+  Publisher                = {ACS},
+  Series                   = {CRPIT},
+  Volume                   = {165},
+
+  Pdf-file                 = {files/APCCM2015.pdf},
+  Url                      = {http://crpit.com/confpapers/CRPITV165Liu.pdf}
+}
+
+@InProceedings{Mohamed_2017_LDK,
+  Title                    = {Identifying Equivalent Relation Paths in Knowledge Graphs},
+  Author                   = {Sameh K. Mohamed and Emir Mu{\~{n}}oz and V{\'\i}t Nov{\'a}{\v{c}}ek and Pierre-Yves Vandenbussche},
+  Booktitle                = {1st Language, Data and Knowledge, {LDK} 2017 (in press)},
+  Year                     = {2017},
+  Month                    = {19--20 June},
+  Publisher                = {Springer},
+  Series                   = {Lecture Notes in Artificial Intelligence},
+
+  Pdf-file                 = {#}
+}
+
+@InProceedings{ESWC_2016,
+  Title                    = {On Learnability of Constraints from {RDF} Data},
+  Author                   = {Emir Mu{\~{n}}oz},
+  Booktitle                = {The Semantic Web. Latest Advances and New Domains - 13th International
+ Conference, {ESWC} 2016, Heraklion, Crete, Greece, May 29 - June 2,
+ 2016, Proceedings},
+  Year                     = {2016},
+  Editor                   = {Harald Sack and
+ Eva Blomqvist and
+ Mathieu d'Aquin and
+ Chiara Ghidini and
+ Simone Paolo Ponzetto and
+ Christoph Lange},
+  Pages                    = {834--844},
+  Publisher                = {Springer},
+  Series                   = {Lecture Notes in Computer Science},
+  Volume                   = {9678},
+
+  Doi                      = {10.1007/978-3-319-34129-3_52},
+  Owner                    = {emir},
+  Pdf-file                 = {files/ESWCPhD2016.pdf},
+  Slides                   = {https://speakerdeck.com/emunoz/on-learnability-of-cardinality-constraints-from-rdf-data},
+  Timestamp                = {2017.02.19},
+  Url                      = {http://dx.doi.org/10.1007/978-3-319-34129-3_52}
+}
+
+@InProceedings{LD4IE_2014,
+  Title                    = {Learning Content Patterns from Linked Data},
+  Author                   = {Emir Mu{\~{n}}oz},
+  Booktitle                = {Proceedings of the 2nd International Workshop on Linked Data for Information Extraction (LD4IE 2014) at {ISWC} 2014},
+  Year                     = {2014},
+
+  Address                  = {Riva del Garda, Italy},
+  Month                    = {19-23 October},
+  Pages                    = {21--32},
+  Publisher                = {CEUR-WS.org},
+  Series                   = {CEUR Workshop Proceedings},
+  Volume                   = {1267},
+
+  Bibtexlink               = {http://dblp.uni-trier.de/rec/bibtex/conf/semweb/Munoz14},
+  Owner                    = {emir},
+  Pdf-file                 = {files/LD4IE2014.pdf},
+  Timestamp                = {2016.01.01},
+  Url                      = {http://ceur-ws.org/Vol-1267/LD4IE2014_Munos.pdf}
+}
+
+@MastersThesis{Emir_Master_2011,
+  Title                    = {Claves XML: Una Implementaci\'{o}n de Algoritmos de Implicaci\'{o}n y Validaci\'{o}n},
+  Author                   = {Emir Mu{\~{n}}oz},
+  School                   = {Universidad de Santiago de Chile},
+  Year                     = {2011},
+
+  Address                  = {Chile},
+
+  Owner                    = {emir},
+  Pdf-file                 = {http://emunoz.org/publications/files/master-thesis-2011.pdf},
+  Slides                   = {files/master-thesis-2011-slides.pdf},
+  Timestamp                = {2016.01.01}
+}
+
+@InProceedings{uRaptor_2014,
+  Title                    = {μRaptor: A DOM-based system with appetite for hCard elements},
+  Author                   = {Emir Mu{\~{n}}oz and Luca Costabello and Pierre-Yves Vandenbussche},
+  Booktitle                = {Proceedings of the 2nd International Workshop on Linked Data for Information Extraction (LD4IE 2014) at {ISWC} 2014},
+  Year                     = {2014},
+
+  Address                  = {Riva del Garda, Italy},
+  Month                    = {October},
+  Note                     = {<i class="fa fa-trophy"></i> This paper won the <a href="http://data.dws.informatik.uni-mannheim.de/LD4IE/">LD4IE 2014 Challenge</a>.},
+  Pages                    = {67--71},
+  Publisher                = {CEUR-WS.org},
+  Series                   = {CEUR Workshop Proceedings},
+  Volume                   = {1267},
+
+  Link                     = {https://github.com/emir-munoz/uraptor},
+  Owner                    = {emir},
+  Timestamp                = {2016.01.01},
+  Url                      = {http://ceur-ws.org/Vol-1267/LD4IE2014_IEchallenge_Munos.pdf},
+  Webpdf                   = {files/LD4IE2014_challenge.pdf}
+}
+
+@InProceedings{WSDM_2014,
+  Title                    = {Using Linked Data to Mine RDF from Wikipedia's Tables},
+  Author                   = {Emir Mu{\~{n}}oz and Aidan Hogan and Alessandra Mileo},
+  Booktitle                = {7th ACM Web Search and Data Mining Conference (WSDM 2014), New York, NY, USA, February 24-28},
+  Year                     = {2014},
+  Month                    = {February 24-28},
+  Pages                    = {533-542},
+
+  Link                     = {http://emunoz.org/wikitables},
+  Pdf-file                 = {files/WSDM2014.pdf},
+  Slides                   = {https://speakerdeck.com/emunoz/using-linked-data-to-mine-rdf-from-wikipedias-tables},
+  Url                      = {http://dl.acm.org/citation.cfm?doid=2556195.2556266}
+}
+
+@InProceedings{ISWC-DEMO_2013,
+  Title                    = {DRETa: Extracting RDF from Wikitables},
+  Author                   = {Emir Mu{\~{n}}oz and Aidan Hogan and Alessandra Mileo},
+  Booktitle                = {Demo Proceedings of the 12th International Semantic Web Conference (ISWC 2013)},
+  Year                     = {2013},
+
+  Address                  = {Sydney, Australia},
+  Month                    = {21-25 October},
+  Pages                    = {89-92},
+
+  Bibsource                = {DBLP, http://dblp.uni-trier.de},
+  Link                     = {http://emunoz.org/wikitables},
+  Owner                    = {emir},
+  Pdf-file                 = {files/ISWC2013_demo_dreta.pdf},
+  Timestamp                = {2016.01.01},
+  Url                      = {http://ceur-ws.org/Vol-1035/iswc2013_demo_23.pdf}
+}
+
+@InProceedings{LD4IE_2013,
+  Title                    = {Triplifying Wikipedia's Tables},
+  Author                   = {Emir Mu{\~{n}}oz and Aidan Hogan and Alessandra Mileo},
+  Booktitle                = {Proceedings of the Linked Data for Information Extraction Workshop (LD4IE 2013) at {ISWC} 2013},
+  Year                     = {2013},
+
+  Address                  = {Sydney, Australia},
+  Month                    = {21-25 October},
+  Publisher                = {CEUR-WS.org},
+  Series                   = {CEUR Workshop Proceedings},
+  Volume                   = {1057},
+
+  Link                     = {http://emunoz.org/wikitables},
+  Owner                    = {emir},
+  Pdf-file                 = {files/LD4IE2013.pdf},
+  Timestamp                = {2016.01.01},
+  Url                      = {http://ceur-ws.org/Vol-1057/MunozEtAl_LD4IE2013.pdf}
+}
+
+@InProceedings{DEXA_2017,
+  Title                    = {Mining Cardinalities from Knowledge Bases},
+  Author                   = {Emir Mu{\~{n}}oz and Matthias Nickles},
+  Booktitle                = {28rd International Conference on Database and Expert Systems Applications (DEXA 2017), Lyon, France, 28-31 August (in press)},
+  Year                     = {2017},
+  Month                    = {28--31 August},
+  Publisher                = {Springer},
+  Series                   = {Lecture Notes in Computer Science},
+
+  Pdf-file                 = {#}
+}
+
+@InProceedings{AMIA_2016,
+  Title                    = {Using Drug Similarities for Discovery of Possible Adverse Reactions},
+  Author                   = {Mu{\~{n}}oz, Emir and Nov{\'{a}}cek, V{\'{\i}}t and Vandenbussche, Pierre-Yves},
+  Booktitle                = {{AMIA} 2016, American Medical Informatics Association Annual Symposium, Chicago, IL, USA, November 12-16, 2016},
+  Year                     = {2016},
+  Organization             = {American Medical Informatics Association},
+  Pages                    = {924--933},
+  Volume                   = {2016},
+
+  Owner                    = {emir},
+  Pdf-file                 = {files/AMIA2016.pdf},
+  Slides                   = {https://speakerdeck.com/emunoz/},
+  Timestamp                = {2017.02.19},
+  Url                      = {https://amia2016.zerista.com/}
+}
+
+@InProceedings{LDMC_2016,
+  Title                    = {A Hybrid Method for Rating Prediction Using Linked Data Features and Text Reviews},
+  Author                   = {Semih Yumusak and
+ Emir Mu{\~{n}}oz and
+ Pasquale Minervini and
+ Erdogan Dogdu and
+ Halife Kodaz},
+  Booktitle                = {Joint Proceedings of the 5th Workshop on Data Mining and Knowledge
+ Discovery meets Linked Open Data and the 1st International Workshop
+ on Completing and Debugging the Semantic Web (Know@LOD-2016, CoDeS-2016)
+ co-located with 13th {ESWC} 2016, Heraklion, Greece, May 30th, 2016.},
+  Year                     = {2016},
+
+  Address                  = {Heraklion, Crete},
+  Editor                   = {Heiko Paulheim and
+ Jens Lehmann and
+ Vojtech Sv{\'{a}}tek and
+ Craig A. Knoblock and
+ Matthew Horridge and
+ Patrick Lambrix and
+ Bijan Parsia},
+  Note                     = {<i class="fa fa-trophy"></i> This paper won the <a href="http://knowalod2016.informatik.uni-mannheim.de/en/linked-data-mining-challenge/">Know@LOD 2016 Challenge</a>.},
+  Publisher                = {CEUR-WS.org},
+  Series                   = {{CEUR} Workshop Proceedings},
+  Volume                   = {1586},
+
+  Pdf-file                 = {files/KNOWATLOD2016_challenge.pdf},
+  Slides                   = {https://speakerdeck.com/emunoz/a-hybrid-method-for-rating-prediction-using-linked-data-features-and-text-reviews},
+  Url                      = {http://ceur-ws.org/Vol-1586/ldmc3.pdf}
+}
+
