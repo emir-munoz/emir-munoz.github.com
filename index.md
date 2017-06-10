@@ -21,7 +21,8 @@ I started the PhD programme on February 2014.
 Before that I worked as Research Assistant at Digital Enterprise Research Institute (DERI, now INSIGHT) since October 2012. 
 I am also a Computer Engineer and I hold a Master degree in Computer Engineering both from University of Santiago de Chile.
 <br><br>
-My research interests are: Databases, Web Data Mining, and Artificial Intelligence. 
+My general research interests fall into Databases, Web Data Mining, and Artificial Intelligence, with specific interests on 
+Machine Learning from Structured Data and Knowledge Graphs, Statistical Relational Learning, and Semantic Web and Linked Data.
 Currently, focused on knowledge graphs and the analysis of their structure, constraints, and completeness.
 </div>
 </div>
