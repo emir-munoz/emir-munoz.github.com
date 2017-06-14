@@ -34,11 +34,5 @@
     "text": "Resume",
     "url": "/resume",
     "icon": "fa-graduation-cap",
-  },
-  {
-    "text": "XML Feed",
-    "url": "/feed.xml",
-    "icon": "fa-feed",
-    "target": _blank
   }
 ]
