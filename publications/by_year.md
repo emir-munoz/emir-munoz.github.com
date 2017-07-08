@@ -9,7 +9,7 @@ permalink: /publications/by_year
 <p>
 Databases:
 {% for site in site.data.databases %}
-<a href="{{ site.url }}">@{{ site.name }}</a>
+<a href="{{ site.url }}" target="_blank">@{{ site.name }}</a>
 {% endfor %}
 </p>
 
