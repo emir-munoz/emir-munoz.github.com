@@ -11,23 +11,23 @@
  
     <div class="btn-group btn-group-raised">
         
-    <a class="btn btn-raised btn-default btn-xs" data-toggle="collapse" onclick="$('#{{key}}-bibtex').toggle();">BibTeX</a>
- 
-    {% if entry.pdf-file %}
-    <a class="btn btn-raised btn-default btn-xs" href="{{entry.pdf-file}}" target="_blank">PDF</a>
-    {% endif %}
-    
-    {% if entry.url %}
-    <a class="btn btn-raised btn-default btn-xs" href="{{entry.url}}" target="_blank">WWW</a>
-    {% endif %}
-    
-    {% if entry.slides %}
-    <a class="btn btn-raised btn-default btn-xs" href="{{entry.slides}}" target="_blank">Slides</a>
-    {% endif %}
-    
-    {% if entry.poster %}
-    <a class="btn btn-raised btn-default btn-xs" href="{{entry.poster}}" target="_blank">Poster</a>
-    {% endif %}
+        <a class="btn btn-raised btn-default btn-xs" data-toggle="collapse" onclick="$('#{{key}}-bibtex').toggle();">BibTeX</a>
+     
+        {% if entry.pdf-file %}
+        <a class="btn btn-raised btn-default btn-xs" href="{{entry.pdf-file}}" target="_blank">PDF</a>
+        {% endif %}
+        
+        {% if entry.url %}
+        <a class="btn btn-raised btn-default btn-xs" href="{{entry.url}}" target="_blank">WWW</a>
+        {% endif %}
+        
+        {% if entry.slides %}
+        <a class="btn btn-raised btn-default btn-xs" href="{{entry.slides}}" target="_blank">Slides</a>
+        {% endif %}
+        
+        {% if entry.poster %}
+        <a class="btn btn-raised btn-default btn-xs" href="{{entry.poster}}" target="_blank">Poster</a>
+        {% endif %}
     
     </div>
  
