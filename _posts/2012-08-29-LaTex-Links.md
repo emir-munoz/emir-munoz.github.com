@@ -1,12 +1,17 @@
 ---
-layout: post
 title: LaTex Links
-categories: utils
-tagline: "PhD utils"
-tags : [phd, utils, latex]
+date: 2012-08-29 00:00:00 Z
+categories:
+- utils
+tags:
+- phd
+- utils
+- latex
+layout: post
+tagline: PhD utils
 summary: Useful links for who works with LaTex documents.
 status: final
-hn-discussion:
+hn-discussion: 
 ---
 
 <div style="visibility: hidden; overflow: hidden; position: absolute; top: 0px; height: 1px; width: auto; padding: 0px; border: 0px; margin: 0px; text-align: left; text-indent: 0px; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal;">

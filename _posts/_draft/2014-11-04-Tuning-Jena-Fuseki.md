@@ -1,12 +1,15 @@
 ---
-layout: post
 title: Tuning Jena Fuseki
+layout: post
 category: Utils
-tagline: "Hacking"
-tags: [utils, java, rdf]
-summary:
+tagline: Hacking
+tags:
+- utils
+- java
+- rdf
+summary: 
 status: draft
-hn-discussion:
+hn-discussion: 
 ---
 
 {% include JB/setup %}

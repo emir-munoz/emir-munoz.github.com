@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Publications
-permalink: /publications/by_year
+permalink: "/publications/by_year"
+layout: page
 ---
 
 <p><i class="fa fa-sort"></i>&nbsp;<a href="/publications">sorted by type</a> | <a href="/publications/by_year.html">sorted by year</a></p>

@@ -1,12 +1,16 @@
 ---
-layout: post
 title: Path of Ubuntu Applications
-categories: utils
-tagline: "Hacking"
-tags : [utils, linux]
-summary:
+date: 2012-08-24 00:00:00 Z
+categories:
+- utils
+tags:
+- utils
+- linux
+layout: post
+tagline: Hacking
+summary: 
 status: final
-hn-discussion:
+hn-discussion: 
 ---
 
 _This post was first published on my Wordpress page [link](http://depinfi.wordpress.com/2012/08/24/path-for-ubuntu-applications/)_

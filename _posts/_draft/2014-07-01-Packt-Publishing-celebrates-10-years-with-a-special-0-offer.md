@@ -1,12 +1,13 @@
 ---
-layout: post
 title: Packt Publishing celebrates 10 years with a special offer
+layout: post
 categories: books
 tagline: 
-tags: [books]
+tags:
+- books
 summary: Packt publisher offer
 status: final
-hn-discussion:
+hn-discussion: 
 ---
 
 It has been 10 years since [Packt Publishing](http://bit.ly/1sTMBub) embarked on its mission to deliver effective learning and 

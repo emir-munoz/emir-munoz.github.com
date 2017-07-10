@@ -1,12 +1,17 @@
 ---
-layout: post
 title: Using OpenRefine Review
-categories: books
-tagline: "Book Review"
-tags: [to-read, books, review]
+date: 2013-11-26 00:00:00 Z
+categories:
+- books
+tags:
+- to-read
+- books
+- review
+layout: post
+tagline: Book Review
 summary: Review of the book Using OpenRefine
 status: final
-hn-discussion:
+hn-discussion: 
 ---
 
 _[The publisher of this book provide me with a free e-copy for review]_

@@ -1,12 +1,13 @@
 ---
-layout: post
 title: Packt Publishing's 2000th Title Campaign Offer
+layout: post
 categories: books
 tagline: 
-tags: [books]
+tags:
+- books
 summary: Packt publisher offer
 status: final
-hn-discussion:
+hn-discussion: 
 ---
 
 ***Celebrate 2000 Titles with Packt with the BUY ONE, GET ONE FREE offer! Check it out at [http://bit.ly/1j26nPN]()! #Packt2k***

@@ -1,7 +1,7 @@
 ---
-layout: project
 title: Projects
-permalink: /projects/
+permalink: "/projects/"
+layout: project
 ---
 
 This is a list of (public) projects in which I have participated:
