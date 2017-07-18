@@ -33,7 +33,7 @@ gems:
 scholar:
   style: "/assets/bibliography/iso690-author-date-en-title.csl"
   locale: en
-  sort_by: year
+  sort_by: year,month
   order: descending
   source: "/_bibliography"
   bibliography: references.bib
