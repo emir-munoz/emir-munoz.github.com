@@ -1,12 +1,16 @@
 ---
-layout: post
 title: Sorting HashMap based on its values
-categories: utils
-tagline: "Hacking"
-tags: [utils, java]
-summary:
+date: 2012-09-19 00:00:00 Z
+categories:
+- utils
+tags:
+- utils
+- java
+layout: post
+tagline: Hacking
+summary: 
 status: final
-hn-discussion:
+hn-discussion: 
 ---
 
 _This post was first published on my Wordpress page [link](http://depinfi.wordpress.com/2012/09/19/sorting-hashmap-based-on-its-values/)_

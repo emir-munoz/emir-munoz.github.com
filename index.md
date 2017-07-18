@@ -1,6 +1,6 @@
 ---
-layout: page
 title: Me
+layout: page
 ---
 
 <div class="row">

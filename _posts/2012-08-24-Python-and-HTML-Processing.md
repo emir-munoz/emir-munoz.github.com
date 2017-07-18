@@ -1,12 +1,16 @@
 ---
-layout: post
 title: Python and HTML Processing
-categories: utils
-tagline: "Hacking"
-tags : [utils, python]
-summary:
+date: 2012-08-24 00:00:00 Z
+categories:
+- utils
+tags:
+- utils
+- python
+layout: post
+tagline: Hacking
+summary: 
 status: final
-hn-discussion:
+hn-discussion: 
 ---
 
 _This post was first published on my Wordpress page [link](http://depinfi.wordpress.com/2012/08/24/python-and-html-processing/)_

@@ -1,12 +1,16 @@
 ---
-layout: post
 title: Research & Academia Blogs
-categories: research
-tagline: "Research"
-tags : [phd, to-read]
-summary:
+date: 2012-08-29 00:00:00 Z
+categories:
+- research
+tags:
+- phd
+- to-read
+layout: post
+tagline: Research
+summary: 
 status: final
-hn-discussion:
+hn-discussion: 
 ---
 
 <ul>

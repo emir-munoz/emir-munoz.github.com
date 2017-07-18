@@ -1,12 +1,17 @@
 ---
-layout: post
 title: Reducing space Theorems, Proofs, Lemmas, etc in LaTex
-categories: utils
-tagline: "Hacking"
-tags : [utils, latex, phd]
-summary:
+date: 2012-11-26 00:00:00 Z
+categories:
+- utils
+tags:
+- utils
+- latex
+- phd
+layout: post
+tagline: Hacking
+summary: 
 status: final
-hn-discussion:
+hn-discussion: 
 ---
 
 _This post was first published on my Wordpress page [link](http://depinfi.wordpress.com/2012/11/26/reducing-space-theorems-proofs-lemmas-etc-in-latex/)_

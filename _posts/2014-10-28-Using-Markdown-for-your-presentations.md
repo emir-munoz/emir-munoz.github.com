@@ -1,12 +1,16 @@
 ---
-layout: post
 title: Using Markdown for your presentations
-category: utils
-tagline: "PhD utils"
-tags: [utils, markdown]
-summary:
+date: 2014-10-28 00:00:00 Z
+categories:
+- utils
+tags:
+- utils
+- markdown
+layout: post
+tagline: PhD utils
+summary: 
 status: final
-hn-discussion:
+hn-discussion: 
 ---
 
 This post is about how to use a plain text file to create a HTML5 + Javascript presentation. Among the few options, this time I will use 
