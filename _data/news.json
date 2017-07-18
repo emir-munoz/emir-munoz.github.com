@@ -1,6 +1,11 @@
 [
 	{
 		"display": "true",
+		"date": "17/07/2017",
+		"headline": "Our paper <em>'Facilitating Prediction of Adverse Drug Reactions by Using Knowledge Graphs and Multi-Label Learning Models'</em> has been accepted at Briefings in Bioinformatics 2017"
+	},
+	{
+		"display": "true",
 		"date": "22/06/2017",
 		"headline": "Our paper <em>'Regularizing Neural Knowledge Graph Embeddings via Equivalence and Inversion Axioms'</em> has been accepted at ECML-PKDD 2017 (acceptance rate of 27%)"
 	},
