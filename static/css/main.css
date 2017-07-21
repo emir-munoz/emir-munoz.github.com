@@ -211,3 +211,23 @@ footer {
     width: 100%;
     height: 100%;
 }
+/*
+ol.bibliography li::before {
+    content: "■";
+    font-family: "Arial Black";
+    font-size: 1.35em;
+    margin-left: -1em;
+    display: inline-block;
+}
+ol.bibliography li {
+   list-style: none;
+   float: left;
+}
+ol.bibliography li span {
+   display: inline-flex;
+   margin-left: 0.5em;
+}
+ol.bibliography li.conference::before {
+   color: #196ca3;
+}
+*/
