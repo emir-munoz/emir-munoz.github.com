@@ -38,6 +38,9 @@ scholar:
   source: "/_bibliography"
   bibliography: references.bib
   bibliography_template: bibtemplate
+  bibliography_item_tag: li
+  bibliography_item_attributes: {}
   replace_strings: true
   join_strings: true
+  bibtex_skip_fields: [type_, pdf-file]
   query: "@*"
