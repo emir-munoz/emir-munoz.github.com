@@ -16,37 +16,37 @@ Databases:
 
 ### Thesis
 
-{% bibliography --query @*[type=thesis] %}
+{% bibliography --query @*[type_=thesis] %}
 
 ### Journal Articles
 
-{% bibliography --query @*[type=journal] %}
+{% bibliography --query @*[type_=journal] %}
 
 ### Conference Papers
 
-{% bibliography --query @*[type=conference] %}
+{% bibliography --query @*[type_=conference] %}
 
 ### Workshop Papers
 
-{% bibliography --query @*[type=workshop] %}
+{% bibliography --query @*[type_=workshop] %}
 
 ### Poster & Demo Papers
 
-{% bibliography --query @*[type=poster_demo] %}
+{% bibliography --query @*[type_=poster_demo] %}
 
 ### Patents
 
-{% bibliography --query @*[type=patent] %}
+{% bibliography --query @*[type_=patent] %}
 
 {% comment %}
 
 ### Book Chapters
 
-{% bibliography --query @*[type=book] %}
+{% bibliography --query @*[type_=book] %}
 
 ### Misc
 
-{% bibliography --query @*[type=misc] %}
+{% bibliography --query @*[type_=misc] %}
 
 {% endcomment %}
 
