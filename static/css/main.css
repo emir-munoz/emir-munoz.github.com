@@ -211,7 +211,6 @@ footer {
     width: 100%;
     height: 100%;
 }
-/*
 ol.bibliography li::before {
     content: "■";
     font-family: "Arial Black";
@@ -221,13 +220,31 @@ ol.bibliography li::before {
 }
 ol.bibliography li {
    list-style: none;
-   float: left;
 }
-ol.bibliography li span {
-   display: inline-flex;
+ol.bibliography li div.bibtex {
+   display: inline-table;
    margin-left: 0.5em;
+}
+ol.bibliography li.thesis::before {
+   color: #fbd200;
+}
+ol.bibliography li.journal::before {
+   color: #c32b72;
 }
 ol.bibliography li.conference::before {
    color: #196ca3;
 }
-*/
+ol.bibliography li.workshop::before {
+   color: #196ca3;
+}
+ol.bibliography li.poster_demo::before {
+   color: #ef942d;
+}
+ol.bibliography li.patent::before {
+   color: #96ad2c;
+}
+ol.bibliography li.book::before {
+   color: #f8c91f;
+}
+
+
