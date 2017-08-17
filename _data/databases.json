@@ -18,5 +18,13 @@
 	{
 		"name": "Bibsonomy",
 		"url": "http://www.bibsonomy.org/user/emunoz"
-	}
+	},
+        {
+               "name": "SemanticScholar",
+               "url": "https://www.semanticscholar.org/author/Emir-Mu%C3%B1oz/2441383"
+        },
+        {
+               "name": "MicrosoftAcademic",
+               "url": "https://academic.microsoft.com/#/detail/2165782363"
+        }
 ]
