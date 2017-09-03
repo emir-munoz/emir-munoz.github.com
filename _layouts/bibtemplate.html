@@ -11,6 +11,10 @@
         {% if entry.pdf-file %}
         <a class="btn btn-raised btn-default btn-xs" href="{{entry.pdf-file}}" target="_blank">PDF</a>
         {% endif %}
+
+        {% if entry.supp-fie %}
+        <a class="btn btn-raised btn-default btn-xs" href="{{entry.supp-file}}" target="_blank">SUPPL.</a>
+        {% endif %}
         
         {% if entry.url %}
         <a class="btn btn-raised btn-default btn-xs" href="{{entry.url}}" target="_blank">WWW</a>
