@@ -10,9 +10,9 @@ collections:
     output: true
 description: My Professional Webpage
 author: Emir Muñoz
-logo: "/static/img/avatar.png"
+logo: "/assets/me.png"
 github: https://github.com/emir-munoz
-about: Computer Science Researcher
+about: Machine Learning Engineer
 baseurl: ''
 url: http://emunoz.org
 disqus_shortname: emirmunoz

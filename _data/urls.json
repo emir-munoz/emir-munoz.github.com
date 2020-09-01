@@ -22,17 +22,17 @@
   {
     "text": "Teaching",
     "url": "/teaching",
-    "icon": "fa-pencil"
+    "icon": "fa-graduation-cap"
   },
   {
     "text": "Blog",
     "url": "/blog",
-    "icon": "fa-comments",
+    "icon": "fa-blog",
     "layout": "post"
   },
   {
     "text": "Resume",
     "url": "/resume",
-    "icon": "fa-graduation-cap",
+    "icon": "fa-toolbox",
   }
 ]

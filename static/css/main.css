@@ -6,7 +6,7 @@
     padding: 10px 0 10px 0;
     width: 100%;
 }
-.full{ font-size: 16px; }
+.full{ font-size: 14px; }
 .logo-img {
     width: 56px;
     height: 56px;
@@ -53,7 +53,8 @@ p.info a {
     height: auto;
 }
 .social-icons {
-    margin: 20px 0 0;
+    margin: 5px 0 5px;
+    text-align: center;
 }
 .icon {
     background: #fff;
@@ -107,7 +108,12 @@ li.current-menu-item:before {
     color: #01c87b;
     font-weight: 300;
 }
-h2.blog-title-pro{color: #fff;}
+h2.blog-title-pro {
+    color: #fff;
+    font-size:20px;
+    margin-top: 3px;
+    margin-bottom: 5px;
+}
 h2.blog-title-pro:after {
     content: "";
     display: block;

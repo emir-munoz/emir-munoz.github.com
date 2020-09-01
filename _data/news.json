@@ -1,21 +1,31 @@
 [
 	{
 		"display": "true",
+		"date": "Feb 2020",
+		"headline": "I successfully defended my Ph.D. thesis. Many thanks to Fabian Suchanek and Mathieu d'Aquin for been my examiner and Matthias Nickles for supervising me!"
+	},
+	{
+		"display": "true",
+		"date": "Sep 2018",
+		"headline": "I joined the Genesys AI Group in Galway, Ireland"
+	},
+	{
+		"display": "false",
 		"date": "17/07/2017",
 		"headline": "Our paper <em>'Facilitating Prediction of Adverse Drug Reactions by Using Knowledge Graphs and Multi-Label Learning Models'</em> has been accepted at Briefings in Bioinformatics 2017"
 	},
 	{
-		"display": "true",
+		"display": "false",
 		"date": "22/06/2017",
 		"headline": "Our paper <em>'Regularizing Neural Knowledge Graph Embeddings via Equivalence and Inversion Axioms'</em> has been accepted at ECML-PKDD 2017 (acceptance rate of 27%)"
 	},
 	{
-		"display": "true",
+		"display": "false",
 		"date": "24/05/2017",
 		"headline": "Our paper <em>'Mining Cardinalities from Knowledge Bases'</em> has been accepted at DEXA 2017"
 	},
 	{
-		"display": "true",
+		"display": "false",
 		"date": "04/04/2017",
 		"headline": "Our paper <em>'Identifying Equivalent Relation Paths in Knowledge Graphs'</em> has been accepted at LDK 2017"
 	}
