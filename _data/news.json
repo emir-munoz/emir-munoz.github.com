@@ -1,11 +1,16 @@
 [
 	{
 		"display": "true",
-		"date": "Feb 2020",
-		"headline": "I successfully defended my Ph.D. thesis. Many thanks to Fabian Suchanek and Mathieu d'Aquin for been my examiner and Matthias Nickles for supervising me!"
+		"date": "Dec 2020",
+		"headline": "Recognised as EMNLP 2020 - Outstanding Reviewer"
 	},
 	{
 		"display": "true",
+		"date": "Feb 2020",
+		"headline": "I successfully defended my Ph.D. thesis. Many thanks to Fabian Suchanek and Mathieu d'Aquin for their support and Matthias Nickles for supervising me!"
+	},
+	{
+		"display": "false",
 		"date": "Sep 2018",
 		"headline": "I joined the Genesys AI Group in Galway, Ireland"
 	},

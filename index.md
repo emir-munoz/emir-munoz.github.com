@@ -17,10 +17,10 @@ layout: page
 
 <div class="col-md-8 col-xs-12 text-justify">
 <p>
-I am a Machine Learning engineer at <a href="https://www.genesys.com/">Genesys</a>. I work in the AI Group using Machine Learning to build applications focused on customer experience and call centres.
+I am a Team Lead - Staff Machine Learning engineer at <a href="https://www.genesys.com/">Genesys</a>. I'm part of the AI Group and work building Machine Learning services to improve customer experience and optimise call centres routing.
 </p>
 <p>
-I hold a Ph.D. from <a href="https://www.nuigalway.ie/">National University of Ireland, Galway</a>, a B.Eng. and M.Sc. in Computer Engineering from <a href="https://www.usach.cl/">Universidad de Santiago, Chile</a>.
+I hold a PhD from <a href="https://www.nuigalway.ie/">National University of Ireland, Galway</a>, a BEng and MSc in Computer Engineering from <a href="https://www.usach.cl/">Universidad de Santiago, Chile</a>.
 </p>
 </div>
 </div>
