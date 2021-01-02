@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Emir Muñoz</title>
+    <description>My Professional Webpage</description>
+    <link>http://emunoz.org/</link>
+    <atom:link href="http://emunoz.org/sitemap.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 02 Jan 2021 19:50:14 +0000</pubDate>
+    <lastBuildDate>Sat, 02 Jan 2021 19:50:14 +0000</lastBuildDate>
+    <generator>Jekyll v4.1.1</generator>
+    
+      <item>
+        <title>Using Markdown for your presentations</title>
+        <description>&lt;p&gt;This post is about how to use a plain text file to create a HTML5 + Javascript presentation. Among the few options, this time I will use 
+&lt;a href=&quot;https://github.com/infews/keydown&quot;&gt;KeyDown&lt;/a&gt; which is based on &lt;a href=&quot;imakewebthings.com/deck.js/&quot;&gt;deck.js&lt;/a&gt;. An example presentation can be found 
+in this &lt;a href=&quot;http://infews.github.io/keydown/&quot;&gt;link&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;To start creating your deck, install the keydown builder:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;gem &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;keydown&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;After that, we can generate a template from scratch with the basics.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;keydown generate my_presentation&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;For those that worked before with deck.js this is an improvement making much easier the work.&lt;/p&gt;
+
+&lt;p&gt;The result of the generation is a folder with this structure:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;| - my_presentation/
+	| - css/				- keydown CSS and a file &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;you to customize
+	| - deck.js				- deck library
+	| - images/				- Some keydown images, but also &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;your images
+	| - js/					- keydown JavaScript, and a file &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;you to customize
+	| - slides.md&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;That easy is to generate the squeleton of the presentation. Now you can modify the file &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;slides.md&lt;/code&gt; adding your content using Markdown syntax.
+Each slide is separated by a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;!SLIDE&lt;/code&gt; tag.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;SLIDE
+
+&lt;span class=&quot;c&quot;&gt;# This is my talk&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;In the github repository of keydown you can find the details of how to add images and use the template.&lt;/p&gt;
+
+&lt;p&gt;After you add your content, you can generate the deck as a HTML5 file using the command:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;keydown slides slides.md&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;For me that didn’t work so I checked the open issues and I found an answer in &lt;a href=&quot;https://github.com/infews/keydown/issues/34&quot;&gt;issue 34&lt;/a&gt;.
+I uninstalled &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;compass 1.0.1&lt;/code&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;gem uninstall compass&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;and installed &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;compass 0.12.7&lt;/code&gt; using the following Gemfile:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'https://rubygems.org'&lt;/span&gt;
+
+gem &lt;span class=&quot;s1&quot;&gt;'keydown'&lt;/span&gt;
+gem &lt;span class=&quot;s1&quot;&gt;'compass'&lt;/span&gt;, &lt;span class=&quot;s1&quot;&gt;'0.12.7'&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;and then executing bundle to build the deck.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;bundle
+bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;keydown slides slides.md&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;That did the trick and I finally got the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;slides.html&lt;/code&gt; file.&lt;/p&gt;
+
+&lt;p&gt;Once that everything is working propertly, edit the presentation is as simple as write Markdown. Then, the result looks good =) Now just use your arrow keys to move.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 28 Oct 2014 00:00:00 +0000</pubDate>
+        <link>http://emunoz.org/utils/2014/10/28/Using-Markdown-for-your-presentations.html</link>
+        <guid isPermaLink="true">http://emunoz.org/utils/2014/10/28/Using-Markdown-for-your-presentations.html</guid>
+        
+        <category>utils</category>
+        
+        <category>markdown</category>
+        
+        
+        <category>utils</category>
+        
+      </item>
+    
+      <item>
+        <title>Using OpenRefine Review</title>
+        <description>&lt;p&gt;&lt;em&gt;[The publisher of this book provide me with a free e-copy for review]&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Link to the book: &lt;a href=&quot;&quot;&gt;http://www.packtpub.com/openrefine-guide-for-data-analysis-and-linking-dataset-to-the-web/book&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;My familiarization with OpenRefine started with Google Refine. The main idea has evolved and become open for contributions of the community. 
+This book is a nice cookbook, easy to follow written in a friendly language, to perform both simple and complex operations over semistructured 
+data such as HTML tables, spreadsheets, csv files, among others, exploiting the linkeability of your datasets with the Linked Open Data (LOD). 
+Even without previous knowledge any user can take this book and from scratch start to use OpenRefine.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Organization:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The book is divided in four chapters plus an appendix.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Chapter 1&lt;/em&gt;: Presents the first set of easy-to-follow recipes to get your hands into loading and preparing your data.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Chapter 2&lt;/em&gt;: The main contribution is on how to sort and create facets to select (or isolate) data based on regular expressions over the cell values, with the main goal of fix the datasets.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Chapter 3&lt;/em&gt;: Tells you how to deal with more advanced operations over your data, and gives a brief introduction to GREL, the language defined to manipulate cell values. GREL is simple and powerful enough to match and replace the cell’s content as needed by different purposes, that’s because they have an appendix with a deeper explanation.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Chapter 4&lt;/em&gt;: Once that all the data have been normalized this can be reconciliated with an external knowledge base or linked open dataset such as Freebase (can be whatever knowledge base appropriate for the data at hands) to enrich the semantics of the data.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;What I like about this book:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The format of cookbook and the easy reading are the most positive aspects of this book. The authors made a good work explaining all the use cases using a real data example.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;What I dislike about this book:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The smaller things that I dislike are part of the format used in the book. It would be better to have enumerated figures and sections to make references effortless. 
+However, the figures are very self explicatives and ad-hoc with the explanations. Also, for easy referencing would be nice to have a consecutive recipes numeration 
+and not a new numeration in each chapter.&lt;/p&gt;
+
+&lt;p&gt;Wrapping up, I would strongly recommend this book to any user interested in: Semantic Web/Linked Data, Linked Open Data publication, Data Integration, 
+Named Entity Recognition; at student, lecturer, practitioner level, or just for hobby.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 26 Nov 2013 00:00:00 +0000</pubDate>
+        <link>http://emunoz.org/books/2013/11/26/Using-OpenRefine-Review.html</link>
+        <guid isPermaLink="true">http://emunoz.org/books/2013/11/26/Using-OpenRefine-Review.html</guid>
+        
+        <category>to-read</category>
+        
+        <category>books</category>
+        
+        <category>review</category>
+        
+        
+        <category>books</category>
+        
+      </item>
+    
+      <item>
+        <title>Using Algorithm2e in ACM template</title>
+        <description>&lt;p&gt;&lt;em&gt;This post was first published on my Wordpress page &lt;a href=&quot;http://depinfi.wordpress.com/2012/11/26/using-algorithm2e-in-acm-template/&quot;&gt;link&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;If you have tried to use this package to create algorithms in the ACM template for papers, 
+you must be come across this issue. If you only add the packate &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;algorithm2e&lt;/code&gt; with something like&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-latex&quot; data-lang=&quot;latex&quot;&gt;&lt;span class=&quot;k&quot;&gt;\usepackage&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;[ruled,vlined]&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;algorithm2e&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;you should have received a nice errors telling you “1616:Too many }’s” and “1617:Extra \fi \fi”.&lt;/p&gt;
+
+&lt;p&gt;To solve this annoying bug, that could make you lose a lot of valuable time, just add 
+the following code before the import of the package.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-latex&quot; data-lang=&quot;latex&quot;&gt;&lt;span class=&quot;c&quot;&gt;% For algorithms in ACM template&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;\makeatletter&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;\newif\if&lt;/span&gt;@restonecol
+&lt;span class=&quot;k&quot;&gt;\makeatother&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;\let\algorithm\relax&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;\let\endalgorithm\relax&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;\usepackage&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;[ruled,vlined]&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;algorithm2e&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;I hope this will be useful for you like was for me :)&lt;/p&gt;
+
+&lt;p&gt;Cheers!&lt;/p&gt;
+</description>
+        <pubDate>Mon, 26 Nov 2012 00:00:00 +0000</pubDate>
+        <link>http://emunoz.org/utils/2012/11/26/Using-Algorithm2e-in-ACM-template.html</link>
+        <guid isPermaLink="true">http://emunoz.org/utils/2012/11/26/Using-Algorithm2e-in-ACM-template.html</guid>
+        
+        <category>utils</category>
+        
+        <category>latex</category>
+        
+        <category>phd</category>
+        
+        
+        <category>utils</category>
+        
+      </item>
+    
+      <item>
+        <title>Reducing space Theorems, Proofs, Lemmas, etc in LaTex</title>
+        <description>&lt;p&gt;&lt;em&gt;This post was first published on my Wordpress page &lt;a href=&quot;http://depinfi.wordpress.com/2012/11/26/reducing-space-theorems-proofs-lemmas-etc-in-latex/&quot;&gt;link&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;If you need to make more space in your papers (space is valuable in this cases), 
+because the (vertical) space between theorems, proofs, lemmas, remarks, examples, 
+and definitions with other paragraphs is too large. Here I will show a little trick to do that.&lt;/p&gt;
+
+&lt;p&gt;We need to import the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;asmthm&lt;/code&gt; package. But, not too fast, this will trigger an error. 
+So, above the import we need to add two lines that solve the bug related with an 
+incompatibility in the proof enviroment (or macro).&lt;/p&gt;
+
+&lt;p&gt;Then we are ready to define our theorem style with the desire spaces and fonts as follows:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-latex&quot; data-lang=&quot;latex&quot;&gt;&lt;span class=&quot;k&quot;&gt;\let\proof\relax&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;\let\endproof\relax&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;\usepackage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;amsthm&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;%http://ctan.org/pkg/amsthm&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;\newtheorem&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;theorem&lt;span class=&quot;p&quot;&gt;}{&lt;/span&gt;Theorem&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;\newtheoremstyle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;exampstyle&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;\topsep&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;% Space above&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;\topsep&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;% Space below&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;{}&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;% Body font&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;{}&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;% Indent amount&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;\bfseries&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;% Theorem head font&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;.&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;% Punctuation after theorem head&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;.5em&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;% Space after theorem head&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;{}&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;% Theorem head spec (can be left empty, meaning 'normal')&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;\theoremstyle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;exampstyle&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;\newtheorem&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;example&lt;span class=&quot;p&quot;&gt;}{&lt;/span&gt;Example&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;\theoremstyle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;exampstyle&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;\newtheorem&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;remark&lt;span class=&quot;p&quot;&gt;}{&lt;/span&gt;Remark&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;\theoremstyle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;exampstyle&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;\newtheorem&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;definition&lt;span class=&quot;p&quot;&gt;}{&lt;/span&gt;Definition&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;\theoremstyle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;exampstyle&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;\newtheorem&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;lemma&lt;span class=&quot;p&quot;&gt;}{&lt;/span&gt;Lemma&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;This code will enumerate each enviroment –theorem, proof, etc– independly. 
+If you are wishing to enumerate relatively to sections you have to use these modifications.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-latex&quot; data-lang=&quot;latex&quot;&gt;&lt;span class=&quot;k&quot;&gt;\let\proof\relax&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;\let\endproof\relax&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;\usepackage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;amsthm&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;%http://ctan.org/pkg/amsthm&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;\newtheorem&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;theorem&lt;span class=&quot;p&quot;&gt;}{&lt;/span&gt;Theorem&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;[section]
+&lt;span class=&quot;k&quot;&gt;\newtheoremstyle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;exampstyle&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;\topsep&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;% Space above&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;\topsep&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;% Space below&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;{}&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;% Body font&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;{}&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;% Indent amount&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;\bfseries&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;% Theorem head font&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;.&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;% Punctuation after theorem head&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;.5em&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;% Space after theorem head&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;{}&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;% Theorem head spec (can be left empty, meaning 'normal')&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;\theoremstyle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;exampstyle&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;\newtheorem&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;example&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;[theorem]&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;Example&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;\theoremstyle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;exampstyle&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;\newtheorem&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;remark&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;[theorem]&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;Remark&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;\theoremstyle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;exampstyle&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;\newtheorem&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;definition&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;[theorem]&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;Definition&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;\theoremstyle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;exampstyle&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;\newtheorem&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;lemma&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;[theorem]&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;Lemma&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;In the style you can customize the environments with your preferences and even create more than one style if necessary.&lt;/p&gt;
+
+&lt;p&gt;Cheers!&lt;/p&gt;
+</description>
+        <pubDate>Mon, 26 Nov 2012 00:00:00 +0000</pubDate>
+        <link>http://emunoz.org/utils/2012/11/26/Reducing-space-Theorems-Proofs-Lemmas-etc-in-LaTex.html</link>
+        <guid isPermaLink="true">http://emunoz.org/utils/2012/11/26/Reducing-space-Theorems-Proofs-Lemmas-etc-in-LaTex.html</guid>
+        
+        <category>utils</category>
+        
+        <category>latex</category>
+        
+        <category>phd</category>
+        
+        
+        <category>utils</category>
+        
+      </item>
+    
+      <item>
+        <title>Sorting HashMap based on its values</title>
+        <description>&lt;p&gt;&lt;em&gt;This post was first published on my Wordpress page &lt;a href=&quot;http://depinfi.wordpress.com/2012/09/19/sorting-hashmap-based-on-its-values/&quot;&gt;link&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;This task could be done in different ways. &lt;a href=&quot;http://www.theserverside.com/discussions/thread.tss?thread_id=29569&quot;&gt;Here&lt;/a&gt; 
+a discussion about some ways. In this post I will show one that I followed. Roughly speaking, the idea is convert the map 
+into a list with the purpose of use the classic &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Collection.sort()&lt;/code&gt; method.
+The first think is that you need is to define a new class, that represents one map entry; 
+and implements the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Comparable&lt;/code&gt; interface. In this class you have to implement the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;compareTo&lt;/code&gt; 
+method and override the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;toString&lt;/code&gt; (if you want).&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;java.util.Map&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+ 
+&lt;span class=&quot;nd&quot;&gt;@SuppressWarnings&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;rawtypes&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;CustomEntry&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;implements&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Comparable&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Map&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;Entry&lt;/span&gt;   &lt;span class=&quot;n&quot;&gt;entry&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+ 
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;CustomEntry&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Map&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;Entry&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;entry&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;entry&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;entry&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+ 
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Map&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;Entry&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getEntry&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;entry&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+ 
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;compareTo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;CustomEntry&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;anotherEntry&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nc&quot;&gt;Integer&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;thisIntegerVal&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Integer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getEntry&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getValue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;());&lt;/span&gt;
+        &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;thisVal&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;thisIntegerVal&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;intValue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+        &lt;span class=&quot;nc&quot;&gt;Integer&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;anotherIntegerVal&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Integer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;anotherEntry&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getEntry&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getValue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;());&lt;/span&gt;
+        &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;anotherVal&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;anotherIntegerVal&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;intValue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;thisVal&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;anotherVal&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;thisVal&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;anotherVal&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;));&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+ 
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;compareTo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Object&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;o&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;compareTo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;CustomEntry&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;o&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+ 
+    &lt;span class=&quot;nd&quot;&gt;@Override&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;toString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nc&quot;&gt;StringBuilder&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;str&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;StringBuilder&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getEntry&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getKey&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()).&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;:&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getEntry&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getValue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;());&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;toString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Next step is to define the function that will convert any map into a list. Basically, 
+this function will recover the entries in the map, and transform them into custom entries 
+using the previous class &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CustomEntry&lt;/code&gt;.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;java.util.*&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;java.util.Map.Entry&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+ 
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;MapFunctions&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;MapFunctions&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+ 
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;E&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;List&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;CustomEntry&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;convertMapToList&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Map&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;E&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nc&quot;&gt;List&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;CustomEntry&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;list&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ArrayList&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;CustomEntry&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;();&lt;/span&gt;
+        &lt;span class=&quot;nc&quot;&gt;Set&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Entry&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;E&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;entrySet&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;entrySet&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+        &lt;span class=&quot;nc&quot;&gt;Iterator&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Entry&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;E&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;iterator&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;entrySet&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;iterator&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iterator&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;hasNext&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;())&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;nc&quot;&gt;Map&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;Entry&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;E&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;entry&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Map&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;Entry&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;E&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;iterator&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+            &lt;span class=&quot;nc&quot;&gt;CustomEntry&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;customEntry&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;CustomEntry&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;entry&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;customEntry&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Now, you are allowed to execute the following instructions:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;nc&quot;&gt;THashMap&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Integer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;map&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;...&lt;/span&gt; &lt;span class=&quot;cm&quot;&gt;/* some initialization */&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;List&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;CustomEntry&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sortedList&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;MapFunctions&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;convertMapToList&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;Collections&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;sort&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sortedList&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sortedList&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;and you will print the list of entries (from your original map) sorted based on its (original) values.&lt;/p&gt;
+
+&lt;p&gt;Cheers!&lt;/p&gt;
+</description>
+        <pubDate>Wed, 19 Sep 2012 00:00:00 +0000</pubDate>
+        <link>http://emunoz.org/utils/2012/09/19/Sorting-HashMap-based-on-its-values.html</link>
+        <guid isPermaLink="true">http://emunoz.org/utils/2012/09/19/Sorting-HashMap-based-on-its-values.html</guid>
+        
+        <category>utils</category>
+        
+        <category>java</category>
+        
+        
+        <category>utils</category>
+        
+      </item>
+    
+      <item>
+        <title>Research &amp; Academia Blogs</title>
+        <description>&lt;ul&gt;
+	&lt;li&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://patthomson.wordpress.com/&quot;&gt;Patter — Pat Thomson&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://thesiswhisperer.com/&quot;&gt;The Thesis Whisperer — Inger Mewburn&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://theresearchwhisperer.wordpress.com/&quot;&gt;The Research Whisperer – several RMIT researchers&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://supervisorsfriend.wordpress.com/&quot;&gt;the (research) supervisor’s friend — Geof Hill&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://myresearchrants.wordpress.com/&quot;&gt;My Research Rants – Jordi Cabot&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://3monththesis.com/phd-support/blog/&quot;&gt;The Three Month Thesis – James Hayton&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://blog.prof.so/&quot;&gt;profserious – Anthony Finkelstein&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://marialuisaaliotta.wordpress.com/&quot;&gt;Academic Life — Marialuisa Aliotta&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://help4newprofs.wordpress.com/&quot;&gt;Help for New Professors — Faye Hicks&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://thesistips.wordpress.com/&quot;&gt;The Art of Scientific Writing – Faye Hicks&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://explorationsofstyle.wordpress.com/&quot;&gt;Explorations of style– Rachael Cayley&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://sharmanedit.wordpress.com/&quot;&gt;sharmanedit — Anna Sharman&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://www.gradhacker.org/&quot;&gt;GradHacker – writers from several universities&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://blogs.warwick.ac.uk/researchexchange/&quot;&gt;PhD Life – Warwick Uni students&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://www.phdcomics.com/comics.php&quot;&gt;PhD Comics — essential reading for every PhD student, and good therapy&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Wed, 29 Aug 2012 00:00:00 +0000</pubDate>
+        <link>http://emunoz.org/research/2012/08/29/Research-Academia-Blogs.html</link>
+        <guid isPermaLink="true">http://emunoz.org/research/2012/08/29/Research-Academia-Blogs.html</guid>
+        
+        <category>phd</category>
+        
+        <category>to-read</category>
+        
+        
+        <category>research</category>
+        
+      </item>
+    
+      <item>
+        <title>LaTex Links</title>
+        <description>&lt;div style=&quot;visibility: hidden; overflow: hidden; position: absolute; top: 0px; height: 1px; width: auto; padding: 0px; border: 0px; margin: 0px; text-align: left; text-indent: 0px; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal;&quot;&gt;
+	&lt;div id=&quot;MathJax_Hidden&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&quot;MathJax_Message&quot; style=&quot;display: none;&quot;&gt;&lt;/div&gt;
+
+&lt;dl&gt;
+	&lt;dt&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://www.sharelatex.com/&quot;&gt;ShareLaTex:&lt;/a&gt;&lt;/dt&gt;
+	&lt;dd&gt;Online pdflatex compiler that allow you to do a collaborative LaTex document.&lt;/dd&gt;
+
+	&lt;dt&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://detexify.kirelabs.org/classify.html&quot;&gt;Detaxify:&lt;/a&gt;&lt;/dt&gt;
+	&lt;dd&gt;A great way of finding LaTeX symbols just drawing it.&lt;/dd&gt;
+
+	&lt;dt&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://www.texample.net/&quot;&gt;TeXample.net:&lt;/a&gt;&lt;/dt&gt;
+	&lt;dd&gt;Documentation about TikZ.&lt;/dd&gt;
+
+	&lt;dt&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://mathurl.com&quot;&gt;mathURL:&lt;/a&gt;&lt;/dt&gt;
+	&lt;dd&gt;Live equation editing · permanent short links · LaTeX+AMS input.&lt;/dd&gt;
+
+	&lt;dt&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://webdemo.visionobjects.com/equation.html?locale=default&quot;&gt;WebEquation:&lt;/a&gt;&lt;/dt&gt;
+	&lt;dd&gt;Write an equation and get the LaTex or MathML source.&lt;/dd&gt;
+
+	&lt;dt&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://www.mathjax.org/&quot;&gt;MathJax:&lt;/a&gt;&lt;/dt&gt;
+	&lt;dd&gt;An open source JavaScript display engine for mathematics that works in all modern browsers.&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;h3 id=&quot;the-following-are-examples-of-mathjax&quot;&gt;The following are examples of MathJax:&lt;/h3&gt;
+
+&lt;p&gt;Complex formula:&lt;/p&gt;
+
+\[\begin{align*}
+  &amp;amp; \phi(x,y) = \phi \left(\sum_{i=1}^n x_ie_i, \sum_{j=1}^n y_je_j \right)
+  = \sum_{i=1}^n \sum_{j=1}^n x_i y_j \phi(e_i, e_j) = \\
+  &amp;amp; (x_1, \ldots, x_n) \left( \begin{array}{ccc}
+      \phi(e_1, e_1) &amp;amp; \cdots &amp;amp; \phi(e_1, e_n) \\
+      \vdots &amp;amp; \ddots &amp;amp; \vdots \\
+      \phi(e_n, e_1) &amp;amp; \cdots &amp;amp; \phi(e_n, e_n)
+    \end{array} \right)
+  \left( \begin{array}{c}
+      y_1 \\
+      \vdots \\
+      y_n
+    \end{array} \right)
+\end{align*}\]
+
+&lt;p&gt;The following is a math block:&lt;/p&gt;
+
+&lt;p&gt;Inline \(5 + 5\)
+$$ 5 + 5 $$&lt;/p&gt;
+
+&lt;p&gt;But next comes a paragraph with an inline math statement:&lt;/p&gt;
+
+&lt;p&gt;\(5 + 5\)&lt;/p&gt;
+
+&lt;script src=&quot;http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+
+</description>
+        <pubDate>Wed, 29 Aug 2012 00:00:00 +0000</pubDate>
+        <link>http://emunoz.org/utils/2012/08/29/LaTex-Links.html</link>
+        <guid isPermaLink="true">http://emunoz.org/utils/2012/08/29/LaTex-Links.html</guid>
+        
+        <category>phd</category>
+        
+        <category>utils</category>
+        
+        <category>latex</category>
+        
+        
+        <category>utils</category>
+        
+      </item>
+    
+      <item>
+        <title>Python and HTML Processing</title>
+        <description>&lt;p&gt;&lt;em&gt;This post was first published on my Wordpress page &lt;a href=&quot;http://depinfi.wordpress.com/2012/08/24/python-and-html-processing/&quot;&gt;link&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Trying to harvest some links from the Coursea Lectures, in a fast and efficient way saving me valuable time, 
+I decided to use Python with &lt;a href=&quot;http://www.crummy.com/software/BeautifulSoup/&quot;&gt;Beautiful Soup&lt;/a&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Beautiful Soup is a Python library designed for quick turnaround projects like screen-scraping. 
+It parses anything you give it, and does the tree traversal stuff for you. You can tell it 
+“Find all the links”, or “Find all the links of class externalLink”, or “Find all the links whose 
+urls match “foo.com”, or “Find the table heading that’s got bold text, then give me that text.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;First, you need to download the library from this &lt;a href=&quot;http://www.crummy.com/software/BeautifulSoup/bs4/download/&quot;&gt;link&lt;/a&gt; and untar the bs4 folder in your workspace.
+The library is really simple and intuitive to use, since represent the HTML document as a nested data structure.&lt;/p&gt;
+
+&lt;p&gt;Too much chatter, now I’m going to show you the python code :)&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;c1&quot;&gt;#!/usr/bin/env python
+&lt;/span&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;urllib&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sgmllib&lt;/span&gt;
+ 
+&lt;span class=&quot;c1&quot;&gt;# Get a file-like object for the Coursea Web site course page.
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;f&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;urllib&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;urlopen&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://class.coursera.org/gametheory/lecture/preview&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# Read from the object, storing the page's contents in 's'.
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# Here is the import for the library above described.
+&lt;/span&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;bs4&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;BeautifulSoup&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# BeautifulSoup object, which represents the document as a nested data structure
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;soup&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;BeautifulSoup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+ 
+&lt;span class=&quot;c1&quot;&gt;# Find all the link with rel 'lecture-link'
+&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;videos&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;soup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;find_all&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'a'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;lecture-link&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+   &lt;span class=&quot;n&quot;&gt;link&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;videos&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'href'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+   &lt;span class=&quot;c1&quot;&gt;# Get the page apointed by the previous link in the same way
+&lt;/span&gt;   &lt;span class=&quot;n&quot;&gt;f1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;urllib&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;urlopen&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;link&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+   &lt;span class=&quot;n&quot;&gt;s1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;f1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+   &lt;span class=&quot;n&quot;&gt;soup1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;BeautifulSoup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+ 
+   &lt;span class=&quot;c1&quot;&gt;# Find all the source tags in the document and filter for 'video/mp4'
+&lt;/span&gt;   &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;link&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;soup1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;find_all&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'source'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;link&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'type'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;video/mp4&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;c1&quot;&gt;# You can concate 'wget' to build immediately an script
+&lt;/span&gt;          &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'wget '&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;link&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'src'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;A full documentation can be found &lt;a href=&quot;http://www.crummy.com/software/BeautifulSoup/bs4/doc/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Be sure you have the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bs4&lt;/code&gt; folder and a file with the previous code in the same workspace. 
+Then you can execute your python file as usual and get the links to download the video lectures that you want.&lt;/p&gt;
+
+&lt;p&gt;Cheers!&lt;/p&gt;
+</description>
+        <pubDate>Fri, 24 Aug 2012 00:00:00 +0000</pubDate>
+        <link>http://emunoz.org/utils/2012/08/24/Python-and-HTML-Processing.html</link>
+        <guid isPermaLink="true">http://emunoz.org/utils/2012/08/24/Python-and-HTML-Processing.html</guid>
+        
+        <category>utils</category>
+        
+        <category>python</category>
+        
+        
+        <category>utils</category>
+        
+      </item>
+    
+      <item>
+        <title>Path of Ubuntu Applications</title>
+        <description>&lt;p&gt;&lt;em&gt;This post was first published on my Wordpress page &lt;a href=&quot;http://depinfi.wordpress.com/2012/08/24/path-for-ubuntu-applications/&quot;&gt;link&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Usually I’m looking for the path where ubuntu installs some applications, here is a way to do it.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;dpkg &lt;span class=&quot;nt&quot;&gt;-l&lt;/span&gt; | &lt;span class=&quot;nb&quot;&gt;grep &lt;/span&gt;name_of_the_app&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;For example if you want to find what installed applications contains the word ‘emacs’ you have to use this,&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;dpkg &lt;span class=&quot;nt&quot;&gt;-l&lt;/span&gt; | &lt;span class=&quot;nb&quot;&gt;grep &lt;/span&gt;emacs
+ii  emacs                                  23.3+1-1ubuntu9                         The GNU Emacs editor &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;metapackage&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+ii  emacs23                                23.3+1-1ubuntu9                         The GNU Emacs editor &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;with GTK+ user interface&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+ii  emacs23-bin-common                     23.3+1-1ubuntu9                         The GNU Emacs editor&lt;span class=&quot;s1&quot;&gt;'s shared, architecture dependent files
+ii  emacs23-common                         23.3+1-1ubuntu9                         The GNU Emacs editor'&lt;/span&gt;s shared, architecture independent infrastructure
+ii  emacsen-common                         1.4.22ubuntu1                           Common facilities &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;all emacsen
+ii  python-ropemacs                        0.6c2-4&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;And then you can find all the files that this application contains.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;dpkg &lt;span class=&quot;nt&quot;&gt;-L&lt;/span&gt; emacs23
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/emacs23
+/usr/share/doc/emacs23/copyright
+/usr/share/doc/emacs23/README.Debian
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/emacs23
+/usr/share/menu
+/usr/share/menu/emacs23
+/usr/share/emacs
+/usr/share/emacs/23.3
+/usr/share/emacs/23.3/etc
+/usr/share/emacs/23.3/etc/DOC-23.3.1
+/usr/share/man
+/usr/share/man/man1
+/usr/share/applications
+/usr/share/applications/emacs23.desktop
+/usr/bin
+/usr/bin/emacs23-x
+/usr/share/doc/emacs23/changelog.Debian.gz
+/usr/share/man/man1/emacs23-x.1.gz
+/usr/share/man/man1/emacs23.1.gz
+/usr/bin/emacs23&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+</description>
+        <pubDate>Fri, 24 Aug 2012 00:00:00 +0000</pubDate>
+        <link>http://emunoz.org/utils/2012/08/24/Path-of-Ubuntu-Applications.html</link>
+        <guid isPermaLink="true">http://emunoz.org/utils/2012/08/24/Path-of-Ubuntu-Applications.html</guid>
+        
+        <category>utils</category>
+        
+        <category>linux</category>
+        
+        
+        <category>utils</category>
+        
+      </item>
+    
+  </channel>
+</rss>
